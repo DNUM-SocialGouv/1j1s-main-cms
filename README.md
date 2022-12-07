@@ -1,40 +1,25 @@
-# 🚀 Getting started with Strapi
+# CMS principal 1Jeune1Solution
+Ce projet est le cms principal d'1Jeune1Solution.
+Il s'agit de la version typescript.
+Les cms stages et contenus statiques seront rapatriés ulterieurement.
 
+Afin de faciliter les choses, tout est dockerisé sur ce projet.
+
+
+## `develop`
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
-### `develop`
+### liste des commandes
+| action                                                                                                                       | Commande                       |
+|------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
+| Lancer le projet                                                                                                             | `npm run docker:start`         | 
+| Lancer le projet avec les logs                                                                                               | `npm run docker:start::logs`   | 
+| Relancer le projet après un changement dans les dépendances (mise à jour ou nouveau plugin)                                  | `npm run docker:new-component` | 
+| killer le projet                                                                                                             | `npm run docker:down`          | 
+| killer le projet et supprimer les données **/!\ ATTENTION**: cette commande supprimera tous vos volumes dockers non utilisés | `npm run docker:clean`         | 
+| Stopper le projet                                                                                                            | `npm run docker:stop`          | 
+| Lancer le projet manuellement avec base externe                                                                              | `npm run dev`                  | 
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
-
-```
-npm run develop
-# or
-yarn develop
-```
-
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
 
 ## 📚 Learn more
 
@@ -53,5 +38,3 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 - [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
 
 ---
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>

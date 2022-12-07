@@ -8,6 +8,7 @@
     "docker:new-component": "docker-compose stop && docker-compose --env-file=.env.docker up --build -d",
     "docker:start::log": "docker-compose --env-file=.env.docker up -d && docker-compose logs -f",
     "docker:down": "docker-compose --env-file=.env.docker down",
+    "docker:clean": "docker-compose --env-file=.env.docke down && docker volume prune",
     "docker:stop": "docker-compose --env-file=.env.docker stop",
     "develop": "strapi develop",
     "dev": "strapi develop",
