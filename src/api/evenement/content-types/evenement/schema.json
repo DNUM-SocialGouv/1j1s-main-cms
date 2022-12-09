@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "evenements",
+  "info": {
+    "singularName": "evenement",
+    "pluralName": "evenements",
+    "displayName": "Evenement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "dateDebut": {
+      "type": "datetime"
+    },
+    "description": {
+      "type": "text"
+    },
+    "idSource": {
+      "type": "string"
+    },
+    "lieu": {
+      "type": "string"
+    },
+    "modaliteInscription": {
+      "type": "text"
+    },
+    "online": {
+      "type": "boolean"
+    },
+    "organismeOrganisateur": {
+      "type": "string"
+    },
+    "titre": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "seance_information",
+        "reunion_information",
+        "atelier",
+        "job_dating",
+        "forum",
+        "Conférence"
+      ]
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "tous-mobilises",
+        "salons-en-ligne"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "idSource"
+    },
+    "dateFin": {
+      "type": "datetime"
+    }
+  }
+}
