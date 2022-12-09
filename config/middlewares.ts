@@ -1,6 +1,5 @@
 export default [
   'strapi::errors',
-  'strapi::security',
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::logger',
@@ -9,4 +8,18 @@ export default [
   'strapi::session',
   'strapi::favicon',
   'strapi::public',
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          'connect-src': ["'self'", 'https:'],
+          'img-src': ["'self'", 'data:', 'blob:', 'dl.airtable.com', process.env.MINIO_ENDPOINT],
+          'media-src': ["'self'", 'data:', 'blob:', 'dl.airtable.com', process.env.MINIO_ENDPOINT],
+          upgradeInsecureRequests: null,
+        },
+      },
+    },
+  },
 ];
