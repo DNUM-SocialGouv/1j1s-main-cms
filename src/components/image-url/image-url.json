@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_image_url_image_urls",
+  "info": {
+    "displayName": "Image Url",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

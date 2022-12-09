@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_services_optionnels_services_optionnels",
+  "info": {
+    "displayName": "Service Optionnel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nom": {
+      "type": "enumeration",
+      "enum": [
+        "lave-vaisselle"
+      ]
+    }
+  }
+}

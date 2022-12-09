@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_services_inclus_services_incluses",
+  "info": {
+    "displayName": "Service Inclus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nom": {
+      "type": "enumeration",
+      "enum": [
+        "lave-vaisselle",
+        "micro-onde",
+        "parking"
+      ]
+    }
+  }
+}

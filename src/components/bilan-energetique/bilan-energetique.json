@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_bilan_energetique_bilan_energetiques",
+  "info": {
+    "displayName": "Bilan Energetique"
+  },
+  "options": {},
+  "attributes": {
+    "consommationEnergetique": {
+      "type": "string"
+    },
+    "emissionDeGaz": {
+      "type": "string"
+    }
+  }
+}
