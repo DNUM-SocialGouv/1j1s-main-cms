@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "evenements",
+  "info": {
+    "singularName": "evenement",
+    "pluralName": "evenements",
+    "displayName": "Evenement"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "dateDebut": {
+      "type": "datetime"
+    }
+  }
+}
