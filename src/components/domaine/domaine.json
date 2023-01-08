@@ -1,0 +1,55 @@
+{
+  "collectionName": "components_domaine_domaines",
+  "info": {
+    "displayName": "Domaine",
+    "icon": "certificate",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nom": {
+      "type": "enumeration",
+      "enum": [
+        "achats",
+        "activités sociales et culturelles",
+        "agriculture",
+        "architecture / urbanisme / immobilier",
+        "audit",
+        "chimie / biologie / agronomie",
+        "commerce",
+        "communication",
+        "community management",
+        "comptabilité / contrôle de gestion",
+        "conception / génie civil / génie industriel",
+        "conseil",
+        "design / UX / UI",
+        "développement informatique",
+        "direction d'entreprise",
+        "énergie / matériaux / mécanique / électronique",
+        "enseignement",
+        "environnement",
+        "évènementiel",
+        "études / statistiques / data",
+        "fiscalite / finance / assurance",
+        "gestion de projet / produit",
+        "graphisme / illustration",
+        "infra / réseaux / télécoms",
+        "hôtellerie - restauration",
+        "journalisme / rp / médias",
+        "juridique",
+        "logistique",
+        "luxe / mode / textile",
+        "marketing",
+        "production / fabrication / exploitation",
+        "qualité / maintenance",
+        "rh / formation",
+        "santé / services à la personne",
+        "secteur public",
+        "relation client / support",
+        "travaux / chantiers",
+        "ventes",
+        "non renseigné"
+      ]
+    }
+  }
+}

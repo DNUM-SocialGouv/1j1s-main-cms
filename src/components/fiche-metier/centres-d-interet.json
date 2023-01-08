@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_fiche_metier_centres_d_interets",
+  "info": {
+    "displayName": "Centres d'intérêt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "identifiant": {
+      "type": "string"
+    },
+    "libelle": {
+      "type": "string"
+    }
+  }
+}

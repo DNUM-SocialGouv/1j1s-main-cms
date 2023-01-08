@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_fiche_metier_niveau_acces_minimals",
+  "info": {
+    "displayName": "Niveau accès minimal",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "libelle": {
+      "type": "string"
+    },
+    "identifiant": {
+      "type": "string"
+    }
+  }
+}

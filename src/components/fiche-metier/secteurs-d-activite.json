@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_fiche_metier_secteurs_d_activite",
+  "info": {
+    "displayName": "Secteurs d'activité",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "identifiant": {
+      "type": "string"
+    },
+    "libelle": {
+      "type": "string"
+    }
+  }
+}

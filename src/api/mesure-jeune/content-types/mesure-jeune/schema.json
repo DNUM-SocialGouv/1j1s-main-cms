@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "mesures_jeunes",
+  "info": {
+    "singularName": "mesure-jeune",
+    "pluralName": "mesures-jeunes",
+    "displayName": "Les mesures jeunes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vieProfessionnelle": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cartes.carte-lien"
+    },
+    "orienterFormer": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cartes.carte-lien"
+    },
+    "accompagnement": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cartes.carte-lien"
+    },
+    "aidesFinancieres": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cartes.carte-lien"
+    }
+  }
+}

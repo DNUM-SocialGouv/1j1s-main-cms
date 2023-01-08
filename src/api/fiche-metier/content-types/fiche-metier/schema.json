@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fiche_metiers",
+  "info": {
+    "singularName": "fiche-metier",
+    "pluralName": "fiche-metiers",
+    "displayName": "Fiche métier",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom_metier": {
+      "type": "string"
+    },
+    "competences": {
+      "type": "richtext"
+    },
+    "condition_travail": {
+      "type": "richtext"
+    },
+    "secteurs_activite": {
+      "type": "component",
+      "repeatable": true,
+      "component": "fiche-metier.secteurs-d-activite"
+    },
+    "identifiant": {
+      "type": "string"
+    },
+    "centres_interet": {
+      "type": "component",
+      "repeatable": true,
+      "component": "fiche-metier.centres-d-interet"
+    },
+    "niveau_acces_min": {
+      "type": "component",
+      "repeatable": true,
+      "component": "fiche-metier.niveau-acces-minimal"
+    },
+    "nature_travail": {
+      "type": "richtext"
+    },
+    "vie_professionnelle": {
+      "type": "richtext"
+    },
+    "acces_metier": {
+      "type": "richtext"
+    },
+    "statuts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "fiche-metier.statuts-professionnels"
+    },
+    "formations_min_requise": {
+      "displayName": "Formations min requise",
+      "type": "component",
+      "repeatable": true,
+      "component": "fiche-metier.formations-min-requise"
+    },
+    "accroche_metier": {
+      "type": "richtext"
+    },
+    "libelle_feminin": {
+      "type": "string"
+    },
+    "libelle_masculin": {
+      "type": "string"
+    },
+    "synonymes": {
+      "type": "string"
+    }
+  }
+}
