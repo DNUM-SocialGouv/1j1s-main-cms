@@ -1,41 +1,29 @@
-const LIMITE_ENTRIES_EVENEMENT = 1000
-const LIMITE_MAX_EVENEMENTS = 100000
-const LIMITE_MAX_FACETS = 100000
+import { configurationAnnonceDeLogementMeilisearch } from "./meilisearch/annonce-de-logement";
+import { configurationEvenementMeilisearch } from "./meilisearch/evenement";
+import { configurationFicheMetierMeilisearch } from "./meilisearch/fiche-metier";
+import { configurationOffreDeStageMeilisearch } from "./meilisearch/offre-de-stage";
 
-module.exports = ({env}) => ({
+export default ({ env }) => ({
   meilisearch: {
     config: {
-      host: env('PLUGIN_MEILISEARCH_URL'),
+      host: env("PLUGIN_MEILISEARCH_URL"),
       apiKey: env("PLUGIN_MEILISEARCH_API_KEY")
     },
-    "evenement": {
-      entriesQuery: {
-        limit: LIMITE_ENTRIES_EVENEMENT,
-      },
-      settings: {
-        filterableAttributes: ["type", "online", "lieu", "dateDebut"],
-        searchableAttributes: ["titre", "description", "organismeOrganisateur"],
-        sortableAttributes: ["dateDebut"],
-        displayedAttributes: ["titre", "dateDebut", "dateFin", "organismeOrganisateur", "lieu", "slug"],
-        pagination: {
-          maxTotalHits: LIMITE_MAX_EVENEMENTS
-        },
-        faceting: {
-          maxValuesPerFacet: LIMITE_MAX_FACETS
-        },
-      }
-    },
+    "annonce-de-logement": configurationAnnonceDeLogementMeilisearch,
+    "evenement": configurationEvenementMeilisearch,
+    "fiche-metier": configurationFicheMetierMeilisearch,
+    "offre-de-stage": configurationOffreDeStageMeilisearch,
   },
   upload: {
     config: {
-      provider: 'aws-s3',
+      provider: "aws-s3",
       providerOptions: {
-        accessKeyId: env('MINIO_ACCESS_KEY'),
-        secretAccessKey: env('MINIO_SECRET_KEY'),
-        endpoint: env('MINIO_ENDPOINT'),
+        accessKeyId: env("MINIO_ACCESS_KEY"),
+        secretAccessKey: env("MINIO_SECRET_KEY"),
+        endpoint: env("MINIO_ENDPOINT"),
         s3ForcePathStyle: true,
         params: {
-          Bucket: env('MINIO_BUCKET'),
+          Bucket: env("MINIO_BUCKET"),
         },
       },
     },
