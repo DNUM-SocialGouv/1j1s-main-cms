@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_services_inclus_services_incluses",
+  "info": {
+    "displayName": "Service Inclus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nom": {
+      "type": "enumeration",
+      "enum": [
+        "aspirateur",
+        "fer à repasser",
+        "internet",
+        "local à vélo",
+        "machine à laver",
+        "micro-onde",
+        "nécessaire de nettoyage",
+        "parking",
+        "salle de bain privative",
+        "salle de sport",
+        "télévision",
+        "non renseigné"
+      ]
+    }
+  }
+}

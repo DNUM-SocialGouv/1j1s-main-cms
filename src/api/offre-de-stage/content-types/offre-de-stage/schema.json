@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offres_de_stage",
+  "info": {
+    "singularName": "offre-de-stage",
+    "pluralName": "offres-de-stage",
+    "displayName": "Offre-de-stage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "identifiantSource": {
+      "type": "string",
+      "required": true
+    },
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "hellowork",
+        "interne",
+        "jobijoba",
+        "jobteaser",
+        "stagefr-compresse",
+        "stagefr-decompresse",
+        "welcome to the jungle"
+      ]
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "dateDeDebut": {
+      "type": "date",
+      "required": true
+    },
+    "urlDeCandidature": {
+      "type": "text",
+      "regex": "^(http|https|mailto):(//)?"
+    },
+    "teletravailPossible": {
+      "type": "boolean"
+    },
+    "sourceCreatedAt": {
+      "type": "datetime",
+      "private": true
+    },
+    "sourceUpdatedAt": {
+      "type": "datetime"
+    },
+    "sourcePublishedAt": {
+      "type": "datetime",
+      "private": true
+    },
+    "remunerationBase": {
+      "type": "integer"
+    },
+    "employeur": {
+      "type": "component",
+      "repeatable": false,
+      "component": "employeur.employeur"
+    },
+    "domaines": {
+      "type": "component",
+      "repeatable": true,
+      "component": "domaine.domaine"
+    },
+    "preRequis": {
+      "type": "component",
+      "repeatable": false,
+      "component": "competence.competence"
+    },
+    "dureeEnJour": {
+      "type": "integer",
+      "min": 0
+    },
+    "dureeEnJourMax": {
+      "type": "integer",
+      "min": 0
+    },
+    "localisation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "localisation.localisation"
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "kind": "collectionType",
+  "collectionName": "annonces_de_logement",
+  "info": {
+    "singularName": "annonce-de-logement",
+    "pluralName": "annonces-de-logement",
+    "displayName": "Annonce-de-logement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "identifiantSource": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "immojeune",
+        "studapart"
+      ],
+      "required": true
+    },
+    "typeBien": {
+      "type": "enumeration",
+      "enum": [
+        "appartement",
+        "chambre",
+        "colocation",
+        "immeuble",
+        "maison",
+        "studio",
+        "t1",
+        "t1bis",
+        "t2",
+        "t3",
+        "t4",
+        "t4 et plus",
+        "non renseigné"
+      ],
+      "required": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "colocation",
+        "courte",
+        "habitation intergénérationnelle",
+        "location",
+        "résidence",
+        "sous-location",
+        "non renseigné"
+      ]
+    },
+    "surface": {
+      "type": "integer",
+      "required": true
+    },
+    "surfaceMax": {
+      "type": "integer"
+    },
+    "nombreDePieces": {
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "required": true
+    },
+    "etage": {
+      "type": "integer"
+    },
+    "dateDeDisponibilite": {
+      "type": "date",
+      "required": true
+    },
+    "bilanEnergetique": {
+      "displayName": "Bilan Energetique",
+      "type": "component",
+      "repeatable": false,
+      "component": "bilan-energetique.bilan-energetique"
+    },
+    "meuble": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "localisation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "localisation.localisation",
+      "required": true
+    },
+    "sourceCreatedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "sourceUpdatedAt": {
+      "type": "datetime",
+      "required": true
+    },
+    "imagesUrl": {
+      "displayName": "imageUrl",
+      "type": "component",
+      "repeatable": true,
+      "component": "image-url.image-url"
+    },
+    "servicesInclus": {
+      "displayName": "Services Inclus",
+      "type": "component",
+      "repeatable": true,
+      "component": "service-inclus.services-inclus"
+    },
+    "servicesOptionnels": {
+      "displayName": "Services Optionnels",
+      "type": "component",
+      "repeatable": true,
+      "component": "service-optionnel.services-optionnels"
+    },
+    "prixHT": {
+      "type": "decimal",
+      "min": 0
+    },
+    "prix": {
+      "type": "decimal"
+    },
+    "devise": {
+      "type": "string",
+      "required": true,
+      "default": "euros"
+    },
+    "charge": {
+      "type": "decimal",
+      "min": 0
+    },
+    "garantie": {
+      "type": "decimal",
+      "min": 0
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}

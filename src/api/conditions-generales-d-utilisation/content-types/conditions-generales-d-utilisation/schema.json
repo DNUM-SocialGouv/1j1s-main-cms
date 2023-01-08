@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "conditions_generales_d_utilisations",
+  "info": {
+    "singularName": "conditions-generales-d-utilisation",
+    "pluralName": "conditions-generales-d-utilisations",
+    "displayName": "Conditions générales d'utilisation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "contenu": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_localisation_localisations",
+  "info": {
+    "displayName": "Localisation",
+    "icon": "search-location",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "ville": {
+      "type": "string"
+    },
+    "adresse": {
+      "type": "text"
+    },
+    "departement": {
+      "type": "string"
+    },
+    "codePostal": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "pays": {
+      "type": "string"
+    }
+  }
+}
