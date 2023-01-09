@@ -1,5 +1,5 @@
 {
-  "/mesure-jeune": {
+  "/upload/files": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MesureJeuneListResponse"
+                "$ref": "#/components/schemas/UploadFileListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Mesure-jeune"
+        "Upload - File"
       ],
       "parameters": [
         {
@@ -169,16 +169,18 @@
           }
         }
       ],
-      "operationId": "get/mesure-jeune"
-    },
-    "put": {
+      "operationId": "get/upload/files"
+    }
+  },
+  "/upload/files/{id}": {
+    "get": {
       "responses": {
         "200": {
           "description": "OK",
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/MesureJeuneResponse"
+                "$ref": "#/components/schemas/UploadFileResponse"
               }
             }
           }
@@ -235,20 +237,21 @@
         }
       },
       "tags": [
-        "Mesure-jeune"
+        "Upload - File"
       ],
-      "parameters": [],
-      "operationId": "put/mesure-jeune",
-      "requestBody": {
-        "required": true,
-        "content": {
-          "application/json": {
-            "schema": {
-              "$ref": "#/components/schemas/MesureJeuneRequest"
-            }
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "number"
           }
         }
-      }
+      ],
+      "operationId": "get/upload/files/{id}"
     },
     "delete": {
       "responses": {
@@ -315,10 +318,21 @@
         }
       },
       "tags": [
-        "Mesure-jeune"
+        "Upload - File"
       ],
-      "parameters": [],
-      "operationId": "delete/mesure-jeune"
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "description": "",
+          "deprecated": false,
+          "required": true,
+          "schema": {
+            "type": "number"
+          }
+        }
+      ],
+      "operationId": "delete/upload/files/{id}"
     }
   }
 }
