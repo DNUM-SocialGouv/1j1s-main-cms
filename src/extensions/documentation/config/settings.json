@@ -1,0 +1,30 @@
+{
+  "info": {
+    "version": "0.2",
+    "title": "Gestionnaire de stage 1 jeune 1 solution",
+    "description": "Gestionnaire de contenu et de concatenation de stages 1 jeune 1 solution",
+    "license": {
+      "name": "MIT",
+      "url": "https://github.com/DNUM-SocialGouv/1j1s-stage-orchestrateur-transform-load/blob/main/LICENSE"
+    },
+    "contact": {
+      "name": "l'équipe",
+      "email": "OCTO.1j1s@accenture.com",
+      "url": "https://www.1jeune1solution.gouv.fr/"
+    }
+  },
+  "servers": [
+    {
+      "description": "Local Server",
+      "url": "http://localhost/api"
+    },
+    {
+      "description": "Integration Server",
+      "url": "https://1j1s-stage-content-manager.osc-fr1.scalingo.io/api"
+    },
+    {
+      "description": "Production Server",
+      "url": "https://1j1s-stage-content-manager-prod.osc-fr1.scalingo.io/api"
+    }
+  ]
+}

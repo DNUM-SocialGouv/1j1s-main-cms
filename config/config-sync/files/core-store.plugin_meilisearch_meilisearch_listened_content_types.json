@@ -1,0 +1,12 @@
+{
+  "key": "plugin_meilisearch_meilisearch_listened_content_types",
+  "value": [
+    "api::annonce-de-logement.annonce-de-logement",
+    "api::evenement.evenement",
+    "api::fiche-metier.fiche-metier",
+    "api::offre-de-stage.offre-de-stage"
+  ],
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

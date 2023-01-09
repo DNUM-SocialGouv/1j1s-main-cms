@@ -1,0 +1,70 @@
+{
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "permissions": [
+    {
+      "action": "api::accessibilite.accessibilite.find"
+    },
+    {
+      "action": "api::actualite.actualite.find"
+    },
+    {
+      "action": "api::annonce-de-logement.annonce-de-logement.find"
+    },
+    {
+      "action": "api::annonce-de-logement.annonce-de-logement.findOne"
+    },
+    {
+      "action": "api::article.article.find"
+    },
+    {
+      "action": "api::article.article.findOne"
+    },
+    {
+      "action": "api::conditions-generales-d-utilisation.conditions-generales-d-utilisation.find"
+    },
+    {
+      "action": "api::evenement.evenement.find"
+    },
+    {
+      "action": "api::evenement.evenement.findOne"
+    },
+    {
+      "action": "api::fiche-metier.fiche-metier.find"
+    },
+    {
+      "action": "api::fiche-metier.fiche-metier.findOne"
+    },
+    {
+      "action": "api::les-mesures-employeurs.les-mesures-employeurs.find"
+    },
+    {
+      "action": "api::mention-legale.mention-legale.find"
+    },
+    {
+      "action": "api::mesure-jeune.mesure-jeune.find"
+    },
+    {
+      "action": "api::offre-de-stage.offre-de-stage.find"
+    },
+    {
+      "action": "api::offre-de-stage.offre-de-stage.findOne"
+    },
+    {
+      "action": "api::politique-de-confidentialite.politique-de-confidentialite.find"
+    },
+    {
+      "action": "plugin::slugify.slugController.findSlug"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.user.me"
+    }
+  ]
+}
