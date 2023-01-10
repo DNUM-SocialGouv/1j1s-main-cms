@@ -60,6 +60,7 @@ export const configurationAnnonceDeLogementMeilisearch = {
       "surfaceAAfficher",
       "type",
       "url",
+      "imagesUrl",
       "sourceUpdatedAt",
       "localisationAAfficher",
     ],
@@ -77,6 +78,7 @@ export const configurationAnnonceDeLogementMeilisearch = {
       dateDeMiseAJour: getSourceUpdatedAtToDisplay(entry.sourceUpdatedAt),
       devise: getDeviseToDisplay(entry.devise),
       localisationAAfficher: getLocalisationToDisplay(entry.localisation),
+      imagesUrl: entry.imagesUrl.map((image) => image.value),
       localisation: entry.localisation && {
         ville: entry.localisation.ville,
         codePostal: entry.localisation.codePostal,
