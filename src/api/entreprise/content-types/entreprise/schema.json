@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entreprises",
+  "info": {
+    "singularName": "entreprise",
+    "pluralName": "entreprises",
+    "displayName": "Entreprises"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom_societe": {
+      "type": "string"
+    },
+    "code_postal": {
+      "type": "string"
+    },
+    "ville": {
+      "type": "string"
+    },
+    "siret": {
+      "type": "string"
+    },
+    "taille": {
+      "type": "string"
+    },
+    "secteur": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "travail": {
+      "type": "string"
+    },
+    "erreur": {
+      "type": "string"
+    }
+  }
+}

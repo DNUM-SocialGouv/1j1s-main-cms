@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "toutes_les_mesures_employeurs",
+  "info": {
+    "singularName": "les-mesures-employeurs",
+    "pluralName": "toutes-les-mesures-employeurs",
+    "displayName": "Les mesures employeurs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dispositifs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cartes.carte-lien"
+    }
+  }
+}

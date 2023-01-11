@@ -1,0 +1,1190 @@
+{
+  "name": "Author",
+  "code": "strapi-author",
+  "description": "Authors can manage the content they have created.",
+  "permissions": [
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::accessibilite.accessibilite",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::accessibilite.accessibilite",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::accessibilite.accessibilite",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::accessibilite.accessibilite",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::annonce-de-logement.annonce-de-logement",
+      "properties": {
+        "fields": [
+          "identifiantSource",
+          "titre",
+          "description",
+          "url",
+          "source",
+          "typeBien",
+          "type",
+          "surface",
+          "surfaceMax",
+          "nombreDePieces",
+          "etage",
+          "dateDeDisponibilite",
+          "bilanEnergetique.consommationEnergetique",
+          "bilanEnergetique.emissionDeGaz",
+          "meuble",
+          "localisation.latitude",
+          "localisation.longitude",
+          "localisation.ville",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays",
+          "sourceCreatedAt",
+          "sourceUpdatedAt",
+          "imagesUrl.value",
+          "servicesInclus.nom",
+          "servicesOptionnels.nom",
+          "prixHT",
+          "prix",
+          "devise",
+          "charge",
+          "garantie",
+          "slug"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::annonce-de-logement.annonce-de-logement",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::annonce-de-logement.annonce-de-logement",
+      "properties": {
+        "fields": [
+          "identifiantSource",
+          "titre",
+          "description",
+          "url",
+          "source",
+          "typeBien",
+          "type",
+          "surface",
+          "surfaceMax",
+          "nombreDePieces",
+          "etage",
+          "dateDeDisponibilite",
+          "bilanEnergetique.consommationEnergetique",
+          "bilanEnergetique.emissionDeGaz",
+          "meuble",
+          "localisation.latitude",
+          "localisation.longitude",
+          "localisation.ville",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays",
+          "sourceCreatedAt",
+          "sourceUpdatedAt",
+          "imagesUrl.value",
+          "servicesInclus.nom",
+          "servicesOptionnels.nom",
+          "prixHT",
+          "prix",
+          "devise",
+          "charge",
+          "garantie",
+          "slug"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::annonce-de-logement.annonce-de-logement",
+      "properties": {
+        "fields": [
+          "identifiantSource",
+          "titre",
+          "description",
+          "url",
+          "source",
+          "typeBien",
+          "type",
+          "surface",
+          "surfaceMax",
+          "nombreDePieces",
+          "etage",
+          "dateDeDisponibilite",
+          "bilanEnergetique.consommationEnergetique",
+          "bilanEnergetique.emissionDeGaz",
+          "meuble",
+          "localisation.latitude",
+          "localisation.longitude",
+          "localisation.ville",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays",
+          "sourceCreatedAt",
+          "sourceUpdatedAt",
+          "imagesUrl.value",
+          "servicesInclus.nom",
+          "servicesOptionnels.nom",
+          "prixHT",
+          "prix",
+          "devise",
+          "charge",
+          "garantie",
+          "slug"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "titre",
+          "slug",
+          "contenu",
+          "banniere"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::article.article",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "titre",
+          "slug",
+          "contenu",
+          "banniere"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "titre",
+          "slug",
+          "contenu",
+          "banniere"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::conditions-generales-d-utilisation.conditions-generales-d-utilisation",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::conditions-generales-d-utilisation.conditions-generales-d-utilisation",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::conditions-generales-d-utilisation.conditions-generales-d-utilisation",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::conditions-generales-d-utilisation.conditions-generales-d-utilisation",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::contact-cej.contact-cej",
+      "properties": {
+        "fields": [
+          "prenom",
+          "nom",
+          "email",
+          "telephone",
+          "age",
+          "ville",
+          "code_postal"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::contact-cej.contact-cej",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::contact-cej.contact-cej",
+      "properties": {
+        "fields": [
+          "prenom",
+          "nom",
+          "email",
+          "telephone",
+          "age",
+          "ville",
+          "code_postal"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::contact-cej.contact-cej",
+      "properties": {
+        "fields": [
+          "prenom",
+          "nom",
+          "email",
+          "telephone",
+          "age",
+          "ville",
+          "code_postal"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::contact-entreprise.contact-entreprise",
+      "properties": {
+        "fields": [
+          "prenom",
+          "nom",
+          "email",
+          "telephone",
+          "sujet",
+          "message"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::contact-entreprise.contact-entreprise",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::contact-entreprise.contact-entreprise",
+      "properties": {
+        "fields": [
+          "prenom",
+          "nom",
+          "email",
+          "telephone",
+          "sujet",
+          "message"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::contact-entreprise.contact-entreprise",
+      "properties": {
+        "fields": [
+          "prenom",
+          "nom",
+          "email",
+          "telephone",
+          "sujet",
+          "message"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::contact-poe.contact-poe",
+      "properties": {
+        "fields": [
+          "nom_societe",
+          "code_postal",
+          "ville",
+          "siret",
+          "taille",
+          "secteur",
+          "prenom",
+          "telephone",
+          "nom",
+          "travail",
+          "erreur",
+          "nombreARecruter",
+          "commentaire",
+          "email"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::contact-poe.contact-poe",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::contact-poe.contact-poe",
+      "properties": {
+        "fields": [
+          "nom_societe",
+          "code_postal",
+          "ville",
+          "siret",
+          "taille",
+          "secteur",
+          "prenom",
+          "telephone",
+          "nom",
+          "travail",
+          "erreur",
+          "nombreARecruter",
+          "commentaire",
+          "email"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::contact-poe.contact-poe",
+      "properties": {
+        "fields": [
+          "nom_societe",
+          "code_postal",
+          "ville",
+          "siret",
+          "taille",
+          "secteur",
+          "prenom",
+          "telephone",
+          "nom",
+          "travail",
+          "erreur",
+          "nombreARecruter",
+          "commentaire",
+          "email"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::entreprise.entreprise",
+      "properties": {
+        "fields": [
+          "nom_societe",
+          "code_postal",
+          "ville",
+          "siret",
+          "taille",
+          "secteur",
+          "prenom",
+          "telephone",
+          "email",
+          "nom",
+          "travail",
+          "erreur"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::entreprise.entreprise",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::entreprise.entreprise",
+      "properties": {
+        "fields": [
+          "nom_societe",
+          "code_postal",
+          "ville",
+          "siret",
+          "taille",
+          "secteur",
+          "prenom",
+          "telephone",
+          "email",
+          "nom",
+          "travail",
+          "erreur"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::entreprise.entreprise",
+      "properties": {
+        "fields": [
+          "nom_societe",
+          "code_postal",
+          "ville",
+          "siret",
+          "taille",
+          "secteur",
+          "prenom",
+          "telephone",
+          "email",
+          "nom",
+          "travail",
+          "erreur"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::evenement.evenement",
+      "properties": {
+        "fields": [
+          "dateDebut",
+          "description",
+          "idSource",
+          "lieu",
+          "modaliteInscription",
+          "online",
+          "organismeOrganisateur",
+          "titre",
+          "type",
+          "source",
+          "slug",
+          "dateFin"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::evenement.evenement",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::evenement.evenement",
+      "properties": {
+        "fields": [
+          "dateDebut",
+          "description",
+          "idSource",
+          "lieu",
+          "modaliteInscription",
+          "online",
+          "organismeOrganisateur",
+          "titre",
+          "type",
+          "source",
+          "slug",
+          "dateFin"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::evenement.evenement",
+      "properties": {
+        "fields": [
+          "dateDebut",
+          "description",
+          "idSource",
+          "lieu",
+          "modaliteInscription",
+          "online",
+          "organismeOrganisateur",
+          "titre",
+          "type",
+          "source",
+          "slug",
+          "dateFin"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::fiche-metier.fiche-metier",
+      "properties": {
+        "fields": [
+          "nom_metier",
+          "competences",
+          "condition_travail",
+          "secteurs_activite.identifiant",
+          "secteurs_activite.libelle",
+          "identifiant",
+          "centres_interet.identifiant",
+          "centres_interet.libelle",
+          "niveau_acces_min.libelle",
+          "niveau_acces_min.identifiant",
+          "nature_travail",
+          "vie_professionnelle",
+          "acces_metier",
+          "statuts.identifiant",
+          "statuts.id_ideo1",
+          "statuts.libelle",
+          "formations_min_requise.identifiant",
+          "formations_min_requise.libelle",
+          "accroche_metier",
+          "libelle_feminin",
+          "libelle_masculin",
+          "synonymes"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::fiche-metier.fiche-metier",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::fiche-metier.fiche-metier",
+      "properties": {
+        "fields": [
+          "nom_metier",
+          "competences",
+          "condition_travail",
+          "secteurs_activite.identifiant",
+          "secteurs_activite.libelle",
+          "identifiant",
+          "centres_interet.identifiant",
+          "centres_interet.libelle",
+          "niveau_acces_min.libelle",
+          "niveau_acces_min.identifiant",
+          "nature_travail",
+          "vie_professionnelle",
+          "acces_metier",
+          "statuts.identifiant",
+          "statuts.id_ideo1",
+          "statuts.libelle",
+          "formations_min_requise.identifiant",
+          "formations_min_requise.libelle",
+          "accroche_metier",
+          "libelle_feminin",
+          "libelle_masculin",
+          "synonymes"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::fiche-metier.fiche-metier",
+      "properties": {
+        "fields": [
+          "nom_metier",
+          "competences",
+          "condition_travail",
+          "secteurs_activite.identifiant",
+          "secteurs_activite.libelle",
+          "identifiant",
+          "centres_interet.identifiant",
+          "centres_interet.libelle",
+          "niveau_acces_min.libelle",
+          "niveau_acces_min.identifiant",
+          "nature_travail",
+          "vie_professionnelle",
+          "acces_metier",
+          "statuts.identifiant",
+          "statuts.id_ideo1",
+          "statuts.libelle",
+          "formations_min_requise.identifiant",
+          "formations_min_requise.libelle",
+          "accroche_metier",
+          "libelle_feminin",
+          "libelle_masculin",
+          "synonymes"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::les-mesures-employeurs.les-mesures-employeurs",
+      "properties": {
+        "fields": [
+          "dispositifs.titre",
+          "dispositifs.contenu",
+          "dispositifs.banniere",
+          "dispositifs.url",
+          "dispositifs.article",
+          "dispositifs.pourQui"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::les-mesures-employeurs.les-mesures-employeurs",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::les-mesures-employeurs.les-mesures-employeurs",
+      "properties": {
+        "fields": [
+          "dispositifs.titre",
+          "dispositifs.contenu",
+          "dispositifs.banniere",
+          "dispositifs.url",
+          "dispositifs.article",
+          "dispositifs.pourQui"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::les-mesures-employeurs.les-mesures-employeurs",
+      "properties": {
+        "fields": [
+          "dispositifs.titre",
+          "dispositifs.contenu",
+          "dispositifs.banniere",
+          "dispositifs.url",
+          "dispositifs.article",
+          "dispositifs.pourQui"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::mention-legale.mention-legale",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::mention-legale.mention-legale",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::mention-legale.mention-legale",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::mention-legale.mention-legale",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::mesure-jeune.mesure-jeune",
+      "properties": {
+        "fields": [
+          "vieProfessionnelle.titre",
+          "vieProfessionnelle.contenu",
+          "vieProfessionnelle.banniere",
+          "vieProfessionnelle.url",
+          "vieProfessionnelle.article",
+          "vieProfessionnelle.pourQui",
+          "orienterFormer.titre",
+          "orienterFormer.contenu",
+          "orienterFormer.banniere",
+          "orienterFormer.url",
+          "orienterFormer.article",
+          "orienterFormer.pourQui",
+          "accompagnement.titre",
+          "accompagnement.contenu",
+          "accompagnement.banniere",
+          "accompagnement.url",
+          "accompagnement.article",
+          "accompagnement.pourQui",
+          "aidesFinancieres.titre",
+          "aidesFinancieres.contenu",
+          "aidesFinancieres.banniere",
+          "aidesFinancieres.url",
+          "aidesFinancieres.article",
+          "aidesFinancieres.pourQui"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::mesure-jeune.mesure-jeune",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::mesure-jeune.mesure-jeune",
+      "properties": {
+        "fields": [
+          "vieProfessionnelle.titre",
+          "vieProfessionnelle.contenu",
+          "vieProfessionnelle.banniere",
+          "vieProfessionnelle.url",
+          "vieProfessionnelle.article",
+          "vieProfessionnelle.pourQui",
+          "orienterFormer.titre",
+          "orienterFormer.contenu",
+          "orienterFormer.banniere",
+          "orienterFormer.url",
+          "orienterFormer.article",
+          "orienterFormer.pourQui",
+          "accompagnement.titre",
+          "accompagnement.contenu",
+          "accompagnement.banniere",
+          "accompagnement.url",
+          "accompagnement.article",
+          "accompagnement.pourQui",
+          "aidesFinancieres.titre",
+          "aidesFinancieres.contenu",
+          "aidesFinancieres.banniere",
+          "aidesFinancieres.url",
+          "aidesFinancieres.article",
+          "aidesFinancieres.pourQui"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::mesure-jeune.mesure-jeune",
+      "properties": {
+        "fields": [
+          "vieProfessionnelle.titre",
+          "vieProfessionnelle.contenu",
+          "vieProfessionnelle.banniere",
+          "vieProfessionnelle.url",
+          "vieProfessionnelle.article",
+          "vieProfessionnelle.pourQui",
+          "orienterFormer.titre",
+          "orienterFormer.contenu",
+          "orienterFormer.banniere",
+          "orienterFormer.url",
+          "orienterFormer.article",
+          "orienterFormer.pourQui",
+          "accompagnement.titre",
+          "accompagnement.contenu",
+          "accompagnement.banniere",
+          "accompagnement.url",
+          "accompagnement.article",
+          "accompagnement.pourQui",
+          "aidesFinancieres.titre",
+          "aidesFinancieres.contenu",
+          "aidesFinancieres.banniere",
+          "aidesFinancieres.url",
+          "aidesFinancieres.article",
+          "aidesFinancieres.pourQui"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::offre-de-stage.offre-de-stage",
+      "properties": {
+        "fields": [
+          "identifiantSource",
+          "titre",
+          "slug",
+          "source",
+          "description",
+          "dateDeDebut",
+          "urlDeCandidature",
+          "teletravailPossible",
+          "sourceCreatedAt",
+          "sourceUpdatedAt",
+          "sourcePublishedAt",
+          "remunerationBase",
+          "employeur.nom",
+          "employeur.description",
+          "employeur.logoUrl",
+          "employeur.siteUrl",
+          "domaines.nom",
+          "preRequis.niveauEtude",
+          "preRequis.profil",
+          "dureeEnJour",
+          "dureeEnJourMax",
+          "localisation.latitude",
+          "localisation.longitude",
+          "localisation.ville",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::offre-de-stage.offre-de-stage",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::offre-de-stage.offre-de-stage",
+      "properties": {
+        "fields": [
+          "identifiantSource",
+          "titre",
+          "slug",
+          "source",
+          "description",
+          "dateDeDebut",
+          "urlDeCandidature",
+          "teletravailPossible",
+          "sourceCreatedAt",
+          "sourceUpdatedAt",
+          "sourcePublishedAt",
+          "remunerationBase",
+          "employeur.nom",
+          "employeur.description",
+          "employeur.logoUrl",
+          "employeur.siteUrl",
+          "domaines.nom",
+          "preRequis.niveauEtude",
+          "preRequis.profil",
+          "dureeEnJour",
+          "dureeEnJourMax",
+          "localisation.latitude",
+          "localisation.longitude",
+          "localisation.ville",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::offre-de-stage.offre-de-stage",
+      "properties": {
+        "fields": [
+          "identifiantSource",
+          "titre",
+          "slug",
+          "source",
+          "description",
+          "dateDeDebut",
+          "urlDeCandidature",
+          "teletravailPossible",
+          "sourceCreatedAt",
+          "sourceUpdatedAt",
+          "sourcePublishedAt",
+          "remunerationBase",
+          "employeur.nom",
+          "employeur.description",
+          "employeur.logoUrl",
+          "employeur.siteUrl",
+          "domaines.nom",
+          "preRequis.niveauEtude",
+          "preRequis.profil",
+          "dureeEnJour",
+          "dureeEnJourMax",
+          "localisation.latitude",
+          "localisation.longitude",
+          "localisation.ville",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::politique-de-confidentialite.politique-de-confidentialite",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::politique-de-confidentialite.politique-de-confidentialite",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::politique-de-confidentialite.politique-de-confidentialite",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::politique-de-confidentialite.politique-de-confidentialite",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::upload.assets.copy-link",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.download",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.update",
+      "subject": null,
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::upload.read",
+      "subject": null,
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    }
+  ]
+}

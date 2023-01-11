@@ -1,43 +1,17 @@
-const LIMITE_ENTRIES_EVENEMENT = 1000
-const LIMITE_MAX_EVENEMENTS = 100000
-const LIMITE_MAX_FACETS = 100000
+import configSync from "./config-sync";
+import importExportConfiguration from "./import-export";
+import meilisearchConfiguration from "./meilisearch";
+import minioConfiguration from "./minio";
+import sentryConfiguration from "./sentry";
+import slugifyConfiguration from "./slugify";
+import usersPermissionsConfiguration from "./users-permissions";
 
-module.exports = ({env}) => ({
-  meilisearch: {
-    config: {
-      host: env('PLUGIN_MEILISEARCH_URL'),
-      apiKey: env("PLUGIN_MEILISEARCH_API_KEY")
-    },
-    "evenement": {
-      entriesQuery: {
-        limit: LIMITE_ENTRIES_EVENEMENT,
-      },
-      settings: {
-        filterableAttributes: ["type", "online", "lieu", "dateDebut"],
-        searchableAttributes: ["titre", "description", "organismeOrganisateur"],
-        sortableAttributes: ["dateDebut"],
-        displayedAttributes: ["titre", "dateDebut", "dateFin", "organismeOrganisateur", "lieu", "slug"],
-        pagination: {
-          maxTotalHits: LIMITE_MAX_EVENEMENTS
-        },
-        faceting: {
-          maxValuesPerFacet: LIMITE_MAX_FACETS
-        },
-      }
-    },
-  },
-  upload: {
-    config: {
-      provider: 'aws-s3',
-      providerOptions: {
-        accessKeyId: env('MINIO_ACCESS_KEY'),
-        secretAccessKey: env('MINIO_SECRET_KEY'),
-        endpoint: env('MINIO_ENDPOINT'),
-        s3ForcePathStyle: true,
-        params: {
-          Bucket: env('MINIO_BUCKET'),
-        },
-      },
-    },
-  },
-})
+export default ({ env }) => ({
+  "config-sync": configSync,
+  "import-export-entries": importExportConfiguration,
+  meilisearch: meilisearchConfiguration(env),
+  sentry: sentryConfiguration(env),
+  slugify: slugifyConfiguration,
+  upload: minioConfiguration(env),
+  "users-permissions": usersPermissionsConfiguration,
+});

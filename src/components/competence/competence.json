@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_competence_competences",
+  "info": {
+    "displayName": "Competence",
+    "icon": "tasks",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "niveauEtude": {
+      "type": "enumeration",
+      "enum": [
+        "PREBAC",
+        "BAC",
+        "BAC+1",
+        "BAC+2",
+        "BAC+3",
+        "BAC+4",
+        "BAC+5",
+        "n/a"
+      ]
+    },
+    "profil": {
+      "type": "string"
+    }
+  }
+}
