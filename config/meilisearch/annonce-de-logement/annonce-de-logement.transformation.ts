@@ -8,13 +8,13 @@ export function transformerAnnonceDeLogement({ entry }: { entry: AnnonceDeLogeme
     titre: entry.titre,
     dateDeDisponibilite: entry.dateDeDisponibilite,
     dateDeMiseAJour: getSourceUpdatedAtToDisplay(entry.sourceUpdatedAt),
-    devise: entry.devise,
+    devise: getDeviseToDisplay(entry.devise),
     prix: entry.prix,
     prixHT: entry.prixHT,
     surface,
-    surfaceMax,
+    surfaceMax: surfaceMax ? surfaceMax : 0,
     surfaceAAfficher: getSurfaceToDisplay(surface, surfaceMax),
-    type: entry.type.toString(),
+    type: entry.type,
     url: entry.url,
     imagesUrl: entry.imagesUrl?.map(imageUrl => imageUrl.value) || [],
     sourceUpdatedAt: entry.sourceUpdatedAt,
@@ -22,31 +22,40 @@ export function transformerAnnonceDeLogement({ entry }: { entry: AnnonceDeLogeme
   };
 }
 
-function getSurfaceToDisplay(surface, surfaceMax) {
-  if (surfaceMax === undefined) {
-    return `${surface}m²`;
-  } else if (surfaceMax === null) {
-    return `${surface}m²`;
-  } else if (surfaceMax === 0) {
-    return `${surface}m²`;
+export function getSurfaceToDisplay(surface: number, surfaceMax: number): string {
+  if (surfaceMax) {
+    return `de ${surface} à ${surfaceMax} m²`;
   }
-  return `de ${surface} à ${surfaceMax} m²`;
+  return `${surface}m²`;
 }
 
-function getDeviseToDisplay(devise) {
+export function getDeviseToDisplay(devise: string): string {
   if (devise === "euros") {
     return "€";
   }
-  return devise;
+  return "€";
 }
 
-function getLocalisationToDisplay(localisation) {
+export function getLocalisationToDisplay(localisation): string {
+  if (!localisation) {
+    return "";
+  }
   const { ville, codePostal } = localisation;
-  if (ville && codePostal) return codePostal + " - " + ville;
-  if (codePostal) return codePostal;
-  return ville;
+  if (ville && codePostal) {
+    return codePostal + " - " + ville;
+  }
+  if (codePostal) {
+    return String(codePostal);
+  }
+  if (ville) {
+    return ville;
+  }
+  return "";
 }
 
-function getSourceUpdatedAtToDisplay(datetime) {
-  return datetime.split("T")[0];
+export function getSourceUpdatedAtToDisplay(datetime: string): string {
+  if (datetime) {
+    return datetime.split("T")[0];
+  }
+  return "";
 }

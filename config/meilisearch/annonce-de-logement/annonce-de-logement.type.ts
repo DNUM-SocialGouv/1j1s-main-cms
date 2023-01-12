@@ -17,30 +17,30 @@ export interface AnnonceDeLogementMeilisearch {
   localisationAAfficher: string;
 }
 
-enum TypeBien {
-  "appartement",
-  "chambre",
-  "colocation",
-  "immeuble",
-  "maison",
-  "studio",
-  "t1",
-  "t1bis",
-  "t2",
-  "t3",
-  "t4",
-  "t4 et plus",
-  "non renseigné"
+export enum TypeBien {
+  APPARTEMENT = "appartement",
+  CHAMBRE = "chambre",
+  COLOCATION = "colocation",
+  IMMEUBLE = "immeuble",
+  MAISON = "maison",
+  STUDIO = "studio",
+  T1 = "t1",
+  T1BIS = "t1bis",
+  T2 = "t2",
+  T3 = "t3",
+  T4 = "t4",
+  T4_ET_PLUS = "t4 et plus",
+  NON_RENSEIGNÉ = "non renseigné",
 }
 
-enum TypeLocation {
-  "colocation",
-  "courte",
-  "habitation intergénérationnelle",
-  "location",
-  "résidence",
-  "sous-location",
-  "non renseigné",
+export enum TypeLocation {
+  COLOCATION = "colocation",
+  COURTE = "courte",
+  HABITATION_INTERGENERATIONNELLE = "habitation intergénérationnelle",
+  LOCATION = "location",
+  RESIDENCE = "résidence",
+  SOUS_LOCATION = "sous-location",
+  NON_RENSEIGNE = "non renseigné"
 }
 
 interface ImageUrl {
@@ -60,20 +60,20 @@ interface BilanEnergetique {
   emissionDeGaz: string;
 }
 
-enum Source {
+export enum Source {
   "immojeune",
   "studapart"
 }
 
 interface Localisation {
-  latitude: number;
-  longitude: number;
-  ville: string;
-  adresse: string;
-  departement: string;
-  codePostal: string;
-  region: string;
-  pays: string;
+  latitude?: number;
+  longitude?: number;
+  ville?: string;
+  adresse?: string;
+  departement?: string;
+  codePostal?: string;
+  region?: string;
+  pays?: string;
 }
 
 export interface AnnonceDeLogementEntry {
