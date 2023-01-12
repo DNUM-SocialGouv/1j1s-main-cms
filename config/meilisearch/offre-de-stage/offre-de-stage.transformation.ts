@@ -46,8 +46,37 @@ function convertTime(timeInString): string {
   return `${time} jours`;
 }
 
+function getLocalisation(localisation) {
+  return localisation ? {
+    ville: localisation?.ville,
+    departement: localisation?.departement,
+    codePostal: localisation?.codePostal,
+    region: localisation?.region,
+    pays: localisation?.pays,
+    _geo: {
+      lat: localisation?.latitude,
+      lng: localisation?.longitude,
+    }
+  } : {
+    ville: "",
+    departement: "",
+    codePostal: "",
+    region: "",
+    pays: "",
+    _geo: {
+      lat: 0,
+      lng: 0,
+    }
+  };
+}
+
 export function transformerOffreDeStage({ entry }: { entry: OffreDeStageEntry }): OffreDeStageMeilisearch {
+  if (!entry.localisation) {
+    console.log(entry.identifiantSource);
+  }
+
   return {
+    id: entry.id,
     dateDeDebut: entry.dateDeDebut,
     description: entry.description,
     dureeEnJour: entry.dureeEnJour,
@@ -62,16 +91,6 @@ export function transformerOffreDeStage({ entry }: { entry: OffreDeStageEntry })
     niveauEtude: entry.preRequis?.niveauEtude,
     dureeCategorisee: categorisation(entry.dureeEnJour),
     localisationFiltree: [entry.localisation?.ville, entry.localisation?.region, entry.localisation?.departement],
-    localisation: {
-      ville: entry.localisation?.ville,
-      departement: entry.localisation?.departement,
-      codePostal: entry.localisation?.codePostal,
-      region: entry.localisation?.region,
-      pays: entry.localisation?.pays,
-      _geo: {
-        lat: entry.localisation?.latitude,
-        lng: entry.localisation?.longitude,
-      }
-    }
+    localisation: getLocalisation(entry.localisation)
   };
 }

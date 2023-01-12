@@ -11,6 +11,7 @@ interface LocalisationStageMeilisearch {
 }
 
 export interface OffreDeStageMeilisearch {
+  id: number;
   domaines: Array<string>;
   source: string;
   dateDeDebut: string;
@@ -108,6 +109,7 @@ interface Localisation {
 }
 
 export interface OffreDeStageEntry {
+  id: number;
   identifiantSource: string;
   titre: string;
   slug: string;
