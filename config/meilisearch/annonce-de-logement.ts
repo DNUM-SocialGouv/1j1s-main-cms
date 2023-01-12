@@ -41,7 +41,8 @@ export const configurationAnnonceDeLogementMeilisearch = {
       "localisation.ville",
       "localisation.codePostal",
       "prix",
-      "surface"
+      "surface",
+      "surfaceMax"
     ],
     searchableAttributes: [
       "localisation.ville",
