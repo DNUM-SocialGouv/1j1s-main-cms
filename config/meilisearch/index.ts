@@ -1,7 +1,7 @@
-import { configurationAnnonceDeLogementMeilisearch } from "./annonce-de-logement";
-import { configurationEvenementMeilisearch } from "./evenement";
-import { configurationFicheMetierMeilisearch } from "./fiche-metier";
-import { configurationOffreDeStageMeilisearch } from "./offre-de-stage";
+import configurationAnnonceDeLogementMeilisearch from "./annonce-de-logement/index";
+import configurationEvenementMeilisearch from "./evenement/index";
+import configurationFicheMetierMeilisearch from "./fiche-metier/index";
+import configurationOffreDeStageMeilisearch from "./offre-de-stage/index";
 
 export default (env) => ({
   config: {
