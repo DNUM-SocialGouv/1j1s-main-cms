@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "description": "1 jeune 1 solution main CMS ",
   "scripts": {
-    "docker:start": "docker-compose --env-file=.env.docker up -d && sleep 5 && open http://localhost/admin",
+    "docker:start": "docker-compose --env-file=.env.docker up --build -d && sleep 5 && open http://localhost/admin",
     "docker:new-component": "docker-compose stop && docker-compose --env-file=.env.docker up --build -d",
-    "docker:start::log": "docker-compose --env-file=.env.docker up -d && docker-compose logs -f",
+    "docker:start::log": "docker-compose --env-file=.env.docker up --build -d && docker-compose logs -f",
     "docker:down": "docker-compose --env-file=.env.docker down",
     "docker:clean": "docker-compose --env-file=.env.docker down && docker volume prune",
     "docker:stop": "docker-compose --env-file=.env.docker stop",
@@ -17,16 +17,16 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-documentation": "~4.5.5",
-    "@strapi/plugin-sentry": "~4.5.5",
-    "@strapi/plugin-users-permissions": "~4.5.5",
-    "@strapi/provider-upload-aws-s3": "~4.5.5",
-    "@strapi/strapi": "4.5.5",
-    "pg": "8.6.0",
+    "@strapi/plugin-documentation": "~4.5.6",
+    "@strapi/plugin-sentry": "~4.5.6",
+    "@strapi/plugin-users-permissions": "~4.5.6",
+    "@strapi/provider-upload-aws-s3": "~4.5.6",
+    "@strapi/strapi": "4.5.6",
+    "pg": "8.8.0",
     "strapi-plugin-config-sync": "~1.1.0",
     "strapi-plugin-import-export-entries": "~1.18.0",
-    "strapi-plugin-meilisearch": "~0.8.2",
-    "strapi-plugin-slugify": "~2.3.1"
+    "strapi-plugin-meilisearch": "~0.9.1",
+    "strapi-plugin-slugify": "~2.3.2"
   },
   "author": {
     "name": "A Strapi developer"
