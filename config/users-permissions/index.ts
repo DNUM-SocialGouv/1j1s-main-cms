@@ -4,4 +4,4 @@ export default {
       expiresIn: "30m"
     }
   }
-}
+};

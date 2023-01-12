@@ -2,7 +2,7 @@ const LIMITE_ENTRIES_EVENEMENT = 1000;
 const LIMITE_MAX_EVENEMENTS = 100000;
 const LIMITE_MAX_FACETS = 100000;
 
-export const configurationEvenementMeilisearch = {
+export default {
   entriesQuery: {
     limit: LIMITE_ENTRIES_EVENEMENT,
   },
