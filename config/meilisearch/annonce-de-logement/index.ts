@@ -1,4 +1,4 @@
-import { transformerAnnonceDeLogement } from "./annonce-de-logement.tranformation";
+import { transformerAnnonceDeLogement } from "./annonce-de-logement.transformation";
 import Constante from "../constante";
 
 export default {
