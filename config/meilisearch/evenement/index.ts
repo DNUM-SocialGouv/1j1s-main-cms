@@ -1,10 +1,8 @@
-const LIMITE_ENTRIES_EVENEMENT = 1000;
-const LIMITE_MAX_EVENEMENTS = 100000;
-const LIMITE_MAX_FACETS = 100000;
+import Constante from "../constante";
 
 export default {
   entriesQuery: {
-    limit: LIMITE_ENTRIES_EVENEMENT,
+    limit: Constante.LIMITE_ENTRIES_QUERY,
   },
   settings: {
     filterableAttributes: ["type", "online", "lieu", "dateDebut"],
@@ -12,10 +10,10 @@ export default {
     sortableAttributes: ["dateDebut"],
     displayedAttributes: ["titre", "dateDebut", "dateFin", "organismeOrganisateur", "lieu", "slug"],
     pagination: {
-      maxTotalHits: LIMITE_MAX_EVENEMENTS
+      maxTotalHits: Constante.LIMITE_MAX_HITS
     },
     faceting: {
-      maxValuesPerFacet: LIMITE_MAX_FACETS
+      maxValuesPerFacet: Constante.LIMITE_MAX_FACETS
     },
   }
 };

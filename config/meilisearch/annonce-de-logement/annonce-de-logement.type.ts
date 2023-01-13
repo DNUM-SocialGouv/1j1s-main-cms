@@ -36,9 +36,9 @@ enum TypeBien {
 enum TypeLocation {
   "colocation",
   "courte",
-  "habitation interg\u00E9n\u00E9rationnelle",
+  "habitation intergénérationnelle",
   "location",
-  "r\u00E9sidence",
+  "résidence",
   "sous-location",
   "non renseigné",
 }

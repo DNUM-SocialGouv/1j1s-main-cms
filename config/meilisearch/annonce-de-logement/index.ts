@@ -1,12 +1,9 @@
 import { transformerAnnonceDeLogement } from "./annonce-de-logement.tranformation";
-
-const LIMITE_MAX_FACETS = 100000;
-const LIMITE_MAX_LOGEMENTS = 100000;
-const ENTRIES_QUERY = 5000;
+import Constante from "../constante";
 
 export default {
   entriesQuery: {
-    limit: ENTRIES_QUERY,
+    limit: Constante.LIMITE_ENTRIES_QUERY,
   },
   settings: {
     filterableAttributes: [
@@ -40,10 +37,10 @@ export default {
       "localisationAAfficher",
     ],
     pagination: {
-      maxTotalHits: LIMITE_MAX_LOGEMENTS
+      maxTotalHits: Constante.LIMITE_MAX_HITS
     },
     faceting: {
-      maxValuesPerFacet: LIMITE_MAX_FACETS
+      maxValuesPerFacet: Constante.LIMITE_MAX_FACETS
     },
   },
   transformEntry: transformerAnnonceDeLogement

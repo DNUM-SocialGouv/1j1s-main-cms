@@ -1,4 +1,4 @@
-interface FicheMetierMeilisearch {
+export interface FicheMetierMeilisearch {
   id: string;
   nom_metier: string;
   competences: string;
@@ -37,7 +37,7 @@ interface Statuts {
   libelle: string;
 }
 
-interface FicheMetierEntry {
+export interface FicheMetierEntry {
   id: string;
   nom_metier: string;
   competences: string;
