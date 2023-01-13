@@ -1,12 +1,9 @@
 import { transformerOffreDeStage } from "./offre-de-stage.transformation";
-
-const LIMITE_MAX_FACETS = 100000;
-const LIMITE_MAX_STAGES = 100000;
-const LIMITE_ENTRIES_QUERY = 5000;
+import Constante from "../constante";
 
 export default {
   entriesQuery: {
-    limit: LIMITE_ENTRIES_QUERY,
+    limit: Constante.LIMITE_ENTRIES_QUERY,
   },
   settings: {
     filterableAttributes: [
@@ -45,11 +42,11 @@ export default {
       "slug"
     ],
     pagination: {
-      maxTotalHits: LIMITE_MAX_STAGES
+      maxTotalHits: Constante.LIMITE_MAX_HITS
     },
     // facetings https://docs.meilisearch.com/reference/api/settings.html#get-settings
     faceting: {
-      maxValuesPerFacet: LIMITE_MAX_FACETS
+      maxValuesPerFacet: Constante.LIMITE_MAX_FACETS
     },
     synonyms: {
       ingenieur: ["\"6 mois\""],

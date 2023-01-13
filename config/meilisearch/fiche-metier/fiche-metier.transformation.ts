@@ -1,3 +1,6 @@
+import {FicheMetierEntry, FicheMetierMeilisearch} from "./fiche-metier.type";
+
+
 export function transformerFicheMetier({ entry }: { entry: FicheMetierEntry }): FicheMetierMeilisearch {
   return {
     id: entry.id,
