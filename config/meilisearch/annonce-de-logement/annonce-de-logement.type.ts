@@ -11,6 +11,7 @@ export interface AnnonceDeLogementMeilisearch {
   surfaceMax: number;
   surfaceAAfficher: string;
   type: string; // enum
+  typeBien: string; // enum
   url: string;
   imagesUrl: Array<string>;
   sourceUpdatedAt: string;
