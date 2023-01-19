@@ -15,6 +15,7 @@ export function transformerAnnonceDeLogement({ entry }: { entry: AnnonceDeLogeme
     surfaceMax: surfaceMax ? surfaceMax : 0,
     surfaceAAfficher: getSurfaceToDisplay(surface, surfaceMax),
     type: entry.type,
+    typeBien: entry.typeBien,
     url: entry.url,
     imagesUrl: entry.imagesUrl?.map(imageUrl => imageUrl.value) || [],
     sourceUpdatedAt: entry.sourceUpdatedAt,

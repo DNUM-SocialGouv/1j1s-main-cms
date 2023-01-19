@@ -282,6 +282,7 @@ describe("AnnonceDeLogementTransformation", () => {
         surfaceMax: 30,
         surfaceAAfficher: `de 25 à 30 m²`,
         type: "courte",
+        typeBien: "t1bis",
         url: "http://some.url",
         imagesUrl: ["http://some.url/1", "http://some.url/2"],
         sourceUpdatedAt: "2022-12-12T01:30:00.000Z",
