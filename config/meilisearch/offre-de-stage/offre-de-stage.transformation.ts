@@ -91,6 +91,7 @@ export function transformerOffreDeStage({ entry }: { entry: OffreDeStageEntry })
     niveauEtude: entry.preRequis?.niveauEtude,
     dureeCategorisee: categorisation(entry.dureeEnJour),
     localisationFiltree: [entry.localisation?.ville, entry.localisation?.region, entry.localisation?.departement],
-    localisation: getLocalisation(entry.localisation)
+    localisation: getLocalisation(entry.localisation),
+    slug: entry.slug,
   };
 }

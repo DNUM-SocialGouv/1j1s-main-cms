@@ -26,7 +26,8 @@ export interface OffreDeStageMeilisearch {
   nomEmployeur: string;
   description: string;
   duree: string;
-  logoUrlEmployeur: string,
+  logoUrlEmployeur: string;
+  slug: string;
 }
 
 enum Source {
