@@ -249,7 +249,7 @@ describe("AnnonceDeLogementTransformation", () => {
           meuble: true,
           localisation: {
             ville: "Paris",
-            codePostal: 75001,
+            codePostal: "75001",
           },
           sourceCreatedAt: "2022-09-01",
           sourceUpdatedAt: "2022-12-12T01:30:00.000Z",
@@ -287,10 +287,13 @@ describe("AnnonceDeLogementTransformation", () => {
         imagesUrl: ["http://some.url/1", "http://some.url/2"],
         sourceUpdatedAt: "2022-12-12T01:30:00.000Z",
         localisationAAfficher: "75001 - Paris",
+        localisation: {
+          ville: "Paris",
+          codePostal: "75001",
+        },
       };
 
       // When
-      // @ts-ignore
       const resultat = transformerAnnonceDeLogement(entry);
 
       // Then
