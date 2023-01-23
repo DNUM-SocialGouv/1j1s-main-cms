@@ -16,6 +16,10 @@ export interface AnnonceDeLogementMeilisearch {
   imagesUrl: Array<string>;
   sourceUpdatedAt: string;
   localisationAAfficher: string;
+  localisation: {
+    ville: string,
+    codePostal: string,
+  },
 }
 
 export enum TypeBien {

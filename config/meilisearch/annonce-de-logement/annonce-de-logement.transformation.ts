@@ -20,6 +20,10 @@ export function transformerAnnonceDeLogement({ entry }: { entry: AnnonceDeLogeme
     imagesUrl: entry.imagesUrl?.map(imageUrl => imageUrl.value) || [],
     sourceUpdatedAt: entry.sourceUpdatedAt,
     localisationAAfficher: getLocalisationToDisplay(entry.localisation),
+    localisation: entry.localisation && {
+      ville: entry.localisation?.ville || "",
+      codePostal: entry.localisation?.codePostal || "",
+    },
   };
 }
 
