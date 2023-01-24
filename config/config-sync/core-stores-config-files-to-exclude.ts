@@ -56,6 +56,7 @@ export default [
   "core-store.plugin_meilisearch_meilisearch_host_config",
   "core-store.plugin_upload_metrics",
   "core-store.plugin_upload_settings",
+  "core-store.plugin_upload_view_configuration",
   "core-store.plugin_users-permissions_advanced",
   "core-store.plugin_users-permissions_email",
   "core-store.plugin_users-permissions_grant",

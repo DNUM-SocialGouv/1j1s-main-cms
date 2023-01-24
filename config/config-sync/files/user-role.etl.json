@@ -1,0 +1,52 @@
+{
+  "name": "ETL",
+  "description": "Rôle utilisé uniquement par l'ETL",
+  "type": "etl",
+  "permissions": [
+    {
+      "action": "api::annonce-de-logement.annonce-de-logement.create"
+    },
+    {
+      "action": "api::annonce-de-logement.annonce-de-logement.delete"
+    },
+    {
+      "action": "api::annonce-de-logement.annonce-de-logement.find"
+    },
+    {
+      "action": "api::annonce-de-logement.annonce-de-logement.findOne"
+    },
+    {
+      "action": "api::annonce-de-logement.annonce-de-logement.update"
+    },
+    {
+      "action": "api::evenement.evenement.create"
+    },
+    {
+      "action": "api::evenement.evenement.delete"
+    },
+    {
+      "action": "api::evenement.evenement.find"
+    },
+    {
+      "action": "api::evenement.evenement.findOne"
+    },
+    {
+      "action": "api::evenement.evenement.update"
+    },
+    {
+      "action": "api::offre-de-stage.offre-de-stage.create"
+    },
+    {
+      "action": "api::offre-de-stage.offre-de-stage.delete"
+    },
+    {
+      "action": "api::offre-de-stage.offre-de-stage.find"
+    },
+    {
+      "action": "api::offre-de-stage.offre-de-stage.findOne"
+    },
+    {
+      "action": "api::offre-de-stage.offre-de-stage.update"
+    }
+  ]
+}
