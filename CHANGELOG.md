@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.0.0...v1.1.0) (2023-01-25)
+
+
+### Features
+
+* **depot-stage:** ajout d'un champ email facultatif dans le composant employeur ([d1c4c3b](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/d1c4c3b18a544cfb53890ef7b48148c38fc81940))
+
 ## 1.0.0 (2023-01-25)
 
 
