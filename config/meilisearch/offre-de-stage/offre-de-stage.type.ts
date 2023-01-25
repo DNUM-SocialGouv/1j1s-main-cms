@@ -45,6 +45,7 @@ interface Employeur {
   description?: string;
   logoUrl?: string;
   siteUrl?: string;
+  email?: string;
 }
 
 enum DomaineValue {
