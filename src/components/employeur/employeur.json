@@ -19,6 +19,9 @@
     },
     "siteUrl": {
       "type": "string"
+    },
+    "email": {
+      "type": "email"
     }
   }
 }
