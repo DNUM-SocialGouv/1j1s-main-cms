@@ -4,6 +4,7 @@
   "version": "1.1.0",
   "description": "1 jeune 1 solution main CMS ",
   "scripts": {
+    "prepare": "./setup.sh",
     "docker:start": "docker-compose --env-file=.env.docker up --build -d && sleep 5 && open http://localhost/admin",
     "docker:new-component": "docker-compose stop && docker-compose --env-file=.env.docker up --build -d",
     "docker:start::log": "docker-compose --env-file=.env.docker up --build -d && docker-compose logs -f",
@@ -31,9 +32,10 @@
     "strapi-plugin-slugify": "~2.3.2"
   },
   "devDependencies": {
-    "@types/mocha": "^10.0.1",
+    "@types/mocha": "~10.0.1",
     "@types/node": "~18.11.18",
-    "mocha": "^10.2.0",
+    "git-notify": "~0.2.3",
+    "mocha": "~10.2.0",
     "ts-node": "~10.9.1"
   },
   "author": {
