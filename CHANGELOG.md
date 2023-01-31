@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.1.0...v1.1.1) (2023-01-31)
+
+
+### Bug Fixes
+
+* **configuration:** ajout droit création entreprise ([2fcee25](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/2fcee2589029a1790893fa6b83e5e4028fee5b1e))
+
 ## [1.1.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.0.0...v1.1.0) (2023-01-25)
 
 
