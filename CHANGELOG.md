@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.1.1...v1.1.2) (2023-02-02)
+
+
+### Bug Fixes
+
+* **sentry:** correction erreur version sentry ([d1a98cb](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/d1a98cb468d774c10ddb83ba56d4c7507ee906d4))
+
 ## [1.1.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.1.0...v1.1.1) (2023-01-31)
 
 
