@@ -1,4 +1,4 @@
-import {FicheMetierEntry, FicheMetierMeilisearch} from "./fiche-metier.type";
+import { FicheMetierEntry, FicheMetierMeilisearch } from "./fiche-metier.type";
 
 
 export function transformerFicheMetier({ entry }: { entry: FicheMetierEntry }): FicheMetierMeilisearch {
@@ -13,10 +13,10 @@ export function transformerFicheMetier({ entry }: { entry: FicheMetierEntry }): 
     accroche_metier: entry.accroche_metier,
     libelle_feminin: entry.libelle_feminin,
     libelle_masculin: entry.libelle_masculin,
-    centres_interet: entry.centres_interet && entry.centres_interet.map(({ libelle }) => libelle),
-    formations_min_requise: entry.formations_min_requise && entry.formations_min_requise.map(({ libelle }) => libelle),
-    niveau_acces_min: entry.niveau_acces_min && entry.niveau_acces_min.map(({ libelle }) => libelle),
-    secteurs_activite: entry.secteurs_activite && entry.secteurs_activite.map(({ libelle }) => libelle),
-    statuts: entry.statuts && entry.statuts.map(({ libelle }) => libelle)
+    centres_interet: entry.centres_interet?.map(({ libelle }) => libelle),
+    formations_min_requise: entry.formations_min_requise?.map(({ libelle }) => libelle),
+    niveau_acces_min: entry.niveau_acces_min?.map(({ libelle }) => libelle),
+    secteurs_activite: entry.secteurs_activite?.map(({ libelle }) => libelle),
+    statuts: entry.statuts?.map(({ libelle }) => libelle)
   };
 }

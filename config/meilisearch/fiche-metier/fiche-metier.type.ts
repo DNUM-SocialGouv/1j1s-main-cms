@@ -53,4 +53,5 @@ export interface FicheMetierEntry {
   niveau_acces_min: Array<NiveauAccesMin>;
   secteurs_activite: Array<SecteursActivite>;
   statuts: Array<Statuts>;
+  synonymes: string;
 }
