@@ -9,16 +9,27 @@
     "nom": {
       "type": "enumeration",
       "enum": [
+        "ascenseur",
         "aspirateur",
+        "cave",
         "fer à repasser",
+        "fibre optique",
+        "four",
+        "garage",
+        "gardien résidentiel",
         "internet",
-        "local à vélo",
         "machine à laver",
+        "lave vaisselle",
+        "local à vélo",
         "micro-onde",
         "nécessaire de nettoyage",
         "parking",
+        "piscine",
+        "réfrigérateur",
         "salle de bain privative",
         "salle de sport",
+        "sèche linge",
+        "terrace",
         "télévision",
         "non renseigné"
       ]
