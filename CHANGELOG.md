@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.1.2...v1.2.0) (2023-02-02)
+
+
+### Features
+
+* **logements:** Ajoute les services manquants ([7310aca](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/7310acaba44c1b27bb74f0ba2854394b21e93d37))
+
 ## [1.1.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.1.1...v1.1.2) (2023-02-02)
 
 
