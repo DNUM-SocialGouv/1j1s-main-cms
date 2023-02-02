@@ -138,20 +138,26 @@ describe("AnnonceDeLogementTransformation", () => {
 
   describe("Lorsque je transforme la localisation à afficher", () => {
     describe("et que la localisation est vide", () => {
-        it("Retourne une chaine vide", () => {
-          const resultat = getLocalisationToDisplay({});
-          assert.strictEqual(resultat, "");
-        });
+      it("Retourne une chaine vide", () => {
+        // When
+        const resultat = getLocalisationToDisplay({});
+
+        // Then
+        assert.strictEqual(resultat, "");
+      });
     });
 
     describe("et que la localisation n'existe pas", () => {
       it("retourne une chaine vide", () => {
+        // When
         const undefinedResultat = getLocalisationToDisplay(undefined);
         const nullResultat = getLocalisationToDisplay(null);
+
+        // Then
         assert.strictEqual(undefinedResultat, "");
         assert.strictEqual(nullResultat, "");
-      })
-    })
+      });
+    });
 
     describe("et que la ville et le code postal sont définis", () => {
       it("retourne le code postal suivi de la ville", () => {
