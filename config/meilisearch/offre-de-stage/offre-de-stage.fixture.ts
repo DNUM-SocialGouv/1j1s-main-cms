@@ -6,7 +6,7 @@ export function uneOffreDeStageStrapi(override?: Partial<Strapi.OffreDeStage>): 
     identifiantSource: "identifiant-source",
     titre: "Le titre",
     slug: "titre-suivi-d-identifiant-source",
-    source: Strapi.Source.JOBTEASER,
+    source: Strapi.OffreDeStage.Source.JOBTEASER,
     description: "La description",
     dateDeDebut: "2023-12-01T00:00:00.000Z",
     urlDeCandidature: "http://une-compagnie.com/apply/1234",
@@ -22,7 +22,7 @@ export function uneOffreDeStageStrapi(override?: Partial<Strapi.OffreDeStage>): 
       nom: "Une compagnie",
       siteUrl: "http://une-compagnie.com"
     },
-    domaines: [{ nom: Strapi.DomaineValue.achats }],
+    domaines: [{ nom: Strapi.OffreDeStage.DomaineValue.achats }],
     dureeEnJour: 365,
     dureeEnJourMax: 461,
     localisation: {
