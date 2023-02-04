@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.2.0...v1.2.1) (2023-02-04)
+
+
+### Tests
+
+* **meilisearch:** ajout tests offre de stages ([0b11e7a](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/0b11e7a8a6803fc2b4c3d6d526e4badf20f022c2))
+
 ## [1.2.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.1.2...v1.2.0) (2023-02-02)
 
 
