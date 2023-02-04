@@ -1,6 +1,6 @@
-import { FicheMetierEntry, FicheMetierMeilisearch } from "./fiche-metier.type";
+import { Meilisearch, Strapi } from "./fiche-metier.type";
 
-export function uneFicheMetierEntry(override?: Partial<FicheMetierEntry>) {
+export function uneFicheMetierStrapi(override?: Partial<Strapi.FicheMetier>) {
   return {
     id: "536",
     nom_metier: "accessoiriste",
@@ -48,7 +48,7 @@ export function uneFicheMetierEntry(override?: Partial<FicheMetierEntry>) {
   };
 }
 
-export function uneFicheMetierMeilisearch(override?: Partial<FicheMetierMeilisearch>): FicheMetierMeilisearch {
+export function uneFicheMetierMeilisearch(override?: Partial<Meilisearch.FicheMetier>): Meilisearch.FicheMetier {
   return {
     id: "536",
     nom_metier: "accessoiriste",
