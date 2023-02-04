@@ -30,7 +30,7 @@ export function convertirDansLaBonneUniteTemporelle(nombreDeJours: string | numb
   return `${nombreDeJours} jours`;
 }
 
-export function transformerLaLocalisation(localisation): Meilisearch.OffreDeStage.Localisation {
+export function transformerLaLocalisation(localisation: Strapi.OffreDeStage.Localisation): Meilisearch.OffreDeStage.Localisation {
   return localisation ? {
     ville: localisation?.ville,
     departement: localisation?.departement,
@@ -65,7 +65,7 @@ export function transformerOffreDeStage({ entry }: { entry: Strapi.OffreDeStage 
     teletravailPossible: entry.teletravailPossible,
     titre: entry.titre,
     duree: convertirDansLaBonneUniteTemporelle(entry.dureeEnJour),
-    domaines: entry.domaines?.map((domaine) => domaine.nom.toString()) || [],
+    domaines: entry.domaines?.map((domaine) => domaine.nom) || [],
     nomEmployeur: entry.employeur.nom,
     logoUrlEmployeur: entry.employeur.logoUrl,
     niveauEtude: entry.preRequis?.niveauEtude,

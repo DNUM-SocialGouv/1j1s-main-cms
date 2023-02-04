@@ -1,6 +1,6 @@
 import { Meilisearch, Strapi } from "./fiche-metier.type";
 
-export function uneFicheMetierStrapi(override?: Partial<Strapi.FicheMetier>) {
+export function uneFicheMetierStrapi(override?: Partial<Strapi.FicheMetier>): Strapi.FicheMetier {
   return {
     id: "536",
     nom_metier: "accessoiriste",

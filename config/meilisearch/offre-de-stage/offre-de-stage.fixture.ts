@@ -22,7 +22,7 @@ export function uneOffreDeStageStrapi(override?: Partial<Strapi.OffreDeStage>): 
       nom: "Une compagnie",
       siteUrl: "http://une-compagnie.com"
     },
-    domaines: [{ nom: Strapi.OffreDeStage.DomaineValue.achats }],
+    domaines: [{ nom: Strapi.OffreDeStage.Domaine.Nom.ACHATS }],
     dureeEnJour: 365,
     dureeEnJourMax: 461,
     localisation: {
