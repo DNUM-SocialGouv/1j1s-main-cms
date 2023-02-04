@@ -30,7 +30,7 @@ export function convertirDansLaBonneUniteTemporelle(nombreDeJours: string | numb
   return `${nombreDeJours} jours`;
 }
 
-export function transformerLaLocalisation(localisation): Meilisearch.Localisation {
+export function transformerLaLocalisation(localisation): Meilisearch.OffreDeStage.Localisation {
   return localisation ? {
     ville: localisation?.ville,
     departement: localisation?.departement,

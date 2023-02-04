@@ -162,7 +162,7 @@ describe("OffreDeStageTransformationTest", () => {
     context("et que cette dernière n'est pas renseignée", () => {
       it("retourne un objet vide", () => {
         // Given
-        const localisationVide: Meilisearch.Localisation = {
+        const localisationVide: Meilisearch.OffreDeStage.Localisation = {
           ville: "",
           departement: "",
           codePostal: "",
@@ -182,7 +182,7 @@ describe("OffreDeStageTransformationTest", () => {
     context("et que cette dernière est partiellement renseignée", () => {
       it("retourne les champs renseignés", () => {
         // Given
-        const localisationAttendue: Meilisearch.Localisation = {
+        const localisationAttendue: Meilisearch.OffreDeStage.Localisation = {
           ville: "Montpellier",
           departement: "Hérault",
           codePostal: "34070",
@@ -194,7 +194,7 @@ describe("OffreDeStageTransformationTest", () => {
           }
         };
 
-        const localisation: Strapi.Localisation = {
+        const localisation: Strapi.OffreDeStage.Localisation = {
           adresse: "280 Avenue Germaine Tillion",
           codePostal: "34070",
           departement: "Hérault",
@@ -216,7 +216,7 @@ describe("OffreDeStageTransformationTest", () => {
     context("et que cette dernière est complètement renseignée", () => {
       it("retourne tous les champs", () => {
         // Given
-        const localisation: Strapi.Localisation = {
+        const localisation: Strapi.OffreDeStage.Localisation = {
           adresse: "280 Avenue Germaine Tillion",
           codePostal: "34070",
           departement: "Hérault",
@@ -227,7 +227,7 @@ describe("OffreDeStageTransformationTest", () => {
           longitude: -3.14159,
         };
 
-        const localisationAttendue: Meilisearch.Localisation = {
+        const localisationAttendue: Meilisearch.OffreDeStage.Localisation = {
           ville: "Montpellier",
           departement: "Hérault",
           codePostal: "34070",

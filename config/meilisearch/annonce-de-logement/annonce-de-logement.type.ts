@@ -17,12 +17,14 @@ export namespace Meilisearch {
     imagesUrl: Array<string>;
     sourceUpdatedAt: string;
     localisationAAfficher: string;
-    localisation: Localisation,
+    localisation: AnnonceDeLogement.Localisation,
   }
 
-  interface Localisation {
-    ville: string,
-    codePostal: string,
+  namespace AnnonceDeLogement {
+    export interface Localisation {
+      ville: string,
+      codePostal: string,
+    }
   }
 }
 
@@ -33,22 +35,22 @@ export namespace Strapi {
     titre: string;
     description: string;
     url: string;
-    source: Source;
-    typeBien: TypeBien;
-    type: TypeLocation;
+    source: AnnonceDeLogement.Source;
+    typeBien: AnnonceDeLogement.TypeBien;
+    type: AnnonceDeLogement.TypeLocation;
     surface: number;
     surfaceMax: number;
     nombreDePieces: number;
     etage: number;
     dateDeDisponibilite: string;
-    bilanEnergetique: BilanEnergetique;
+    bilanEnergetique: AnnonceDeLogement.BilanEnergetique;
     meuble: boolean;
-    localisation: Localisation;
+    localisation: AnnonceDeLogement.Localisation;
     sourceCreatedAt: string;
     sourceUpdatedAt: string;
-    imagesUrl: Array<ImageUrl>;
-    servicesInclus: Array<ServiceInclus>;
-    servicesOptionnels: Array<ServiceOptionnel>;
+    imagesUrl: Array<AnnonceDeLogement.ImageUrl>;
+    servicesInclus: Array<AnnonceDeLogement.ServiceInclus>;
+    servicesOptionnels: Array<AnnonceDeLogement.ServiceOptionnel>;
     prixHT: number;
     prix: number;
     devise: string;
@@ -62,62 +64,65 @@ export namespace Strapi {
     updatedBy: string;
   }
 
-  export enum TypeBien {
-    APPARTEMENT = "appartement",
-    CHAMBRE = "chambre",
-    COLOCATION = "colocation",
-    IMMEUBLE = "immeuble",
-    MAISON = "maison",
-    STUDIO = "studio",
-    T1 = "t1",
-    T1BIS = "t1bis",
-    T2 = "t2",
-    T3 = "t3",
-    T4 = "t4",
-    T4_ET_PLUS = "t4 et plus",
-    NON_RENSEIGNÉ = "non renseigné",
-  }
+  export namespace AnnonceDeLogement {
+    export enum TypeBien {
+      APPARTEMENT = "appartement",
+      CHAMBRE = "chambre",
+      COLOCATION = "colocation",
+      IMMEUBLE = "immeuble",
+      MAISON = "maison",
+      STUDIO = "studio",
+      T1 = "t1",
+      T1BIS = "t1bis",
+      T2 = "t2",
+      T3 = "t3",
+      T4 = "t4",
+      T4_ET_PLUS = "t4 et plus",
+      NON_RENSEIGNÉ = "non renseigné",
+    }
 
-  export enum TypeLocation {
-    COLOCATION = "colocation",
-    COURTE = "courte",
-    HABITATION_INTERGENERATIONNELLE = "habitation intergénérationnelle",
-    LOCATION = "location",
-    RESIDENCE = "résidence",
-    SOUS_LOCATION = "sous-location",
-    NON_RENSEIGNE = "non renseigné"
-  }
+    export enum TypeLocation {
+      COLOCATION = "colocation",
+      COURTE = "courte",
+      HABITATION_INTERGENERATIONNELLE = "habitation intergénérationnelle",
+      LOCATION = "location",
+      RESIDENCE = "résidence",
+      SOUS_LOCATION = "sous-location",
+      NON_RENSEIGNE = "non renseigné"
+    }
 
-  interface ImageUrl {
-    value: string;
-  }
 
-  interface ServiceInclus {
-    nom: string;
-  }
+    export interface ImageUrl {
+      value: string;
+    }
 
-  interface ServiceOptionnel {
-    nom: string;
-  }
+    export interface ServiceInclus {
+      nom: string;
+    }
 
-  interface BilanEnergetique {
-    consommationEnergetique: string;
-    emissionDeGaz: string;
-  }
+    export interface ServiceOptionnel {
+      nom: string;
+    }
 
-  export enum Source {
-    "immojeune",
-    "studapart"
-  }
+    export interface BilanEnergetique {
+      consommationEnergetique: string;
+      emissionDeGaz: string;
+    }
 
-  interface Localisation {
-    latitude?: number;
-    longitude?: number;
-    ville?: string;
-    adresse?: string;
-    departement?: string;
-    codePostal?: string;
-    region?: string;
-    pays?: string;
+    export enum Source {
+      "immojeune",
+      "studapart"
+    }
+
+    export interface Localisation {
+      latitude?: number;
+      longitude?: number;
+      ville?: string;
+      adresse?: string;
+      departement?: string;
+      codePostal?: string;
+      region?: string;
+      pays?: string;
+    }
   }
 }
