@@ -1,4 +1,4 @@
-import { OffreDeStageEntry, OffreDeStageMeilisearch } from "./offre-de-stage.type";
+import { Meilisearch, Strapi } from "./offre-de-stage.type";
 
 export function creerFiltreSurLaDuree(nombreDeJours: string | number): string {
   if (typeof nombreDeJours === 'string') {
@@ -30,7 +30,7 @@ export function convertirDansLaBonneUniteTemporelle(nombreDeJours: string | numb
   return `${nombreDeJours} jours`;
 }
 
-export function transformerLaLocalisation(localisation) {
+export function transformerLaLocalisation(localisation): Meilisearch.Localisation {
   return localisation ? {
     ville: localisation?.ville,
     departement: localisation?.departement,
@@ -54,7 +54,7 @@ export function transformerLaLocalisation(localisation) {
   };
 }
 
-export function transformerOffreDeStage({ entry }: { entry: OffreDeStageEntry }): OffreDeStageMeilisearch {
+export function transformerOffreDeStage({ entry }: { entry: Strapi.OffreDeStage }): Meilisearch.OffreDeStage {
   return {
     id: entry.id,
     dateDeDebut: entry.dateDeDebut,

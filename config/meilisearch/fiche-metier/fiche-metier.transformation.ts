@@ -1,7 +1,7 @@
-import { FicheMetierEntry, FicheMetierMeilisearch } from "./fiche-metier.type";
+import { Meilisearch, Strapi } from "./fiche-metier.type";
 
 
-export function transformerFicheMetier({ entry }: { entry: FicheMetierEntry }): FicheMetierMeilisearch {
+export function transformerFicheMetier({ entry }: { entry: Strapi.FicheMetier }): Meilisearch.FicheMetier {
   return {
     id: entry.id,
     nom_metier: entry.nom_metier,
