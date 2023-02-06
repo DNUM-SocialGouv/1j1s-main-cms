@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.2.1...v1.2.2) (2023-02-06)
+
+
+### Bug Fixes
+
+* **logements:** Fix typo service terrasse ([4a8ea95](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/4a8ea95858065657ae08a8e2eff0db99524106cb))
+
 ## [1.2.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.2.0...v1.2.1) (2023-02-04)
 
 
