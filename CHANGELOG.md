@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.2.2...v1.2.3) (2023-02-06)
+
+
+### Bug Fixes
+
+* **meilisearch:** corriger la taille des batch ([f250c42](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/f250c42995e37045e88866b896c45831616a40d4))
+
 ## [1.2.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.2.1...v1.2.2) (2023-02-06)
 
 
