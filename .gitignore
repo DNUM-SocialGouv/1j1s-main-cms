@@ -118,3 +118,4 @@ build
 # Local
 ############################
 tmp
+.nyc_output

@@ -1,6 +1,6 @@
-import { AnnonceDeLogementEntry, AnnonceDeLogementMeilisearch } from "./annonce-de-logement.type";
+import { Meilisearch, Strapi } from "./annonce-de-logement.type";
 
-export function transformerAnnonceDeLogement({ entry }: { entry: AnnonceDeLogementEntry }): AnnonceDeLogementMeilisearch {
+export function transformerAnnonceDeLogement({ entry }: { entry: Strapi.AnnonceDeLogement }): Meilisearch.AnnonceDeLogement {
   const { surface, surfaceMax } = entry;
   return {
     id: entry.id,

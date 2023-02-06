@@ -1,52 +1,36 @@
-import { OffreDeStageEntry, OffreDeStageMeilisearch } from "./offre-de-stage.type";
+import { Meilisearch, Strapi } from "./offre-de-stage.type";
 
-export function categorisation(timeInString): string {
-  const time = Number(timeInString);
-  if (time === 0) {
-    return "Non renseigné";
+export function creerFiltreSurLaDuree(nombreDeJours: string | number): string {
+  if (typeof nombreDeJours === 'string') {
+    nombreDeJours = Number(nombreDeJours);
   }
-  if (time < 30 && time !== 0) {
-    return "< 1 mois";
-  }
-  if (time === 30) {
-    return "1 mois";
-  }
-  if (time === 60) {
-    return "2 mois";
-  }
-  if (time === 90) {
-    return "3 mois";
-  }
-  if (time === 120) {
-    return "4 mois";
-  }
-  if (time === 150) {
-    return "5 mois";
-  }
-  if (time === 180) {
-    return "6 mois";
-  }
-  if (time > 180) {
-    return "> 6 mois";
-  }
-  return convertTime(timeInString);
+
+  if (nombreDeJours === 0) return "Non renseigné";
+  if (nombreDeJours < 30) return "< 1 mois";
+  if (nombreDeJours === 30) return "1 mois";
+  if (nombreDeJours === 60) return "2 mois";
+  if (nombreDeJours === 90) return "3 mois";
+  if (nombreDeJours === 120) return "4 mois";
+  if (nombreDeJours === 150) return "5 mois";
+  if (nombreDeJours === 180) return "6 mois";
+  if (nombreDeJours > 180) return "> 6 mois";
+
+  return convertirDansLaBonneUniteTemporelle(nombreDeJours);
 }
 
-function convertTime(timeInString): string {
-  const time = Number(timeInString);
-  if (time % 365 === 0) {
-    return `${time / 365} ans`;
+export function convertirDansLaBonneUniteTemporelle(nombreDeJours: string | number): string {
+  if (typeof nombreDeJours === 'string') {
+    nombreDeJours = Number(nombreDeJours);
   }
-  if (time % 30 === 0) {
-    return `${time / 30} mois`;
-  }
-  if (time % 7 === 0) {
-    return `${time / 7} semaines`;
-  }
-  return `${time} jours`;
+
+  if (nombreDeJours % 365 === 0) return `${nombreDeJours / 365} ans`;
+  if (nombreDeJours % 30 === 0) return `${nombreDeJours / 30} mois`;
+  if (nombreDeJours % 7 === 0) return `${nombreDeJours / 7} semaines`;
+
+  return `${nombreDeJours} jours`;
 }
 
-function getLocalisation(localisation) {
+export function transformerLaLocalisation(localisation: Strapi.OffreDeStage.Localisation): Meilisearch.OffreDeStage.Localisation {
   return localisation ? {
     ville: localisation?.ville,
     departement: localisation?.departement,
@@ -70,11 +54,7 @@ function getLocalisation(localisation) {
   };
 }
 
-export function transformerOffreDeStage({ entry }: { entry: OffreDeStageEntry }): OffreDeStageMeilisearch {
-  if (!entry.localisation) {
-    console.log(entry.identifiantSource);
-  }
-
+export function transformerOffreDeStage({ entry }: { entry: Strapi.OffreDeStage }): Meilisearch.OffreDeStage {
   return {
     id: entry.id,
     dateDeDebut: entry.dateDeDebut,
@@ -84,14 +64,14 @@ export function transformerOffreDeStage({ entry }: { entry: OffreDeStageEntry })
     source: entry.source.toString(),
     teletravailPossible: entry.teletravailPossible,
     titre: entry.titre,
-    duree: convertTime(entry.dureeEnJour),
-    domaines: entry.domaines?.map((domaine) => domaine.nom.toString()) || [],
+    duree: convertirDansLaBonneUniteTemporelle(entry.dureeEnJour),
+    domaines: entry.domaines?.map((domaine) => domaine.nom) || [],
     nomEmployeur: entry.employeur.nom,
     logoUrlEmployeur: entry.employeur.logoUrl,
     niveauEtude: entry.preRequis?.niveauEtude,
-    dureeCategorisee: categorisation(entry.dureeEnJour),
+    dureeCategorisee: creerFiltreSurLaDuree(entry.dureeEnJour),
     localisationFiltree: [entry.localisation?.ville, entry.localisation?.region, entry.localisation?.departement],
-    localisation: getLocalisation(entry.localisation),
+    localisation: transformerLaLocalisation(entry.localisation),
     slug: entry.slug,
   };
 }

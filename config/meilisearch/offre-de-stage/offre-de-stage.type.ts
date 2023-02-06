@@ -1,138 +1,148 @@
-interface LocalisationStageMeilisearch {
-  ville: string,
-  departement: string,
-  codePostal: string,
-  region: string,
-  pays: string,
-  _geo: {
-    lat: number,
-    lng: number,
+export namespace Meilisearch {
+  export interface OffreDeStage {
+    id: number;
+    domaines: Array<string>;
+    source: string;
+    dateDeDebut: string;
+    teletravailPossible: boolean;
+    niveauEtude: string;
+    dureeCategorisee: string;
+    dureeEnJour: number;
+    dureeEnJourMax: number;
+    localisation: OffreDeStage.Localisation;
+    localisationFiltree: Array<string>;
+    titre: string;
+    nomEmployeur: string;
+    description: string;
+    duree: string;
+    logoUrlEmployeur: string;
+    slug: string;
+  }
+
+  export namespace OffreDeStage {
+    export interface Localisation {
+      ville: string;
+      departement: string;
+      codePostal: string;
+      region: string;
+      pays: string;
+      _geo: {
+        lat: number;
+        lng: number;
+      }
+    }
   }
 }
 
-export interface OffreDeStageMeilisearch {
-  id: number;
-  domaines: Array<string>;
-  source: string;
-  dateDeDebut: string;
-  teletravailPossible: boolean;
-  niveauEtude: string;
-  dureeCategorisee: string;
-  dureeEnJour: number;
-  dureeEnJourMax: number;
-  localisation: LocalisationStageMeilisearch
-  localisationFiltree: Array<string>;
-  titre: string;
-  nomEmployeur: string;
-  description: string;
-  duree: string;
-  logoUrlEmployeur: string;
-  slug: string;
-}
+export namespace Strapi {
+  export interface OffreDeStage {
+    id: number;
+    identifiantSource: string;
+    titre: string;
+    slug: string;
+    source: OffreDeStage.Source;
+    description: string;
+    dateDeDebut: string;
+    urlDeCandidature: string;
+    teletravailPossible: boolean;
+    sourceCreatedAt: string;
+    sourceUpdatedAt: string;
+    sourcePublishedAt: string;
+    remunerationBase: number;
+    employeur: OffreDeStage.Employeur;
+    domaines: Array<OffreDeStage.Domaine>;
+    preRequis?: OffreDeStage.Competence;
+    dureeEnJour: number;
+    dureeEnJourMax: number;
+    localisation: OffreDeStage.Localisation;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
+    createdBy: string;
+    updatedBy: string;
+  }
 
-enum Source {
-  "hellowork",
-  "interne",
-  "jobijoba",
-  "jobteaser",
-  "stagefr-compresse",
-  "stagefr-decompresse",
-  "welcome to the jungle",
-}
+  export namespace OffreDeStage {
+    export enum Source {
+      HELLOWORK = "hellowork",
+      INTERNE = "interne",
+      JOBIJOBA = "jobijoba",
+      JOBTEASER = "jobteaser",
+      STAGEFR_COMPRESSE = "stagefr-compresse",
+      STAGEFR_DECOMPRESSE = "stagefr-decompresse",
+      WELCOME_TO_THE_JUNGLE = "welcome to the jungle",
+    }
 
-interface Employeur {
-  nom: string;
-  description?: string;
-  logoUrl?: string;
-  siteUrl?: string;
-  email?: string;
-}
+    export interface Employeur {
+      nom: string;
+      description?: string;
+      logoUrl?: string;
+      siteUrl?: string;
+      email?: string;
+    }
 
-enum DomaineValue {
-  "achats",
-  "activités sociales et culturelles",
-  "agriculture",
-  "architecture / urbanisme / immobilier",
-  "audit",
-  "chimie / biologie / agronomie",
-  "commerce",
-  "communication",
-  "community management",
-  "comptabilité / contrôle de gestion",
-  "conception / g\u00E9nie civil / g\u00E9nie industriel",
-  "conseil",
-  "design / UX / UI",
-  "d\u00E9veloppement informatique",
-  "direction d'entreprise",
-  "\u00E9nergie / mat\u00E9riaux / m\u00E9canique / \u00E9lectronique",
-  "enseignement",
-  "environnement",
-  "\u00E9v\u00E8nementiel",
-  "\u00E9tudes / statistiques / data",
-  "fiscalite / finance / assurance",
-  "gestion de projet / produit",
-  "graphisme / illustration",
-  "infra / réseaux / télécoms",
-  "h\u00F4tellerie - restauration",
-  "journalisme / rp / médias",
-  "juridique",
-  "logistique",
-  "luxe / mode / textile",
-  "marketing",
-  "production / fabrication / exploitation",
-  "qualité / maintenance",
-  "rh / formation",
-  "santé / services à la personne",
-  "secteur public",
-  "relation client / support",
-  "travaux / chantiers",
-  "ventes",
-  "non renseigné",
-}
+    export interface Domaine {
+      nom: Domaine.Nom;
+    }
 
-interface Domaine {
-  nom: DomaineValue;
-}
+    export namespace Domaine {
+      export enum Nom {
+        ACHATS = "achats",
+        ACTIVITES_SOCIALES_ET_CULTURELLES = "activités sociales et culturelles",
+        AGRICULTURE = "agriculture",
+        ARCHITECTURE_URBANISME_IMMOBILIER = "architecture / urbanisme / immobilier",
+        AUDIT = "audit",
+        CHIMIE_BIOLOGIE_AGRONOMIE = "chimie / biologie / agronomie",
+        COMMERCE = "commerce",
+        COMMUNICATION = "communication",
+        COMMUNITY_MANAGEMENT = "community management",
+        COMPTABILITÉ_CONTRÔLE_DE_GESTION = "comptabilité / contrôle de gestion",
+        CONCEPTION_GÉNIE_CIVIL_GÉNIE_INDUSTRIEL = "conception / génie civil / génie industriel",
+        CONSEIL = "conseil",
+        DESIGN_UX_UI = "design / UX / UI",
+        DÉVELOPPEMENT_INFORMATIQUE = "développement informatique",
+        DIRECTION_D_ENTREPRISE = "direction d'entreprise",
+        ÉNERGIE_MATÉRIAUX_MÉCANIQUE_ÉLECTRONIQUE = "énergie / matériaux / mécanique / électronique",
+        ENSEIGNEMENT = "enseignement",
+        ENVIRONNEMENT = "environnement",
+        ÉVÈNEMENTIEL = "évènementiel",
+        ÉTUDES_STATISTIQUES_DATA = "études / statistiques / data",
+        FISCALITE_FINANCE_ASSURANCE = "fiscalite / finance / assurance",
+        GESTION_DE_PROJET_PRODUIT = "gestion de projet / produit",
+        GRAPHISME_ILLUSTRATION = "graphisme / illustration",
+        INFRA_RÉSEAUX_TÉLÉCOMS = "infra / réseaux / télécoms",
+        HÔTELLERIE_RESTAURATION = "hôtellerie - restauration",
+        JOURNALISME_RP_MÉDIAS = "journalisme / rp / médias",
+        JURIDIQUE = "juridique",
+        LOGISTIQUE = "logistique",
+        LUXE_MODE_TEXTILE = "luxe / mode / textile",
+        MARKETING = "marketing",
+        PRODUCTION_FABRICATION_EXPLOITATION = "production / fabrication / exploitation",
+        QUALITÉ_MAINTENANCE = "qualité / maintenance",
+        RH_FORMATION = "rh / formation",
+        SANTÉ_SERVICES_À_LA_PERSONNE = "santé / services à la personne",
+        SECTEUR_PUBLIC = "secteur public",
+        RELATION_CLIENT_SUPPORT = "relation client / support",
+        TRAVAUX_CHANTIERS = "travaux / chantiers",
+        VENTES = "ventes",
+        NON_RENSEIGNÉ = "non renseigné",
+      }
+    }
 
-interface Competence {
-  niveauEtude: string;
-  profil?: string;
-}
+    export interface Competence {
+      niveauEtude: string;
+      profil?: string;
+    }
 
-interface Localisation {
-  latitude: number;
-  longitude: number;
-  ville: string;
-  adresse: string;
-  departement: string;
-  codePostal: string;
-  region: string;
-  pays: string;
-}
-
-export interface OffreDeStageEntry {
-  id: number;
-  identifiantSource: string;
-  titre: string;
-  slug: string;
-  source: Source;
-  description: string;
-  dateDeDebut: string;
-  urlDeCandidature: string;
-  teletravailPossible: boolean;
-  sourceCreatedAt: string;
-  sourceUpdatedAt: string;
-  sourcePublishedAt: string;
-  remunerationBase: number;
-  employeur: Employeur;
-  domaines: Array<Domaine>;
-  preRequis?: Competence;
-  dureeEnJour: number;
-  dureeEnJourMax: number;
-  localisation: Localisation;
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
-  createdBy: string;
-  updatedBy: string;
+    export interface Localisation {
+      latitude: number;
+      longitude: number;
+      ville: string;
+      adresse: string;
+      departement: string;
+      codePostal: string;
+      region: string;
+      pays: string;
+    }
+  }
 }

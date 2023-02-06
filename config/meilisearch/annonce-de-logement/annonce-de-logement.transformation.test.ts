@@ -6,7 +6,7 @@ import {
   getSurfaceToDisplay,
   transformerAnnonceDeLogement
 } from "./annonce-de-logement.transformation";
-import { Source, TypeBien, TypeLocation } from "./annonce-de-logement.type";
+import { uneAnnonceDeLogementMeilisearch, uneAnnonceDeLogementStrapi } from './annonce-de-logement.fixture';
 
 let surface: number;
 let surfaceMax: number;
@@ -138,20 +138,26 @@ describe("AnnonceDeLogementTransformation", () => {
 
   describe("Lorsque je transforme la localisation à afficher", () => {
     describe("et que la localisation est vide", () => {
-        it("Retourne une chaine vide", () => {
-          const resultat = getLocalisationToDisplay({});
-          assert.strictEqual(resultat, "");
-        });
+      it("Retourne une chaine vide", () => {
+        // When
+        const resultat = getLocalisationToDisplay({});
+
+        // Then
+        assert.strictEqual(resultat, "");
+      });
     });
 
     describe("et que la localisation n'existe pas", () => {
       it("retourne une chaine vide", () => {
+        // When
         const undefinedResultat = getLocalisationToDisplay(undefined);
         const nullResultat = getLocalisationToDisplay(null);
+
+        // Then
         assert.strictEqual(undefinedResultat, "");
         assert.strictEqual(nullResultat, "");
-      })
-    })
+      });
+    });
 
     describe("et que la ville et le code postal sont définis", () => {
       it("retourne le code postal suivi de la ville", () => {
@@ -227,74 +233,11 @@ describe("AnnonceDeLogementTransformation", () => {
   describe("Lorsque je transforme l'annonce de logement au complet", () => {
     it("me retourne les informations essentielles uniquement", () => {
       // Given
-      const entry = {
-        entry: {
-          id: "1",
-          identifiantSource: "identifiant-source",
-          titre: "le titre",
-          description: "la description",
-          url: "http://some.url",
-          source: Source.immojeune,
-          typeBien: TypeBien.T1BIS,
-          type: TypeLocation.COURTE,
-          surface: 25,
-          surfaceMax: 30,
-          nombreDePieces: 2,
-          etage: 6,
-          dateDeDisponibilite: "2022-12-12",
-          bilanEnergetique: {
-            consommationEnergetique: "A",
-            emissionDeGaz: "B"
-          },
-          meuble: true,
-          localisation: {
-            ville: "Paris",
-            codePostal: "75001",
-          },
-          sourceCreatedAt: "2022-09-01",
-          sourceUpdatedAt: "2022-12-12T01:30:00.000Z",
-          imagesUrl: [{ value: "http://some.url/1" }, { value: "http://some.url/2" }],
-          servicesInclus: [],
-          servicesOptionnels: [],
-          prixHT: 700,
-          prix: 750,
-          devise: "euros",
-          charge: 50,
-          garantie: 600,
-          slug: "le-slug",
-          createdAt: "string",
-          updatedAt: "string",
-          publishedAt: "string",
-          createdBy: "string",
-          updatedBy: "string",
-        }
-      };
-      const expected = {
-        id: "1",
-        slug: "le-slug",
-        titre: "le titre",
-        dateDeDisponibilite: "2022-12-12",
-        dateDeMiseAJour: "2022-12-12",
-        devise: "€",
-        prix: 750,
-        prixHT: 700,
-        surface: 25,
-        surfaceMax: 30,
-        surfaceAAfficher: `de 25 à 30 m²`,
-        type: "courte",
-        typeBien: "t1bis",
-        url: "http://some.url",
-        imagesUrl: ["http://some.url/1", "http://some.url/2"],
-        sourceUpdatedAt: "2022-12-12T01:30:00.000Z",
-        localisationAAfficher: "75001 - Paris",
-        localisation: {
-          ville: "Paris",
-          codePostal: "75001",
-        },
-      };
+      const annonceDeLogementStrapi = uneAnnonceDeLogementStrapi();
+      const expected = uneAnnonceDeLogementMeilisearch();
 
       // When
-      const resultat = transformerAnnonceDeLogement(entry);
+      const resultat = transformerAnnonceDeLogement({ entry: annonceDeLogementStrapi });
 
       // Then
       assert.deepEqual(resultat, expected);
