@@ -1,7 +1,7 @@
 {
   "name": "1j1s-main-cms",
   "private": true,
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "1 jeune 1 solution main CMS ",
   "scripts": {
     "docker:start": "docker-compose --env-file=.env.docker up --build -d && sleep 5 && open http://localhost/admin",
