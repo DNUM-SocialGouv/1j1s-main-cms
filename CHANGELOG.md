@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.2.3...v1.3.0) (2023-02-09)
+
+
+### Features
+
+* **stage:** mise a jour droit utilisateur creation offre de stage ([a81cb13](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/a81cb13c43a5e6fe0e027b0fca2f97ece41e3ae4))
+
 ## [1.2.3](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.2.2...v1.2.3) (2023-02-06)
 
 
