@@ -12,7 +12,7 @@
     "docker:stop": "docker-compose --env-file=.env.docker stop",
     "develop": "strapi develop",
     "dev": "strapi develop",
-    "prepare": "./setup.sh",
+    "prepare": "./setup.sh || true",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
