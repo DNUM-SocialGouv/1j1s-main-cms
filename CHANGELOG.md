@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.3.0...v1.3.1) (2023-02-21)
+
+
+### Bug Fixes
+
+* corrige le docker build qui plantait depuis l'ajout de git-notify ([4533d13](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/4533d13953e4441a3c651395fcfa608c03e575cb))
+
 ## [1.3.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.2.3...v1.3.0) (2023-02-09)
 
 
