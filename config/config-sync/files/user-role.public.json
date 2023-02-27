@@ -52,9 +52,6 @@
       "action": "api::offre-de-stage.offre-de-stage.findOne"
     },
     {
-      "action": "api::offre-de-stage.offre-de-stage.create"
-    },
-    {
       "action": "api::politique-de-confidentialite.politique-de-confidentialite.find"
     },
     {
