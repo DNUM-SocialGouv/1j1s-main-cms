@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.3.2...v1.4.0) (2023-02-28)
+
+
+### Features
+
+* **stages:** renforcer les checks sur la transformation meilisearch ([9463b7e](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/9463b7ef43ffc470b4025de2b059bd2dbe316bee))
+
 ## [1.3.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.3.1...v1.3.2) (2023-02-28)
 
 
