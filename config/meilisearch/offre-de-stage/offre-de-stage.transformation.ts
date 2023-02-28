@@ -5,7 +5,7 @@ export function creerFiltreSurLaDuree(nombreDeJours: string | number): string {
     nombreDeJours = Number(nombreDeJours);
   }
 
-  if (nombreDeJours === 0) return "Non renseigné";
+  if (nombreDeJours === 0 || nombreDeJours === null || nombreDeJours === undefined) return "Non renseigné";
   if (nombreDeJours < 30) return "< 1 mois";
   if (nombreDeJours === 30) return "1 mois";
   if (nombreDeJours === 60) return "2 mois";

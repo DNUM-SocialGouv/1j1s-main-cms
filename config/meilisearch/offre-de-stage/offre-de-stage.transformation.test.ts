@@ -11,6 +11,24 @@ import { uneOffreDeStageMeilisearch, uneOffreDeStageStrapi } from "./offre-de-st
 
 describe("OffreDeStageTransformationTest", () => {
   context("Lorsque je souhaite ajouter une catégorie de filtre sur la durée du stage", () => {
+    context("et que la durée du stage n'est pas renseignée", () => {
+      it("retourne 'Non renseigné'", () => {
+        // When
+        const result = creerFiltreSurLaDuree(null);
+
+        // Then
+        assert.deepEqual(result, "Non renseigné");
+      });
+
+      it("retourne 'Non renseigné'", () => {
+        // When
+        const result = creerFiltreSurLaDuree(undefined);
+
+        // Then
+        assert.deepEqual(result, "Non renseigné");
+      });
+    });
+
     context("et que la durée du stage est égale à 0", () => {
       it("retourne 'Non renseigné'", () => {
         // When
