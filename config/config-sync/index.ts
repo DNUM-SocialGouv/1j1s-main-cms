@@ -5,7 +5,7 @@ export default {
   config: {
     syncDir: "config/config-sync/files/",
     minify: false,
-    importOnBoostrap: true,
+    importOnBootstrap: true,
     excludedTypes: ["i18n-locale"],
     excludedConfig: [...coreStoresConfigFilesToExclude]
   },
