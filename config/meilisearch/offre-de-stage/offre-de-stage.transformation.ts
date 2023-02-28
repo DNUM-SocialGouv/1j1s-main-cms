@@ -54,6 +54,13 @@ export function transformerLaLocalisation(localisation: Strapi.OffreDeStage.Loca
   };
 }
 
+export function transformerLesDomaines(entry: Strapi.OffreDeStage): Array<string> {
+  return entry.domaines
+    ?.filter((domaine) => domaine.nom !== undefined && domaine.nom !== null)
+    ?.filter((domaine) => domaine.nom.length > 0)
+    ?.map((domaine) => domaine.nom);
+}
+
 export function transformerOffreDeStage({ entry }: { entry: Strapi.OffreDeStage }): Meilisearch.OffreDeStage {
   return {
     id: entry.id,
@@ -65,7 +72,7 @@ export function transformerOffreDeStage({ entry }: { entry: Strapi.OffreDeStage 
     teletravailPossible: entry.teletravailPossible,
     titre: entry.titre,
     duree: convertirDansLaBonneUniteTemporelle(entry.dureeEnJour),
-    domaines: entry.domaines?.map((domaine) => domaine.nom) || [],
+    domaines: transformerLesDomaines(entry) || [],
     nomEmployeur: entry.employeur.nom,
     logoUrlEmployeur: entry.employeur.logoUrl,
     niveauEtude: entry.preRequis?.niveauEtude,
