@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.3.1...v1.3.2) (2023-02-28)
+
+
+### Bug Fixes
+
+* **stages:** renforcement du check sur les domaines ([7242478](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/7242478a1a17c52aaa3c16906d2ad89d14388669))
+
 ## [1.3.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.3.0...v1.3.1) (2023-02-21)
 
 
