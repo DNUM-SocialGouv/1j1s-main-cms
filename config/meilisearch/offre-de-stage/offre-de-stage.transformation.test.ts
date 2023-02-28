@@ -3,10 +3,11 @@ import {
   convertirDansLaBonneUniteTemporelle,
   creerFiltreSurLaDuree,
   transformerLaLocalisation,
+  transformerLesDomaines,
   transformerOffreDeStage
 } from "./offre-de-stage.transformation";
 import { Meilisearch, Strapi } from "./offre-de-stage.type";
-import { uneOffreDeStageMeilisearch, uneOffreDeStageStrapi } from './offre-de-stage.fixture';
+import { uneOffreDeStageMeilisearch, uneOffreDeStageStrapi } from "./offre-de-stage.fixture";
 
 describe("OffreDeStageTransformationTest", () => {
   context("Lorsque je souhaite ajouter une catégorie de filtre sur la durée du stage", () => {
@@ -244,6 +245,61 @@ describe("OffreDeStageTransformationTest", () => {
 
         // Then
         assert.deepEqual(result, localisationAttendue);
+      });
+    });
+  });
+
+  context("Lorsque je transforme le domaine", () => {
+    context("et que le nom n'est pas défini dans les domaines", () => {
+      it("retourne un tableau vide", () => {
+        // Given
+        const offreDeStageStrapi = uneOffreDeStageStrapi({
+          domaines: [
+            { nom: undefined },
+            { nom: null },
+          ],
+        });
+
+        // When
+        const actual = transformerLesDomaines(offreDeStageStrapi);
+
+        // Then
+        assert.deepEqual(actual, []);
+      });
+    });
+
+    context("et que le nom est défini", () => {
+      it("retourne un tableau avec les domaines", () => {
+        // Given
+        const offreDeStageStrapi = uneOffreDeStageStrapi({
+          domaines: [
+            { nom: Strapi.OffreDeStage.Domaine.Nom.ACHATS },
+          ],
+        });
+
+        // When
+        const actual = transformerLesDomaines(offreDeStageStrapi);
+
+        // Then
+        assert.deepEqual(actual, ["achats"]);
+      });
+    });
+
+    context("et que les noms sont parfois définis et parfois non", () => {
+      it("retourne un tableau avec seulement les domaines définis", () => {
+        // Given
+        const offreDeStageStrapi = uneOffreDeStageStrapi({
+          domaines: [
+            { nom: Strapi.OffreDeStage.Domaine.Nom.ACHATS },
+            { nom: undefined },
+          ],
+        });
+
+        // When
+        const actual = transformerLesDomaines(offreDeStageStrapi);
+
+        // Then
+        assert.deepEqual(actual, ["achats"]);
       });
     });
   });
