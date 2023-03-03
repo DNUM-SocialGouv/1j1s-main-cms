@@ -692,6 +692,51 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
+      "subject": "api::faq.faq",
+      "properties": {
+        "fields": [
+          "problematique",
+          "reponse"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::faq.faq",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::faq.faq",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::faq.faq",
+      "properties": {
+        "fields": [
+          "problematique",
+          "reponse"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::faq.faq",
+      "properties": {
+        "fields": [
+          "problematique",
+          "reponse"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
       "subject": "api::fiche-metier.fiche-metier",
       "properties": {
         "fields": [

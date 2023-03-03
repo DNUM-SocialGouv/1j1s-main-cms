@@ -31,6 +31,12 @@
       "action": "api::evenement.evenement.findOne"
     },
     {
+      "action": "api::faq.faq.find"
+    },
+    {
+      "action": "api::faq.faq.findOne"
+    },
+    {
       "action": "api::fiche-metier.fiche-metier.find"
     },
     {
