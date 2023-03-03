@@ -12,7 +12,7 @@ services:
       - ./package-lock.json:/opt/package-lock.json
       - ./public/uploads:/opt/app/public/uploads
     ports:
-      - 80:1337
+      - 1337:1337
     environment:
       DATABASE_SSL: false
     depends_on:
@@ -36,7 +36,7 @@ services:
       - database
   meilisearch:
     container_name: 1j1s-meilisearch
-    image: getmeili/meilisearch:v0.30.5
+    image: getmeili/meilisearch:v1.0.2
     environment:
       - MEILI_MASTER_KEY=${PLUGIN_MEILISEARCH_API_KEY:-masterKey}
       - MEILI_NO_ANALYTICS=${MEILI_NO_ANALYTICS:-true}
@@ -57,10 +57,28 @@ services:
       - minio
     entrypoint: >
       /bin/sh -c "
-      /usr/bin/mc config host add myminio http://minio:9000 ${MINIO_ACCESS_KEY} ${MINIO_SECRET_KEY};
-      /usr/bin/mc rm -r --force myminio/${MINIO_BUCKET};
-      /usr/bin/mc mb myminio/${MINIO_BUCKET};
-      /usr/bin/mc policy download myminio/${MINIO_BUCKET};
+      /usr/bin/mc config host add myminio \${MINIO_ENDPOINT} \${MINIO_ACCESS_KEY} \${MINIO_SECRET_KEY};
+      /usr/bin/mc rm -r --force myminio/\${MINIO_CMS_BUCKET};
+      /usr/bin/mc rm -r --force myminio/\${MINIO_STAGES_EXTRACT_BUCKET};
+      /usr/bin/mc rm -r --force myminio/\${MINIO_STAGES_TRANSFORM_BUCKET};
+      /usr/bin/mc rm -r --force myminio/\${MINIO_STAGES_LOAD_BUCKET};
+      /usr/bin/mc rm -r --force myminio/\${MINIO_LOGEMENTS_EXTRACT_BUCKET};
+      /usr/bin/mc rm -r --force myminio/\${MINIO_LOGEMENTS_TRANSFORM_BUCKET};
+      /usr/bin/mc rm -r --force myminio/\${MINIO_LOGEMENTS_LOAD_BUCKET};
+      /usr/bin/mc rm -r --force myminio/\${MINIO_EVENEMENTS_EXTRACT_BUCKET};
+      /usr/bin/mc rm -r --force myminio/\${MINIO_EVENEMENTS_TRANSFORM_BUCKET};
+      /usr/bin/mc rm -r --force myminio/\${MINIO_EVENEMENTS_LOAD_BUCKET};
+      /usr/bin/mc mb myminio/\${MINIO_CMS_BUCKET};
+      /usr/bin/mc mb myminio/\${MINIO_STAGES_EXTRACT_BUCKET};
+      /usr/bin/mc mb myminio/\${MINIO_STAGES_TRANSFORM_BUCKET};
+      /usr/bin/mc mb myminio/\${MINIO_STAGES_LOAD_BUCKET};
+      /usr/bin/mc mb myminio/\${MINIO_LOGEMENTS_EXTRACT_BUCKET};
+      /usr/bin/mc mb myminio/\${MINIO_LOGEMENTS_TRANSFORM_BUCKET};
+      /usr/bin/mc mb myminio/\${MINIO_LOGEMENTS_LOAD_BUCKET};
+      /usr/bin/mc mb myminio/\${MINIO_EVENEMENTS_EXTRACT_BUCKET};
+      /usr/bin/mc mb myminio/\${MINIO_EVENEMENTS_TRANSFORM_BUCKET};
+      /usr/bin/mc mb myminio/\${MINIO_EVENEMENTS_LOAD_BUCKET};
+      /usr/bin/mc policy download myminio/\${MINIO_CMS_BUCKET};
       exit 0;
       "
     networks:
@@ -87,8 +105,8 @@ networks:
     internal: true
   minio:
     internal: true
-
   meilisearch:
+
 volumes:
   strapi-data:
   meilisearch-data:
