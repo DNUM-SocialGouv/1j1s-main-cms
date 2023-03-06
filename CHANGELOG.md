@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.5.0...v1.5.1) (2023-03-06)
+
+
+### Bug Fixes
+
+* **faq:** ajout description ([557f770](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/557f770fb453573fb5803d8aaf6878983ca04989))
+
 ## [1.5.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.4.0...v1.5.0) (2023-03-06)
 
 
