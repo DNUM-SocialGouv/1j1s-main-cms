@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.5.1...v1.5.2) (2023-03-06)
+
+
+### Bug Fixes
+
+* **dependencies:** removed import export plugin ([6b80856](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/6b8085622212588755237676a4c6a94f489a6554))
+
 ## [1.5.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.5.0...v1.5.1) (2023-03-06)
 
 
