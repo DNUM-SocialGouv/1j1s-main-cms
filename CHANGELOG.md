@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.4.0...v1.5.0) (2023-03-06)
+
+
+### Features
+
+* **faq:** ajout de la structure de la FAQ ([a89b39a](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/a89b39ae1fd8a70017f62e59c9053fd516116f4c))
+
 ## [1.4.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.3.2...v1.4.0) (2023-02-28)
 
 
