@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "foire_aux_questions",
+  "info": {
+    "singularName": "foire-a-la-question",
+    "pluralName": "foire-aux-questions",
+    "displayName": "Foire aux questions",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "problematique": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "reponse": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
+    }
+  }
+}
