@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.5.0...v1.5.1) (2023-03-06)
+
+
+### Bug Fixes
+
+* **faq:** suppression de la collection ([d6181c7](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/d6181c7c16e1dc615995c62b0c41acc4c78cdeef))
+
 ## [1.5.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.4.0...v1.5.0) (2023-03-06)
 
 
