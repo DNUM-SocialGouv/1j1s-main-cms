@@ -692,7 +692,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::faq.faq",
+      "subject": "api::foire-a-la-question.foire-a-la-question",
       "properties": {
         "fields": [
           "problematique",
@@ -703,19 +703,19 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::faq.faq",
+      "subject": "api::foire-a-la-question.foire-a-la-question",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.publish",
-      "subject": "api::faq.faq",
+      "subject": "api::foire-a-la-question.foire-a-la-question",
       "properties": {},
       "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::faq.faq",
+      "subject": "api::foire-a-la-question.foire-a-la-question",
       "properties": {
         "fields": [
           "problematique",
@@ -726,7 +726,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::faq.faq",
+      "subject": "api::foire-a-la-question.foire-a-la-question",
       "properties": {
         "fields": [
           "problematique",
