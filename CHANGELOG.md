@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.5.3...v1.6.0) (2023-03-14)
+
+
+### Features
+
+* **faq:** changement de model de données ([3080106](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/3080106b8b95fb5f3e9885295a6b4cfa3ae8d664))
+
 ## [1.5.3](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.5.2...v1.5.3) (2023-03-07)
 
 
