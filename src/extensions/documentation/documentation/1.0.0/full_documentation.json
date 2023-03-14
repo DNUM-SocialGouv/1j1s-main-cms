@@ -14,7 +14,7 @@
       "name": "MIT",
       "url": "https://github.com/DNUM-SocialGouv/1j1s-stage-orchestrateur-transform-load/blob/main/LICENSE"
     },
-    "x-generation-date": "2023-03-14T09:05:29.831Z"
+    "x-generation-date": "2023-03-14T14:09:15.427Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -16965,16 +16965,12 @@
           "data": {
             "required": [
               "problematique",
-              "titre",
               "contenu",
               "slug"
             ],
             "type": "object",
             "properties": {
               "problematique": {
-                "type": "string"
-              },
-              "titre": {
                 "type": "string"
               },
               "contenu": {
@@ -16997,9 +16993,6 @@
             "type": "object",
             "properties": {
               "problematique": {
-                "type": "string"
-              },
-              "titre": {
                 "type": "string"
               },
               "contenu": {
@@ -17319,9 +17312,6 @@
             "type": "object",
             "properties": {
               "problematique": {
-                "type": "string"
-              },
-              "titre": {
                 "type": "string"
               },
               "contenu": {
@@ -17676,9 +17666,6 @@
               "problematique": {
                 "type": "string"
               },
-              "titre": {
-                "type": "string"
-              },
               "contenu": {
                 "type": "string"
               },
@@ -17996,9 +17983,6 @@
             "type": "object",
             "properties": {
               "problematique": {
-                "type": "string"
-              },
-              "titre": {
                 "type": "string"
               },
               "contenu": {

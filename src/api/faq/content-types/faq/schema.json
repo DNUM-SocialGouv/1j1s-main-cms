@@ -15,17 +15,14 @@
       "type": "string",
       "required": true
     },
-    "titre": {
-      "type": "string",
-      "required": true
-    },
     "contenu": {
       "type": "richtext",
       "required": true
     },
     "slug": {
       "type": "uid",
-      "required": true
+      "required": true,
+      "targetField": "problematique"
     }
   }
 }
