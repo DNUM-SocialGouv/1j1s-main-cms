@@ -44,8 +44,17 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 Après avoir lancé Strapi en local il va falloir générer un nouveau Content-Type dans l'interface avec le plugin Content-Type Builder
 - Seléctionner `+` Create new collection type
 - Configurer la nouvelle Collection selon votre besoin
-- Une fois votre Collection déclarée il va falloir gérer la synchronisation de la config dans la codebase: dans `config/config-sync/core-stores-config-files-to-exclude.ts` ajouter la configuration liée à votre nouvelle Collection: `"core-store.plugin_content_manager_configuration_content_types::api::[Collection].[Collection]"`
-- Maintenant ajouter les droits des utilisateurs sur votre nouvelle Collection: dans `config/config-sync/files/user-role.public.json`. Par exemple pour les droits de lecture ajouter:
+- Une fois votre collection créée, il va falloir gérer la configuration de celle-ci pour les différents environnements. Il se trouve que Strapi configure tout seul une collection lors du démarrage et fait donc des changements dans la base de données en conséquence. Nous choisissons de laisser Strapi gérer sa propre configuration pour les collections. Or, si nous laissons le code en l’état, le plugin **config-sync** exportera votre configuration d’une collection créée en local. Et au moment où vous souhaiterez mettre à jour votre configuration dans d’autres environnements que votre environnement local, vous allez écraser la configuration que Strapi aura automatiquement générée au démarrage sur ces environnements. Cela pourrait entraîner des erreurs et planter l’application. Vous avez donc besoin d’indiquer au plugin **config-sync** d’ignorer ces fichiers de configuration. Dans `config/config-sync/core-stores-config-files-to-exclude.ts` ajouter la configuration liée à votre nouvelle Collection: `"core-store.plugin_content_manager_configuration_content_types::api::[Collection].[Collection]"`
+- Mettre à jour les droits d’utilisateurs pour l’utilisation de cette nouvelle Collection.
+- Votre nouvelle Collection est utilisable.
+
+## Gestion des rôles utilisateurs
+
+Pour les rôles utilisateurs affectés à des types (Collection ou Single) ces derniers se gèrent dans `config/config-sync/files/`
+
+Dans le cas d'un rôle public par exemple il faudra modifier le fichier `user-role.public.json`
+
+Pour ajouter les droits de lecture:
 ```
 {
   "action": "api::[Collection].[Collection].find"
@@ -54,4 +63,3 @@ Après avoir lancé Strapi en local il va falloir générer un nouveau Content-T
   "action": "api::[Collection].[Collection].findOne"
 }
 ```
-- Votre nouvelle Collection est utilisable.
