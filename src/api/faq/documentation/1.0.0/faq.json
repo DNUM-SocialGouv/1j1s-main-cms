@@ -1,5 +1,5 @@
 {
-  "/foire-aux-questions": {
+  "/faqs": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/FoireALaQuestionListResponse"
+                "$ref": "#/components/schemas/FaqListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Foire-a-la-question"
+        "Faq"
       ],
       "parameters": [
         {
@@ -169,7 +169,7 @@
           }
         }
       ],
-      "operationId": "get/foire-aux-questions"
+      "operationId": "get/faqs"
     },
     "post": {
       "responses": {
@@ -178,7 +178,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/FoireALaQuestionResponse"
+                "$ref": "#/components/schemas/FaqResponse"
               }
             }
           }
@@ -235,23 +235,23 @@
         }
       },
       "tags": [
-        "Foire-a-la-question"
+        "Faq"
       ],
       "parameters": [],
-      "operationId": "post/foire-aux-questions",
+      "operationId": "post/faqs",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/FoireALaQuestionRequest"
+              "$ref": "#/components/schemas/FaqRequest"
             }
           }
         }
       }
     }
   },
-  "/foire-aux-questions/{id}": {
+  "/faqs/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -259,7 +259,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/FoireALaQuestionResponse"
+                "$ref": "#/components/schemas/FaqResponse"
               }
             }
           }
@@ -316,7 +316,7 @@
         }
       },
       "tags": [
-        "Foire-a-la-question"
+        "Faq"
       ],
       "parameters": [
         {
@@ -330,7 +330,7 @@
           }
         }
       ],
-      "operationId": "get/foire-aux-questions/{id}"
+      "operationId": "get/faqs/{id}"
     },
     "put": {
       "responses": {
@@ -339,7 +339,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/FoireALaQuestionResponse"
+                "$ref": "#/components/schemas/FaqResponse"
               }
             }
           }
@@ -396,7 +396,7 @@
         }
       },
       "tags": [
-        "Foire-a-la-question"
+        "Faq"
       ],
       "parameters": [
         {
@@ -410,13 +410,13 @@
           }
         }
       ],
-      "operationId": "put/foire-aux-questions/{id}",
+      "operationId": "put/faqs/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/FoireALaQuestionRequest"
+              "$ref": "#/components/schemas/FaqRequest"
             }
           }
         }
@@ -487,7 +487,7 @@
         }
       },
       "tags": [
-        "Foire-a-la-question"
+        "Faq"
       ],
       "parameters": [
         {
@@ -501,7 +501,7 @@
           }
         }
       ],
-      "operationId": "delete/foire-aux-questions/{id}"
+      "operationId": "delete/faqs/{id}"
     }
   }
 }

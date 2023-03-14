@@ -36,7 +36,7 @@ export default [
   "core-store.plugin_content_manager_configuration_content_types::api::entreprise.entreprise",
   "core-store.plugin_content_manager_configuration_content_types::api::evenement.evenement",
   "core-store.plugin_content_manager_configuration_content_types::api::fiche-metier.fiche-metier",
-  "core-store.plugin_content_manager_configuration_content_types::api::foire-a-la-question.foire-a-la-question",
+  "core-store.plugin_content_manager_configuration_content_types::api::faq.faq",
   "core-store.plugin_content_manager_configuration_content_types::api::les-mesures-employeurs.les-mesures-employeurs",
   "core-store.plugin_content_manager_configuration_content_types::api::mention-legale.mention-legale",
   "core-store.plugin_content_manager_configuration_content_types::api::mesure-jeune.mesure-jeune",

@@ -38,3 +38,20 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 - [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
 
 ---
+
+## Creation d’un Collection Type
+
+Après avoir lancé Strapi en local il va falloir générer un nouveau Content-Type dans l'interface avec le plugin Content-Type Builder
+- Seléctionner `+` Create new collection type
+- Configurer la nouvelle Collection selon votre besoin
+- Une fois votre Collection déclarée il va falloir gérer la synchronisation de la config dans la codebase: dans `config/config-sync/core-stores-config-files-to-exclude.ts` ajouter la configuration liée à votre nouvelle Collection: `"core-store.plugin_content_manager_configuration_content_types::api::[Collection].[Collection]"`
+- Maintenant ajouter les droits des utilisateurs sur votre nouvelle Collection: dans `config/config-sync/files/user-role.public.json`. Par exemple pour les droits de lecture ajouter:
+```
+{
+  "action": "api::[Collection].[Collection].find"
+},
+{
+  "action": "api::[Collection].[Collection].findOne"
+}
+```
+- Votre nouvelle Collection est utilisable.
