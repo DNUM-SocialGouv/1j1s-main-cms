@@ -19,6 +19,15 @@
       "action": "api::annonce-de-logement.annonce-de-logement.update"
     },
     {
+      "action": "api::contact-cej.contact-cej.delete"
+    },
+    {
+      "action": "api::contact-cej.contact-cej.find"
+    },
+    {
+      "action": "api::contact-cej.contact-cej.findOne"
+    },
+    {
       "action": "api::evenement.evenement.create"
     },
     {
