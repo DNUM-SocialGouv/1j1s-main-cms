@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.7.0...v1.8.0) (2023-03-22)
+
+
+### Features
+
+* **CEJ:** ajout des droits à ETL pour CEJ ([3d4a652](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/3d4a652769a544cc6f3b20802fae9f1d55539cbb))
+
 ## [1.7.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.6.0...v1.7.0) (2023-03-14)
 
 
