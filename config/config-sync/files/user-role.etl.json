@@ -28,6 +28,15 @@
       "action": "api::contact-cej.contact-cej.findOne"
     },
     {
+      "action": "api::contact-poe.contact-poe.delete"
+    },
+    {
+      "action": "api::contact-poe.contact-poe.find"
+    },
+    {
+      "action": "api::contact-poe.contact-poe.findOne"
+    },
+    {
       "action": "api::evenement.evenement.create"
     },
     {
