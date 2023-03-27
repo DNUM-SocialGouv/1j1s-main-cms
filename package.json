@@ -19,22 +19,21 @@
     "test": "mocha"
   },
   "dependencies": {
-    "@strapi/logger": "~4.6.1",
-    "@strapi/plugin-documentation": "~4.6.1",
-    "@strapi/plugin-sentry": "~4.6.1",
-    "@strapi/plugin-users-permissions": "~4.6.1",
-    "@strapi/provider-upload-aws-s3": "~4.6.1",
-    "@strapi/strapi": "4.6.1",
-    "pg": "8.9.0",
+    "@strapi/logger": "~4.8.2",
+    "@strapi/plugin-documentation": "~4.8.2",
+    "@strapi/plugin-sentry": "~4.8.2",
+    "@strapi/plugin-users-permissions": "~4.8.2",
+    "@strapi/provider-upload-aws-s3": "~4.8.2",
+    "@strapi/strapi": "4.8.2",
+    "pg": "8.10.0",
     "strapi-plugin-config-sync": "~1.1.0",
-    "strapi-plugin-import-export-entries": "~1.18.0",
     "strapi-plugin-meilisearch": "~0.9.1",
     "strapi-plugin-populate-deep": "~2.0.0",
     "strapi-plugin-slugify": "~2.3.2"
   },
   "devDependencies": {
     "@types/mocha": "~10.0.1",
-    "@types/node": "~18.13.0",
+    "@types/node": "~18.15.10",
     "git-notify": "~0.2.3",
     "mocha": "~10.2.0",
     "ts-node": "~10.9.1"

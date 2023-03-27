@@ -1,5 +1,4 @@
 import configSync from "./config-sync";
-import importExportConfiguration from "./import-export";
 import meilisearchConfiguration from "./meilisearch";
 import minioConfiguration from "./minio";
 import populateDeepConfiguration from "./populate-deep";
@@ -9,7 +8,6 @@ import usersPermissionsConfiguration from "./users-permissions";
 
 export default ({ env }) => ({
   "config-sync": configSync,
-  "import-export-entries": importExportConfiguration,
   meilisearch: meilisearchConfiguration(env),
   sentry: sentryConfiguration(env),
   slugify: slugifyConfiguration,
