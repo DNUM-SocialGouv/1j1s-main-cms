@@ -4,6 +4,7 @@
   "version": "1.8.0",
   "description": "1 jeune 1 solution main CMS ",
   "scripts": {
+    "docker:populate": "./populate-with-recette-data.sh",
     "docker:start": "docker-compose --env-file=.env.docker up --build -d && sleep 5 && open http://localhost:1337/admin",
     "docker:new-component": "docker-compose stop && docker-compose --env-file=.env.docker up --build -d",
     "docker:start::log": "docker-compose --env-file=.env.docker up --build -d && docker-compose logs -f",
