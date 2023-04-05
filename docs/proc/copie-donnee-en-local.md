@@ -36,7 +36,7 @@ export SCALINGO_DB_USER='<l'utilisateur db prod>'
 ```/bin/bash
 # .env
 
-export SCALINGO_API_TOKEN='<la clef API de Scalingo>'
+SCALINGO_API_TOKEN='<la clef API de Scalingo>'
 ```
 
 ### Connexion

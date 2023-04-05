@@ -11,7 +11,7 @@ else
   exit 1
 fi
 
-scalingo login --api-token ${API_TOKEN}
+scalingo login --api-token ${SCALINGO_API_TOKEN}
 
 addon_id=$(scalingo addons | grep $ADDON_NAME | cut -d'|' -f3 | tr -d ' ')
 mkdir -p tmp && cd tmp
