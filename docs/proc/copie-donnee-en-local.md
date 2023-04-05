@@ -7,8 +7,11 @@ Ci-dessous l'explication du fonctionnement de ce script.
 
 ## Prérequis
 
-Afin de pouvoir exécuter le script, vous devez avoir en votre possession une clef vous permettant de vous connecter sur l'environnement depuis lequel l'on veut copier.
+Afin de pouvoir exécuter le script, il faut avoir copié le contenu de `.env.docker' dans '.env'.
+
+Ensuite, vous devez avoir en votre possession une clef vous permettant de vous connecter sur l'environnement depuis lequel l'on veut copier.
 Pour la générer : il suffit de se connecter sur son compte Scalingo et générer un API Token. 
+
 
 Cette clef (API Token) est à remplir dans la variable d'environnement `SCALINGO_API_TOKEN` dans `.env`.
 
