@@ -357,65 +357,6 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::contact-entreprise.contact-entreprise",
-      "properties": {
-        "fields": [
-          "email",
-          "message",
-          "nom",
-          "prenom",
-          "sujet",
-          "telephone"
-        ]
-      },
-      "conditions": [
-        "admin::is-creator"
-      ]
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::contact-entreprise.contact-entreprise",
-      "properties": {},
-      "conditions": [
-        "admin::is-creator"
-      ]
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::contact-entreprise.contact-entreprise",
-      "properties": {
-        "fields": [
-          "email",
-          "message",
-          "nom",
-          "prenom",
-          "sujet",
-          "telephone"
-        ]
-      },
-      "conditions": [
-        "admin::is-creator"
-      ]
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
-      "subject": "api::contact-entreprise.contact-entreprise",
-      "properties": {
-        "fields": [
-          "email",
-          "message",
-          "nom",
-          "prenom",
-          "sujet",
-          "telephone"
-        ]
-      },
-      "conditions": [
-        "admin::is-creator"
-      ]
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
       "subject": "api::contact-poe.contact-poe",
       "properties": {
         "fields": [

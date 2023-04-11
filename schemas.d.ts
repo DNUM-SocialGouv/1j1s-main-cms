@@ -842,41 +842,6 @@ export interface ApiContactCejContactCej extends CollectionTypeSchema {
   };
 }
 
-export interface ApiContactEntrepriseContactEntreprise
-  extends CollectionTypeSchema {
-  info: {
-    singularName: 'contact-entreprise';
-    pluralName: 'contact-entreprises';
-    displayName: 'Contact entreprise';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    prenom: StringAttribute & RequiredAttribute;
-    nom: StringAttribute & RequiredAttribute;
-    email: EmailAttribute & RequiredAttribute;
-    telephone: StringAttribute & RequiredAttribute;
-    sujet: StringAttribute;
-    message: TextAttribute & RequiredAttribute;
-    createdAt: DateTimeAttribute;
-    updatedAt: DateTimeAttribute;
-    publishedAt: DateTimeAttribute;
-    createdBy: RelationAttribute<
-      'api::contact-entreprise.contact-entreprise',
-      'oneToOne',
-      'admin::user'
-    > &
-      PrivateAttribute;
-    updatedBy: RelationAttribute<
-      'api::contact-entreprise.contact-entreprise',
-      'oneToOne',
-      'admin::user'
-    > &
-      PrivateAttribute;
-  };
-}
-
 export interface ApiContactPoeContactPoe extends CollectionTypeSchema {
   info: {
     singularName: 'contact-poe';
@@ -1513,7 +1478,6 @@ declare global {
       'api::article.article': ApiArticleArticle;
       'api::conditions-generales-d-utilisation.conditions-generales-d-utilisation': ApiConditionsGeneralesDUtilisationConditionsGeneralesDUtilisation;
       'api::contact-cej.contact-cej': ApiContactCejContactCej;
-      'api::contact-entreprise.contact-entreprise': ApiContactEntrepriseContactEntreprise;
       'api::contact-poe.contact-poe': ApiContactPoeContactPoe;
       'api::entreprise.entreprise': ApiEntrepriseEntreprise;
       'api::evenement.evenement': ApiEvenementEvenement;
