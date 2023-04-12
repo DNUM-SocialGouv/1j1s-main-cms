@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.8.0...v1.9.0) (2023-04-12)
+
+
+### Features
+
+* **lee:** suppression de contact-entreprise ([23e150d](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/23e150dae8d365c74c645d4e094d8b420c8f8d74))
+
 ## [1.8.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.7.0...v1.8.0) (2023-03-22)
 
 
