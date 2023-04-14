@@ -61,6 +61,12 @@
       "action": "api::politique-de-confidentialite.politique-de-confidentialite.find"
     },
     {
+      "action": "api::videos-campagne-apprentissage.videos-campagne-apprentissage.find"
+    },
+    {
+      "action": "api::videos-campagne-apprentissage.videos-campagne-apprentissage.findOne"
+    },
+    {
       "action": "plugin::slugify.slugController.findSlug"
     },
     {

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos_campagne_apprentissages",
+  "info": {
+    "singularName": "videos-campagne-apprentissage",
+    "pluralName": "videos-campagne-apprentissages",
+    "displayName": "Vidéos Campagne Apprentissage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "transcription": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
