@@ -594,11 +594,12 @@
     },
     {
       "action": "plugin::content-manager.explorer.create",
-      "subject": "api::foire-a-la-question.foire-a-la-question",
+      "subject": "api::faq.faq",
       "properties": {
         "fields": [
+          "contenu",
           "problematique",
-          "reponse"
+          "slug"
         ]
       },
       "conditions": [
@@ -607,7 +608,7 @@
     },
     {
       "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::foire-a-la-question.foire-a-la-question",
+      "subject": "api::faq.faq",
       "properties": {},
       "conditions": [
         "admin::is-creator"
@@ -615,11 +616,12 @@
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::foire-a-la-question.foire-a-la-question",
+      "subject": "api::faq.faq",
       "properties": {
         "fields": [
+          "contenu",
           "problematique",
-          "reponse"
+          "slug"
         ]
       },
       "conditions": [
@@ -628,11 +630,12 @@
     },
     {
       "action": "plugin::content-manager.explorer.update",
-      "subject": "api::foire-a-la-question.foire-a-la-question",
+      "subject": "api::faq.faq",
       "properties": {
         "fields": [
+          "contenu",
           "problematique",
-          "reponse"
+          "slug"
         ]
       },
       "conditions": [
@@ -1134,6 +1137,56 @@
         "fields": [
           "contenu",
           "titre"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
+      "properties": {
+        "fields": [
+          "titre",
+          "transcription",
+          "url"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
+      "properties": {
+        "fields": [
+          "titre",
+          "transcription",
+          "url"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
+      "properties": {
+        "fields": [
+          "titre",
+          "transcription",
+          "url"
         ]
       },
       "conditions": [
