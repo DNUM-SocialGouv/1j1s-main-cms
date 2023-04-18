@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.9.0...v1.10.0) (2023-04-18)
+
+
+### Features
+
+* **apprentisssage:** création collection vidéo ([9433180](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/9433180f6ef929377e39a5b8c4d0245a08991912))
+
 ## [1.9.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.8.0...v1.9.0) (2023-04-12)
 
 
