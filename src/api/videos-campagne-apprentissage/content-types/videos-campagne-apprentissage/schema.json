@@ -4,13 +4,14 @@
   "info": {
     "singularName": "videos-campagne-apprentissage",
     "pluralName": "videos-campagne-apprentissages",
-    "displayName": "Vidéos Campagne Apprentissage"
+    "displayName": "Vidéos Campagne Apprentissage",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
-    "Video": {
+    "videos": {
       "displayName": "Video",
       "type": "component",
       "repeatable": true,

@@ -1147,11 +1147,7 @@
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {
-        "fields": [
-          "Video.titre",
-          "Video.transcription",
-          "Video.url"
-        ]
+        "fields": []
       },
       "conditions": [
         "admin::is-creator"
@@ -1169,11 +1165,7 @@
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {
-        "fields": [
-          "Video.titre",
-          "Video.transcription",
-          "Video.url"
-        ]
+        "fields": []
       },
       "conditions": [
         "admin::is-creator"
@@ -1183,11 +1175,7 @@
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {
-        "fields": [
-          "Video.titre",
-          "Video.transcription",
-          "Video.url"
-        ]
+        "fields": []
       },
       "conditions": [
         "admin::is-creator"
