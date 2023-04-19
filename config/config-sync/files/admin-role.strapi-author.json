@@ -1148,6 +1148,7 @@
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {
         "fields": [
+          "index",
           "titre",
           "transcription",
           "url"
@@ -1170,6 +1171,7 @@
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {
         "fields": [
+          "index",
           "titre",
           "transcription",
           "url"
@@ -1184,6 +1186,7 @@
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {
         "fields": [
+          "index",
           "titre",
           "transcription",
           "url"
