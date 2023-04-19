@@ -1,14 +1,14 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::videos-campagne-apprentissage.videos-campagne-apprentissage",
+  "key": "plugin_content_manager_configuration_components::video.video",
   "value": {
-    "uid": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
+    "uid": "video.video",
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "id",
-      "defaultSortBy": "id",
+      "mainField": "titre",
+      "defaultSortBy": "titre",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -20,44 +20,44 @@
           "sortable": true
         }
       },
-      "Video": {
+      "titre": {
         "edit": {
-          "label": "Video",
+          "label": "titre",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Video",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "createdAt": {
-        "edit": {
-          "label": "createdAt",
-          "description": "",
-          "placeholder": "",
-          "visible": false,
-          "editable": true
-        },
-        "list": {
-          "label": "createdAt",
+          "label": "titre",
           "searchable": true,
           "sortable": true
         }
       },
-      "updatedAt": {
+      "url": {
         "edit": {
-          "label": "updatedAt",
+          "label": "url",
           "description": "",
           "placeholder": "",
-          "visible": false,
+          "visible": true,
           "editable": true
         },
         "list": {
-          "label": "updatedAt",
+          "label": "url",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "transcription": {
+        "edit": {
+          "label": "transcription",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "transcription",
           "searchable": true,
           "sortable": true
         }
@@ -65,17 +65,31 @@
     },
     "layouts": {
       "list": [
-        "Video"
+        "id",
+        "titre",
+        "url",
+        "transcription"
       ],
       "edit": [
         [
           {
-            "name": "Video",
-            "size": 12
+            "name": "titre",
+            "size": 6
+          },
+          {
+            "name": "url",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "transcription",
+            "size": 6
           }
         ]
       ]
-    }
+    },
+    "isComponent": true
   },
   "type": "object",
   "environment": null,
