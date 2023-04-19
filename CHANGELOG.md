@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.11.0...v1.11.1) (2023-04-19)
+
+
+### Bug Fixes
+
+* **apprentissage:** video supression draft publish ([97b8eb2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/97b8eb2e5bead86fbbbbf560402e280506396b34))
+
 ## [1.11.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.10.0...v1.11.0) (2023-04-19)
 
 
