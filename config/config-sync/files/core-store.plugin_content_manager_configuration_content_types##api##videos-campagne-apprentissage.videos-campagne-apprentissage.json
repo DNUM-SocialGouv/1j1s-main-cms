@@ -8,7 +8,7 @@
       "searchable": true,
       "pageSize": 10,
       "mainField": "titre",
-      "defaultSortBy": "titre",
+      "defaultSortBy": "index",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -62,6 +62,20 @@
           "sortable": true
         }
       },
+      "index": {
+        "edit": {
+          "label": "index",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "index",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -92,12 +106,6 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "titre",
-        "transcription",
-        "url"
-      ],
       "edit": [
         [
           {
@@ -113,8 +121,17 @@
           {
             "name": "url",
             "size": 6
+          },
+          {
+            "name": "index",
+            "size": 4
           }
         ]
+      ],
+      "list": [
+        "index",
+        "titre",
+        "url"
       ]
     }
   },

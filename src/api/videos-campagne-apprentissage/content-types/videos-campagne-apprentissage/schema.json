@@ -12,13 +12,22 @@
   },
   "attributes": {
     "titre": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "transcription": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "url": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "index": {
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "unique": true
     }
   }
 }
