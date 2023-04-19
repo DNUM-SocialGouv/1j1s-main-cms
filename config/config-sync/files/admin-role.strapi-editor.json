@@ -1169,10 +1169,9 @@
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {
         "fields": [
-          "index",
-          "titre",
-          "transcription",
-          "url"
+          "Video.titre",
+          "Video.transcription",
+          "Video.url"
         ]
       },
       "conditions": []
@@ -1194,10 +1193,9 @@
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {
         "fields": [
-          "index",
-          "titre",
-          "transcription",
-          "url"
+          "Video.titre",
+          "Video.transcription",
+          "Video.url"
         ]
       },
       "conditions": []
@@ -1207,10 +1205,9 @@
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {
         "fields": [
-          "index",
-          "titre",
-          "transcription",
-          "url"
+          "Video.titre",
+          "Video.transcription",
+          "Video.url"
         ]
       },
       "conditions": []

@@ -1,33 +1,20 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "videos_campagne_apprentissages",
   "info": {
     "singularName": "videos-campagne-apprentissage",
     "pluralName": "videos-campagne-apprentissages",
-    "displayName": "Vidéos Campagne Apprentissage",
-    "description": ""
+    "displayName": "Vidéos Campagne Apprentissage"
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "titre": {
-      "type": "string",
-      "required": true
-    },
-    "transcription": {
-      "type": "text",
-      "required": true
-    },
-    "url": {
-      "type": "string",
-      "required": true
-    },
-    "index": {
-      "type": "integer",
-      "required": true,
-      "min": 0,
-      "unique": true
+    "Video": {
+      "displayName": "Video",
+      "type": "component",
+      "repeatable": true,
+      "component": "video.video"
     }
   }
 }
