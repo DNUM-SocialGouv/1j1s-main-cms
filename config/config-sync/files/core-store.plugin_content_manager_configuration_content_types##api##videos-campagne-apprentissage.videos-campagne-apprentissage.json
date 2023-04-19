@@ -20,16 +20,16 @@
           "sortable": true
         }
       },
-      "Video": {
+      "videos": {
         "edit": {
-          "label": "Video",
+          "label": "videos",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Video",
+          "label": "videos",
           "searchable": false,
           "sortable": false
         }
@@ -65,12 +65,12 @@
     },
     "layouts": {
       "list": [
-        "Video"
+        "videos"
       ],
       "edit": [
         [
           {
-            "name": "Video",
+            "name": "videos",
             "size": 12
           }
         ]
