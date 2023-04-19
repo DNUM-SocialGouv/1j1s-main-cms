@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.11.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.10.0...v1.11.0) (2023-04-19)
+
+
+### Features
+
+* **apprentissage:** video - ajout champ index + tous les champs sont maintenant obligatoire ([aa5b972](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/aa5b9723abe56853aafddbcf4ce1c3b5fae0a212))
+* **apprentissage:** video passage en single type ([abab1df](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/abab1df7a3d5291ed84d246c0f297891e422ecce))
+
 ## [1.10.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.9.0...v1.10.0) (2023-04-18)
 
 
