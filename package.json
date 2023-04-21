@@ -1,7 +1,7 @@
 {
   "name": "1j1s-main-cms",
   "private": true,
-  "version": "1.11.2",
+  "version": "1.11.3",
   "description": "1 jeune 1 solution main CMS ",
   "scripts": {
     "docker:populate": "./populate-with-recette-data.sh",
