@@ -1,5 +1,5 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "videos_campagne_apprentissages",
   "info": {
     "singularName": "videos-campagne-apprentissage",
@@ -11,11 +11,23 @@
     "draftAndPublish": false
   },
   "attributes": {
-    "videos": {
-      "displayName": "Video",
-      "type": "component",
-      "repeatable": true,
-      "component": "video.video"
+    "Titre": {
+      "type": "string",
+      "required": true
+    },
+    "Transcription": {
+      "type": "text",
+      "required": true
+    },
+    "Url": {
+      "type": "string",
+      "required": true,
+      "regex": "(https?:\\/\\/)?(www\\.)?youtube\\.com\\/watch\\?v=.+"
+    },
+    "Index": {
+      "type": "integer",
+      "required": true,
+      "unique": true
     }
   }
 }

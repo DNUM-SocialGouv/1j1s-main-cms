@@ -8,8 +8,8 @@
       "subject": "api::accessibilite.accessibilite",
       "properties": {
         "fields": [
-          "contenu",
-          "titre"
+          "titre",
+          "contenu"
         ]
       },
       "conditions": [
@@ -29,8 +29,8 @@
       "subject": "api::accessibilite.accessibilite",
       "properties": {
         "fields": [
-          "contenu",
-          "titre"
+          "titre",
+          "contenu"
         ]
       },
       "conditions": [
@@ -42,8 +42,8 @@
       "subject": "api::accessibilite.accessibilite",
       "properties": {
         "fields": [
-          "contenu",
-          "titre"
+          "titre",
+          "contenu"
         ]
       },
       "conditions": [
@@ -55,93 +55,93 @@
       "subject": "api::annonce-de-logement.annonce-de-logement",
       "properties": {
         "fields": [
-          "bilanEnergetique.consommationEnergetique",
-          "bilanEnergetique.emissionDeGaz",
-          "charge",
-          "dateDeDisponibilite",
-          "description",
-          "devise",
-          "etage",
-          "garantie",
           "identifiantSource",
-          "imagesUrl.value",
-          "localisation.adresse",
-          "localisation.codePostal",
-          "localisation.departement",
-          "localisation.latitude",
-          "localisation.longitude",
-          "localisation.pays",
-          "localisation.region",
-          "localisation.ville",
-          "meuble",
-          "nombreDePieces",
-          "prix",
-          "prixHT",
-          "servicesInclus.nom",
-          "servicesOptionnels.nom",
-          "slug",
+          "titre",
+          "description",
+          "url",
           "source",
-          "sourceCreatedAt",
-          "sourceUpdatedAt",
+          "typeBien",
+          "type",
           "surface",
           "surfaceMax",
-          "titre",
-          "type",
-          "typeBien",
-          "url"
-        ]
-      },
-      "conditions": [
-        "admin::is-creator"
-      ]
-    },
-    {
-      "action": "plugin::content-manager.explorer.delete",
-      "subject": "api::annonce-de-logement.annonce-de-logement",
-      "properties": {},
-      "conditions": [
-        "admin::is-creator"
-      ]
-    },
-    {
-      "action": "plugin::content-manager.explorer.read",
-      "subject": "api::annonce-de-logement.annonce-de-logement",
-      "properties": {
-        "fields": [
+          "nombreDePieces",
+          "etage",
+          "dateDeDisponibilite",
           "bilanEnergetique.consommationEnergetique",
           "bilanEnergetique.emissionDeGaz",
-          "charge",
-          "dateDeDisponibilite",
-          "description",
-          "devise",
-          "etage",
-          "garantie",
-          "identifiantSource",
-          "imagesUrl.value",
-          "localisation.adresse",
-          "localisation.codePostal",
-          "localisation.departement",
+          "meuble",
           "localisation.latitude",
           "localisation.longitude",
-          "localisation.pays",
-          "localisation.region",
           "localisation.ville",
-          "meuble",
-          "nombreDePieces",
-          "prix",
-          "prixHT",
-          "servicesInclus.nom",
-          "servicesOptionnels.nom",
-          "slug",
-          "source",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays",
           "sourceCreatedAt",
           "sourceUpdatedAt",
+          "imagesUrl.value",
+          "servicesInclus.nom",
+          "servicesOptionnels.nom",
+          "prixHT",
+          "prix",
+          "devise",
+          "charge",
+          "garantie",
+          "slug"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::annonce-de-logement.annonce-de-logement",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::annonce-de-logement.annonce-de-logement",
+      "properties": {
+        "fields": [
+          "identifiantSource",
+          "titre",
+          "description",
+          "url",
+          "source",
+          "typeBien",
+          "type",
           "surface",
           "surfaceMax",
-          "titre",
-          "type",
-          "typeBien",
-          "url"
+          "nombreDePieces",
+          "etage",
+          "dateDeDisponibilite",
+          "bilanEnergetique.consommationEnergetique",
+          "bilanEnergetique.emissionDeGaz",
+          "meuble",
+          "localisation.latitude",
+          "localisation.longitude",
+          "localisation.ville",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays",
+          "sourceCreatedAt",
+          "sourceUpdatedAt",
+          "imagesUrl.value",
+          "servicesInclus.nom",
+          "servicesOptionnels.nom",
+          "prixHT",
+          "prix",
+          "devise",
+          "charge",
+          "garantie",
+          "slug"
         ]
       },
       "conditions": [
@@ -153,55 +153,55 @@
       "subject": "api::annonce-de-logement.annonce-de-logement",
       "properties": {
         "fields": [
-          "bilanEnergetique.consommationEnergetique",
-          "bilanEnergetique.emissionDeGaz",
-          "charge",
-          "dateDeDisponibilite",
-          "description",
-          "devise",
-          "etage",
-          "garantie",
           "identifiantSource",
-          "imagesUrl.value",
-          "localisation.adresse",
-          "localisation.codePostal",
-          "localisation.departement",
-          "localisation.latitude",
-          "localisation.longitude",
-          "localisation.pays",
-          "localisation.region",
-          "localisation.ville",
-          "meuble",
-          "nombreDePieces",
-          "prix",
-          "prixHT",
-          "servicesInclus.nom",
-          "servicesOptionnels.nom",
-          "slug",
+          "titre",
+          "description",
+          "url",
           "source",
-          "sourceCreatedAt",
-          "sourceUpdatedAt",
+          "typeBien",
+          "type",
           "surface",
           "surfaceMax",
+          "nombreDePieces",
+          "etage",
+          "dateDeDisponibilite",
+          "bilanEnergetique.consommationEnergetique",
+          "bilanEnergetique.emissionDeGaz",
+          "meuble",
+          "localisation.latitude",
+          "localisation.longitude",
+          "localisation.ville",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays",
+          "sourceCreatedAt",
+          "sourceUpdatedAt",
+          "imagesUrl.value",
+          "servicesInclus.nom",
+          "servicesOptionnels.nom",
+          "prixHT",
+          "prix",
+          "devise",
+          "charge",
+          "garantie",
+          "slug"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
           "titre",
-          "type",
-          "typeBien",
-          "url"
-        ]
-      },
-      "conditions": [
-        "admin::is-creator"
-      ]
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::article.article",
-      "properties": {
-        "fields": [
-          "banniere",
-          "contenu",
           "slug",
-          "titre"
+          "contenu",
+          "banniere"
         ]
       },
       "conditions": [
@@ -221,10 +221,10 @@
       "subject": "api::article.article",
       "properties": {
         "fields": [
-          "banniere",
-          "contenu",
+          "titre",
           "slug",
-          "titre"
+          "contenu",
+          "banniere"
         ]
       },
       "conditions": [
@@ -236,23 +236,23 @@
       "subject": "api::article.article",
       "properties": {
         "fields": [
-          "banniere",
-          "contenu",
+          "titre",
           "slug",
-          "titre"
-        ]
-      },
-      "conditions": [
-        "admin::is-creator"
-      ]
-    },
-    {
-      "action": "plugin::content-manager.explorer.create",
-      "subject": "api::conditions-generales-d-utilisation.conditions-generales-d-utilisation",
-      "properties": {
-        "fields": [
           "contenu",
-          "titre"
+          "banniere"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::conditions-generales-d-utilisation.conditions-generales-d-utilisation",
+      "properties": {
+        "fields": [
+          "titre",
+          "contenu"
         ]
       },
       "conditions": [
@@ -272,8 +272,8 @@
       "subject": "api::conditions-generales-d-utilisation.conditions-generales-d-utilisation",
       "properties": {
         "fields": [
-          "contenu",
-          "titre"
+          "titre",
+          "contenu"
         ]
       },
       "conditions": [
@@ -285,8 +285,8 @@
       "subject": "api::conditions-generales-d-utilisation.conditions-generales-d-utilisation",
       "properties": {
         "fields": [
-          "contenu",
-          "titre"
+          "titre",
+          "contenu"
         ]
       },
       "conditions": [
@@ -298,13 +298,13 @@
       "subject": "api::contact-cej.contact-cej",
       "properties": {
         "fields": [
-          "age",
-          "code_postal",
-          "email",
-          "nom",
           "prenom",
+          "nom",
+          "email",
           "telephone",
-          "ville"
+          "age",
+          "ville",
+          "code_postal"
         ]
       },
       "conditions": [
@@ -324,13 +324,13 @@
       "subject": "api::contact-cej.contact-cej",
       "properties": {
         "fields": [
-          "age",
-          "code_postal",
-          "email",
-          "nom",
           "prenom",
+          "nom",
+          "email",
           "telephone",
-          "ville"
+          "age",
+          "ville",
+          "code_postal"
         ]
       },
       "conditions": [
@@ -342,13 +342,13 @@
       "subject": "api::contact-cej.contact-cej",
       "properties": {
         "fields": [
+          "prenom",
+          "nom",
+          "email",
+          "telephone",
           "age",
-          "code_postal",
-          "email",
-          "nom",
-          "prenom",
-          "telephone",
-          "ville"
+          "ville",
+          "code_postal"
         ]
       },
       "conditions": [
@@ -360,20 +360,20 @@
       "subject": "api::contact-poe.contact-poe",
       "properties": {
         "fields": [
-          "code_postal",
-          "commentaire",
-          "email",
-          "erreur",
-          "nom",
           "nom_societe",
-          "nombreARecruter",
-          "prenom",
-          "secteur",
+          "code_postal",
+          "ville",
           "siret",
           "taille",
+          "secteur",
+          "prenom",
           "telephone",
+          "nom",
           "travail",
-          "ville"
+          "erreur",
+          "nombreARecruter",
+          "commentaire",
+          "email"
         ]
       },
       "conditions": [
@@ -393,20 +393,20 @@
       "subject": "api::contact-poe.contact-poe",
       "properties": {
         "fields": [
-          "code_postal",
-          "commentaire",
-          "email",
-          "erreur",
-          "nom",
           "nom_societe",
-          "nombreARecruter",
-          "prenom",
-          "secteur",
+          "code_postal",
+          "ville",
           "siret",
           "taille",
+          "secteur",
+          "prenom",
           "telephone",
+          "nom",
           "travail",
-          "ville"
+          "erreur",
+          "nombreARecruter",
+          "commentaire",
+          "email"
         ]
       },
       "conditions": [
@@ -418,20 +418,20 @@
       "subject": "api::contact-poe.contact-poe",
       "properties": {
         "fields": [
-          "code_postal",
-          "commentaire",
-          "email",
-          "erreur",
-          "nom",
           "nom_societe",
-          "nombreARecruter",
-          "prenom",
-          "secteur",
+          "code_postal",
+          "ville",
           "siret",
           "taille",
+          "secteur",
+          "prenom",
           "telephone",
+          "nom",
           "travail",
-          "ville"
+          "erreur",
+          "nombreARecruter",
+          "commentaire",
+          "email"
         ]
       },
       "conditions": [
@@ -443,18 +443,18 @@
       "subject": "api::entreprise.entreprise",
       "properties": {
         "fields": [
-          "code_postal",
-          "email",
-          "erreur",
-          "nom",
           "nom_societe",
-          "prenom",
-          "secteur",
+          "code_postal",
+          "ville",
           "siret",
           "taille",
+          "secteur",
+          "prenom",
           "telephone",
+          "email",
+          "nom",
           "travail",
-          "ville"
+          "erreur"
         ]
       },
       "conditions": [
@@ -474,18 +474,18 @@
       "subject": "api::entreprise.entreprise",
       "properties": {
         "fields": [
-          "code_postal",
-          "email",
-          "erreur",
-          "nom",
           "nom_societe",
-          "prenom",
-          "secteur",
+          "code_postal",
+          "ville",
           "siret",
           "taille",
+          "secteur",
+          "prenom",
           "telephone",
+          "email",
+          "nom",
           "travail",
-          "ville"
+          "erreur"
         ]
       },
       "conditions": [
@@ -497,18 +497,18 @@
       "subject": "api::entreprise.entreprise",
       "properties": {
         "fields": [
-          "code_postal",
-          "email",
-          "erreur",
-          "nom",
           "nom_societe",
-          "prenom",
-          "secteur",
+          "code_postal",
+          "ville",
           "siret",
           "taille",
+          "secteur",
+          "prenom",
           "telephone",
+          "email",
+          "nom",
           "travail",
-          "ville"
+          "erreur"
         ]
       },
       "conditions": [
@@ -521,17 +521,17 @@
       "properties": {
         "fields": [
           "dateDebut",
-          "dateFin",
           "description",
           "idSource",
           "lieu",
           "modaliteInscription",
           "online",
           "organismeOrganisateur",
-          "slug",
-          "source",
           "titre",
-          "type"
+          "type",
+          "source",
+          "slug",
+          "dateFin"
         ]
       },
       "conditions": [
@@ -552,17 +552,17 @@
       "properties": {
         "fields": [
           "dateDebut",
-          "dateFin",
           "description",
           "idSource",
           "lieu",
           "modaliteInscription",
           "online",
           "organismeOrganisateur",
-          "slug",
-          "source",
           "titre",
-          "type"
+          "type",
+          "source",
+          "slug",
+          "dateFin"
         ]
       },
       "conditions": [
@@ -575,17 +575,17 @@
       "properties": {
         "fields": [
           "dateDebut",
-          "dateFin",
           "description",
           "idSource",
           "lieu",
           "modaliteInscription",
           "online",
           "organismeOrganisateur",
-          "slug",
-          "source",
           "titre",
-          "type"
+          "type",
+          "source",
+          "slug",
+          "dateFin"
         ]
       },
       "conditions": [
@@ -597,8 +597,8 @@
       "subject": "api::faq.faq",
       "properties": {
         "fields": [
-          "contenu",
           "problematique",
+          "contenu",
           "slug"
         ]
       },
@@ -619,8 +619,8 @@
       "subject": "api::faq.faq",
       "properties": {
         "fields": [
-          "contenu",
           "problematique",
+          "contenu",
           "slug"
         ]
       },
@@ -633,8 +633,8 @@
       "subject": "api::faq.faq",
       "properties": {
         "fields": [
-          "contenu",
           "problematique",
+          "contenu",
           "slug"
         ]
       },
@@ -647,28 +647,28 @@
       "subject": "api::fiche-metier.fiche-metier",
       "properties": {
         "fields": [
-          "acces_metier",
-          "accroche_metier",
-          "centres_interet.identifiant",
-          "centres_interet.libelle",
+          "nom_metier",
           "competences",
           "condition_travail",
-          "formations_min_requise.identifiant",
-          "formations_min_requise.libelle",
-          "identifiant",
-          "libelle_feminin",
-          "libelle_masculin",
-          "nature_travail",
-          "niveau_acces_min.identifiant",
-          "niveau_acces_min.libelle",
-          "nom_metier",
           "secteurs_activite.identifiant",
           "secteurs_activite.libelle",
-          "statuts.id_ideo1",
+          "identifiant",
+          "centres_interet.identifiant",
+          "centres_interet.libelle",
+          "niveau_acces_min.libelle",
+          "niveau_acces_min.identifiant",
+          "nature_travail",
+          "vie_professionnelle",
+          "acces_metier",
           "statuts.identifiant",
+          "statuts.id_ideo1",
           "statuts.libelle",
-          "synonymes",
-          "vie_professionnelle"
+          "formations_min_requise.identifiant",
+          "formations_min_requise.libelle",
+          "accroche_metier",
+          "libelle_feminin",
+          "libelle_masculin",
+          "synonymes"
         ]
       },
       "conditions": [
@@ -688,28 +688,28 @@
       "subject": "api::fiche-metier.fiche-metier",
       "properties": {
         "fields": [
-          "acces_metier",
-          "accroche_metier",
-          "centres_interet.identifiant",
-          "centres_interet.libelle",
+          "nom_metier",
           "competences",
           "condition_travail",
-          "formations_min_requise.identifiant",
-          "formations_min_requise.libelle",
-          "identifiant",
-          "libelle_feminin",
-          "libelle_masculin",
-          "nature_travail",
-          "niveau_acces_min.identifiant",
-          "niveau_acces_min.libelle",
-          "nom_metier",
           "secteurs_activite.identifiant",
           "secteurs_activite.libelle",
-          "statuts.id_ideo1",
+          "identifiant",
+          "centres_interet.identifiant",
+          "centres_interet.libelle",
+          "niveau_acces_min.libelle",
+          "niveau_acces_min.identifiant",
+          "nature_travail",
+          "vie_professionnelle",
+          "acces_metier",
           "statuts.identifiant",
+          "statuts.id_ideo1",
           "statuts.libelle",
-          "synonymes",
-          "vie_professionnelle"
+          "formations_min_requise.identifiant",
+          "formations_min_requise.libelle",
+          "accroche_metier",
+          "libelle_feminin",
+          "libelle_masculin",
+          "synonymes"
         ]
       },
       "conditions": [
@@ -721,28 +721,28 @@
       "subject": "api::fiche-metier.fiche-metier",
       "properties": {
         "fields": [
-          "acces_metier",
-          "accroche_metier",
-          "centres_interet.identifiant",
-          "centres_interet.libelle",
+          "nom_metier",
           "competences",
           "condition_travail",
-          "formations_min_requise.identifiant",
-          "formations_min_requise.libelle",
-          "identifiant",
-          "libelle_feminin",
-          "libelle_masculin",
-          "nature_travail",
-          "niveau_acces_min.identifiant",
-          "niveau_acces_min.libelle",
-          "nom_metier",
           "secteurs_activite.identifiant",
           "secteurs_activite.libelle",
-          "statuts.id_ideo1",
+          "identifiant",
+          "centres_interet.identifiant",
+          "centres_interet.libelle",
+          "niveau_acces_min.libelle",
+          "niveau_acces_min.identifiant",
+          "nature_travail",
+          "vie_professionnelle",
+          "acces_metier",
           "statuts.identifiant",
+          "statuts.id_ideo1",
           "statuts.libelle",
-          "synonymes",
-          "vie_professionnelle"
+          "formations_min_requise.identifiant",
+          "formations_min_requise.libelle",
+          "accroche_metier",
+          "libelle_feminin",
+          "libelle_masculin",
+          "synonymes"
         ]
       },
       "conditions": [
@@ -754,12 +754,12 @@
       "subject": "api::les-mesures-employeurs.les-mesures-employeurs",
       "properties": {
         "fields": [
-          "dispositifs.article",
-          "dispositifs.banniere",
-          "dispositifs.contenu",
-          "dispositifs.pourQui",
           "dispositifs.titre",
-          "dispositifs.url"
+          "dispositifs.contenu",
+          "dispositifs.banniere",
+          "dispositifs.url",
+          "dispositifs.article",
+          "dispositifs.pourQui"
         ]
       },
       "conditions": [
@@ -779,12 +779,12 @@
       "subject": "api::les-mesures-employeurs.les-mesures-employeurs",
       "properties": {
         "fields": [
-          "dispositifs.article",
-          "dispositifs.banniere",
-          "dispositifs.contenu",
-          "dispositifs.pourQui",
           "dispositifs.titre",
-          "dispositifs.url"
+          "dispositifs.contenu",
+          "dispositifs.banniere",
+          "dispositifs.url",
+          "dispositifs.article",
+          "dispositifs.pourQui"
         ]
       },
       "conditions": [
@@ -796,12 +796,12 @@
       "subject": "api::les-mesures-employeurs.les-mesures-employeurs",
       "properties": {
         "fields": [
-          "dispositifs.article",
-          "dispositifs.banniere",
-          "dispositifs.contenu",
-          "dispositifs.pourQui",
           "dispositifs.titre",
-          "dispositifs.url"
+          "dispositifs.contenu",
+          "dispositifs.banniere",
+          "dispositifs.url",
+          "dispositifs.article",
+          "dispositifs.pourQui"
         ]
       },
       "conditions": [
@@ -813,8 +813,8 @@
       "subject": "api::mention-legale.mention-legale",
       "properties": {
         "fields": [
-          "contenu",
-          "titre"
+          "titre",
+          "contenu"
         ]
       },
       "conditions": [
@@ -834,8 +834,8 @@
       "subject": "api::mention-legale.mention-legale",
       "properties": {
         "fields": [
-          "contenu",
-          "titre"
+          "titre",
+          "contenu"
         ]
       },
       "conditions": [
@@ -847,8 +847,8 @@
       "subject": "api::mention-legale.mention-legale",
       "properties": {
         "fields": [
-          "contenu",
-          "titre"
+          "titre",
+          "contenu"
         ]
       },
       "conditions": [
@@ -860,30 +860,30 @@
       "subject": "api::mesure-jeune.mesure-jeune",
       "properties": {
         "fields": [
-          "accompagnement.article",
-          "accompagnement.banniere",
-          "accompagnement.contenu",
-          "accompagnement.pourQui",
-          "accompagnement.titre",
-          "accompagnement.url",
-          "aidesFinancieres.article",
-          "aidesFinancieres.banniere",
-          "aidesFinancieres.contenu",
-          "aidesFinancieres.pourQui",
-          "aidesFinancieres.titre",
-          "aidesFinancieres.url",
-          "orienterFormer.article",
-          "orienterFormer.banniere",
-          "orienterFormer.contenu",
-          "orienterFormer.pourQui",
-          "orienterFormer.titre",
-          "orienterFormer.url",
-          "vieProfessionnelle.article",
-          "vieProfessionnelle.banniere",
-          "vieProfessionnelle.contenu",
-          "vieProfessionnelle.pourQui",
           "vieProfessionnelle.titre",
-          "vieProfessionnelle.url"
+          "vieProfessionnelle.contenu",
+          "vieProfessionnelle.banniere",
+          "vieProfessionnelle.url",
+          "vieProfessionnelle.article",
+          "vieProfessionnelle.pourQui",
+          "orienterFormer.titre",
+          "orienterFormer.contenu",
+          "orienterFormer.banniere",
+          "orienterFormer.url",
+          "orienterFormer.article",
+          "orienterFormer.pourQui",
+          "accompagnement.titre",
+          "accompagnement.contenu",
+          "accompagnement.banniere",
+          "accompagnement.url",
+          "accompagnement.article",
+          "accompagnement.pourQui",
+          "aidesFinancieres.titre",
+          "aidesFinancieres.contenu",
+          "aidesFinancieres.banniere",
+          "aidesFinancieres.url",
+          "aidesFinancieres.article",
+          "aidesFinancieres.pourQui"
         ]
       },
       "conditions": [
@@ -903,30 +903,30 @@
       "subject": "api::mesure-jeune.mesure-jeune",
       "properties": {
         "fields": [
-          "accompagnement.article",
-          "accompagnement.banniere",
-          "accompagnement.contenu",
-          "accompagnement.pourQui",
-          "accompagnement.titre",
-          "accompagnement.url",
-          "aidesFinancieres.article",
-          "aidesFinancieres.banniere",
-          "aidesFinancieres.contenu",
-          "aidesFinancieres.pourQui",
-          "aidesFinancieres.titre",
-          "aidesFinancieres.url",
-          "orienterFormer.article",
-          "orienterFormer.banniere",
-          "orienterFormer.contenu",
-          "orienterFormer.pourQui",
-          "orienterFormer.titre",
-          "orienterFormer.url",
-          "vieProfessionnelle.article",
-          "vieProfessionnelle.banniere",
-          "vieProfessionnelle.contenu",
-          "vieProfessionnelle.pourQui",
           "vieProfessionnelle.titre",
-          "vieProfessionnelle.url"
+          "vieProfessionnelle.contenu",
+          "vieProfessionnelle.banniere",
+          "vieProfessionnelle.url",
+          "vieProfessionnelle.article",
+          "vieProfessionnelle.pourQui",
+          "orienterFormer.titre",
+          "orienterFormer.contenu",
+          "orienterFormer.banniere",
+          "orienterFormer.url",
+          "orienterFormer.article",
+          "orienterFormer.pourQui",
+          "accompagnement.titre",
+          "accompagnement.contenu",
+          "accompagnement.banniere",
+          "accompagnement.url",
+          "accompagnement.article",
+          "accompagnement.pourQui",
+          "aidesFinancieres.titre",
+          "aidesFinancieres.contenu",
+          "aidesFinancieres.banniere",
+          "aidesFinancieres.url",
+          "aidesFinancieres.article",
+          "aidesFinancieres.pourQui"
         ]
       },
       "conditions": [
@@ -938,30 +938,30 @@
       "subject": "api::mesure-jeune.mesure-jeune",
       "properties": {
         "fields": [
-          "accompagnement.article",
-          "accompagnement.banniere",
-          "accompagnement.contenu",
-          "accompagnement.pourQui",
-          "accompagnement.titre",
-          "accompagnement.url",
-          "aidesFinancieres.article",
-          "aidesFinancieres.banniere",
-          "aidesFinancieres.contenu",
-          "aidesFinancieres.pourQui",
-          "aidesFinancieres.titre",
-          "aidesFinancieres.url",
-          "orienterFormer.article",
-          "orienterFormer.banniere",
-          "orienterFormer.contenu",
-          "orienterFormer.pourQui",
-          "orienterFormer.titre",
-          "orienterFormer.url",
-          "vieProfessionnelle.article",
-          "vieProfessionnelle.banniere",
-          "vieProfessionnelle.contenu",
-          "vieProfessionnelle.pourQui",
           "vieProfessionnelle.titre",
-          "vieProfessionnelle.url"
+          "vieProfessionnelle.contenu",
+          "vieProfessionnelle.banniere",
+          "vieProfessionnelle.url",
+          "vieProfessionnelle.article",
+          "vieProfessionnelle.pourQui",
+          "orienterFormer.titre",
+          "orienterFormer.contenu",
+          "orienterFormer.banniere",
+          "orienterFormer.url",
+          "orienterFormer.article",
+          "orienterFormer.pourQui",
+          "accompagnement.titre",
+          "accompagnement.contenu",
+          "accompagnement.banniere",
+          "accompagnement.url",
+          "accompagnement.article",
+          "accompagnement.pourQui",
+          "aidesFinancieres.titre",
+          "aidesFinancieres.contenu",
+          "aidesFinancieres.banniere",
+          "aidesFinancieres.url",
+          "aidesFinancieres.article",
+          "aidesFinancieres.pourQui"
         ]
       },
       "conditions": [
@@ -973,35 +973,35 @@
       "subject": "api::offre-de-stage.offre-de-stage",
       "properties": {
         "fields": [
-          "dateDeDebut",
-          "description",
-          "domaines.nom",
-          "dureeEnJour",
-          "dureeEnJourMax",
-          "employeur.description",
-          "employeur.logoUrl",
-          "employeur.nom",
-          "employeur.siteUrl",
           "identifiantSource",
-          "localisation.adresse",
-          "localisation.codePostal",
-          "localisation.departement",
-          "localisation.latitude",
-          "localisation.longitude",
-          "localisation.pays",
-          "localisation.region",
-          "localisation.ville",
-          "preRequis.niveauEtude",
-          "preRequis.profil",
-          "remunerationBase",
+          "titre",
           "slug",
           "source",
-          "sourceCreatedAt",
-          "sourcePublishedAt",
-          "sourceUpdatedAt",
+          "description",
+          "dateDeDebut",
+          "urlDeCandidature",
           "teletravailPossible",
-          "titre",
-          "urlDeCandidature"
+          "sourceCreatedAt",
+          "sourceUpdatedAt",
+          "sourcePublishedAt",
+          "remunerationBase",
+          "employeur.nom",
+          "employeur.description",
+          "employeur.logoUrl",
+          "employeur.siteUrl",
+          "domaines.nom",
+          "preRequis.niveauEtude",
+          "preRequis.profil",
+          "dureeEnJour",
+          "dureeEnJourMax",
+          "localisation.latitude",
+          "localisation.longitude",
+          "localisation.ville",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays"
         ]
       },
       "conditions": [
@@ -1021,35 +1021,35 @@
       "subject": "api::offre-de-stage.offre-de-stage",
       "properties": {
         "fields": [
-          "dateDeDebut",
-          "description",
-          "domaines.nom",
-          "dureeEnJour",
-          "dureeEnJourMax",
-          "employeur.description",
-          "employeur.logoUrl",
-          "employeur.nom",
-          "employeur.siteUrl",
           "identifiantSource",
-          "localisation.adresse",
-          "localisation.codePostal",
-          "localisation.departement",
-          "localisation.latitude",
-          "localisation.longitude",
-          "localisation.pays",
-          "localisation.region",
-          "localisation.ville",
-          "preRequis.niveauEtude",
-          "preRequis.profil",
-          "remunerationBase",
+          "titre",
           "slug",
           "source",
-          "sourceCreatedAt",
-          "sourcePublishedAt",
-          "sourceUpdatedAt",
+          "description",
+          "dateDeDebut",
+          "urlDeCandidature",
           "teletravailPossible",
-          "titre",
-          "urlDeCandidature"
+          "sourceCreatedAt",
+          "sourceUpdatedAt",
+          "sourcePublishedAt",
+          "remunerationBase",
+          "employeur.nom",
+          "employeur.description",
+          "employeur.logoUrl",
+          "employeur.siteUrl",
+          "domaines.nom",
+          "preRequis.niveauEtude",
+          "preRequis.profil",
+          "dureeEnJour",
+          "dureeEnJourMax",
+          "localisation.latitude",
+          "localisation.longitude",
+          "localisation.ville",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays"
         ]
       },
       "conditions": [
@@ -1061,35 +1061,35 @@
       "subject": "api::offre-de-stage.offre-de-stage",
       "properties": {
         "fields": [
-          "dateDeDebut",
-          "description",
-          "domaines.nom",
-          "dureeEnJour",
-          "dureeEnJourMax",
-          "employeur.description",
-          "employeur.logoUrl",
-          "employeur.nom",
-          "employeur.siteUrl",
           "identifiantSource",
-          "localisation.adresse",
-          "localisation.codePostal",
-          "localisation.departement",
-          "localisation.latitude",
-          "localisation.longitude",
-          "localisation.pays",
-          "localisation.region",
-          "localisation.ville",
-          "preRequis.niveauEtude",
-          "preRequis.profil",
-          "remunerationBase",
+          "titre",
           "slug",
           "source",
-          "sourceCreatedAt",
-          "sourcePublishedAt",
-          "sourceUpdatedAt",
+          "description",
+          "dateDeDebut",
+          "urlDeCandidature",
           "teletravailPossible",
-          "titre",
-          "urlDeCandidature"
+          "sourceCreatedAt",
+          "sourceUpdatedAt",
+          "sourcePublishedAt",
+          "remunerationBase",
+          "employeur.nom",
+          "employeur.description",
+          "employeur.logoUrl",
+          "employeur.siteUrl",
+          "domaines.nom",
+          "preRequis.niveauEtude",
+          "preRequis.profil",
+          "dureeEnJour",
+          "dureeEnJourMax",
+          "localisation.latitude",
+          "localisation.longitude",
+          "localisation.ville",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays"
         ]
       },
       "conditions": [
@@ -1101,8 +1101,8 @@
       "subject": "api::politique-de-confidentialite.politique-de-confidentialite",
       "properties": {
         "fields": [
-          "contenu",
-          "titre"
+          "titre",
+          "contenu"
         ]
       },
       "conditions": [
@@ -1122,8 +1122,8 @@
       "subject": "api::politique-de-confidentialite.politique-de-confidentialite",
       "properties": {
         "fields": [
-          "contenu",
-          "titre"
+          "titre",
+          "contenu"
         ]
       },
       "conditions": [
@@ -1135,8 +1135,8 @@
       "subject": "api::politique-de-confidentialite.politique-de-confidentialite",
       "properties": {
         "fields": [
-          "contenu",
-          "titre"
+          "titre",
+          "contenu"
         ]
       },
       "conditions": [
@@ -1147,39 +1147,46 @@
       "action": "plugin::content-manager.explorer.create",
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {
-        "fields": []
+        "fields": [
+          "Titre",
+          "Transcription",
+          "Url",
+          "Index"
+        ]
       },
-      "conditions": [
-        "admin::is-creator"
-      ]
+      "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {},
-      "conditions": [
-        "admin::is-creator"
-      ]
+      "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.read",
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {
-        "fields": []
+        "fields": [
+          "Titre",
+          "Transcription",
+          "Url",
+          "Index"
+        ]
       },
-      "conditions": [
-        "admin::is-creator"
-      ]
+      "conditions": []
     },
     {
       "action": "plugin::content-manager.explorer.update",
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {
-        "fields": []
+        "fields": [
+          "Titre",
+          "Transcription",
+          "Url",
+          "Index"
+        ]
       },
-      "conditions": [
-        "admin::is-creator"
-      ]
+      "conditions": []
     },
     {
       "action": "plugin::upload.assets.copy-link",

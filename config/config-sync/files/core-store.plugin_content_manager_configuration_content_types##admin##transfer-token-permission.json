@@ -1,14 +1,14 @@
 {
-  "key": "plugin_content_manager_configuration_components::video.video",
+  "key": "plugin_content_manager_configuration_content_types::admin::transfer-token-permission",
   "value": {
-    "uid": "video.video",
+    "uid": "admin::transfer-token-permission",
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "titre",
-      "defaultSortBy": "titre",
+      "mainField": "action",
+      "defaultSortBy": "action",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -16,48 +16,63 @@
         "edit": {},
         "list": {
           "label": "id",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "titre": {
-        "edit": {
-          "label": "titre",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "titre",
           "searchable": true,
           "sortable": true
         }
       },
-      "url": {
+      "action": {
         "edit": {
-          "label": "url",
+          "label": "action",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "url",
+          "label": "action",
           "searchable": true,
           "sortable": true
         }
       },
-      "transcription": {
+      "token": {
         "edit": {
-          "label": "transcription",
+          "label": "token",
           "description": "",
           "placeholder": "",
           "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "token",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
           "editable": true
         },
         "list": {
-          "label": "transcription",
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
           "searchable": true,
           "sortable": true
         }
@@ -66,30 +81,23 @@
     "layouts": {
       "list": [
         "id",
-        "titre",
-        "url",
-        "transcription"
+        "action",
+        "token",
+        "createdAt"
       ],
       "edit": [
         [
           {
-            "name": "titre",
+            "name": "action",
             "size": 6
           },
           {
-            "name": "url",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "transcription",
+            "name": "token",
             "size": 6
           }
         ]
       ]
-    },
-    "isComponent": true
+    }
   },
   "type": "object",
   "environment": null,

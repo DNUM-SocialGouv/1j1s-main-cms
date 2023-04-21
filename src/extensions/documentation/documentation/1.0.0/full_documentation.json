@@ -14,7 +14,7 @@
       "name": "MIT",
       "url": "https://github.com/DNUM-SocialGouv/1j1s-stage-orchestrateur-transform-load/blob/main/LICENSE"
     },
-    "x-generation-date": "2023-04-19T16:12:11.590Z"
+    "x-generation-date": "2023-04-21T12:46:30.315Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -23722,14 +23722,25 @@
         ],
         "properties": {
           "data": {
-            "required": [],
+            "required": [
+              "Titre",
+              "Transcription",
+              "Url",
+              "Index"
+            ],
             "type": "object",
             "properties": {
-              "videos": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/VideoVideoComponent"
-                }
+              "Titre": {
+                "type": "string"
+              },
+              "Transcription": {
+                "type": "string"
+              },
+              "Url": {
+                "type": "string"
+              },
+              "Index": {
+                "type": "integer"
               }
             }
           }
@@ -23744,11 +23755,17 @@
           "attributes": {
             "type": "object",
             "properties": {
-              "videos": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/VideoVideoComponent"
-                }
+              "Titre": {
+                "type": "string"
+              },
+              "Transcription": {
+                "type": "string"
+              },
+              "Url": {
+                "type": "string"
+              },
+              "Index": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -24056,11 +24073,17 @@
           "attributes": {
             "type": "object",
             "properties": {
-              "videos": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/VideoVideoComponent"
-                }
+              "Titre": {
+                "type": "string"
+              },
+              "Transcription": {
+                "type": "string"
+              },
+              "Url": {
+                "type": "string"
+              },
+              "Index": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -24401,11 +24424,17 @@
           "attributes": {
             "type": "object",
             "properties": {
-              "videos": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/VideoVideoComponent"
-                }
+              "Titre": {
+                "type": "string"
+              },
+              "Transcription": {
+                "type": "string"
+              },
+              "Url": {
+                "type": "string"
+              },
+              "Index": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -24713,11 +24742,17 @@
           "attributes": {
             "type": "object",
             "properties": {
-              "videos": {
-                "type": "array",
-                "items": {
-                  "$ref": "#/components/schemas/VideoVideoComponent"
-                }
+              "Titre": {
+                "type": "string"
+              },
+              "Transcription": {
+                "type": "string"
+              },
+              "Url": {
+                "type": "string"
+              },
+              "Index": {
+                "type": "integer"
               },
               "createdAt": {
                 "type": "string",
@@ -25023,23 +25058,6 @@
           },
           "meta": {
             "type": "object"
-          }
-        }
-      },
-      "VideoVideoComponent": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "number"
-          },
-          "titre": {
-            "type": "string"
-          },
-          "url": {
-            "type": "string"
-          },
-          "transcription": {
-            "type": "string"
           }
         }
       },
@@ -44321,7 +44339,7 @@
         "operationId": "delete/politique-de-confidentialite"
       }
     },
-    "/videos-campagne-apprentissage": {
+    "/videos-campagne-apprentissages": {
       "get": {
         "responses": {
           "200": {
@@ -44491,7 +44509,168 @@
             }
           }
         ],
-        "operationId": "get/videos-campagne-apprentissage"
+        "operationId": "get/videos-campagne-apprentissages"
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VideosCampagneApprentissageResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Videos-campagne-apprentissage"
+        ],
+        "parameters": [],
+        "operationId": "post/videos-campagne-apprentissages",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VideosCampagneApprentissageRequest"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/videos-campagne-apprentissages/{id}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VideosCampagneApprentissageResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Videos-campagne-apprentissage"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "operationId": "get/videos-campagne-apprentissages/{id}"
       },
       "put": {
         "responses": {
@@ -44559,8 +44738,19 @@
         "tags": [
           "Videos-campagne-apprentissage"
         ],
-        "parameters": [],
-        "operationId": "put/videos-campagne-apprentissage",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "operationId": "put/videos-campagne-apprentissages/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -44639,8 +44829,19 @@
         "tags": [
           "Videos-campagne-apprentissage"
         ],
-        "parameters": [],
-        "operationId": "delete/videos-campagne-apprentissage"
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "operationId": "delete/videos-campagne-apprentissages/{id}"
       }
     },
     "/upload/files": {

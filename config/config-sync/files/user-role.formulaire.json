@@ -17,6 +17,9 @@
     },
     {
       "action": "api::videos-campagne-apprentissage.videos-campagne-apprentissage.find"
+    },
+    {
+      "action": "api::videos-campagne-apprentissage.videos-campagne-apprentissage.findOne"
     }
   ]
 }
