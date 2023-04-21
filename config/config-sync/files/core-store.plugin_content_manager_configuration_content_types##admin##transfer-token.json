@@ -1,14 +1,14 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::videos-campagne-apprentissage.videos-campagne-apprentissage",
+  "key": "plugin_content_manager_configuration_content_types::admin::transfer-token",
   "value": {
-    "uid": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
+    "uid": "admin::transfer-token",
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "Titre",
-      "defaultSortBy": "Index",
+      "mainField": "name",
+      "defaultSortBy": "name",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -20,58 +20,101 @@
           "sortable": true
         }
       },
-      "Titre": {
+      "name": {
         "edit": {
-          "label": "Titre",
+          "label": "name",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Titre",
+          "label": "name",
           "searchable": true,
           "sortable": true
         }
       },
-      "Transcription": {
+      "description": {
         "edit": {
-          "label": "Transcription",
+          "label": "description",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Transcription",
+          "label": "description",
           "searchable": true,
           "sortable": true
         }
       },
-      "Url": {
+      "accessKey": {
         "edit": {
-          "label": "Url",
+          "label": "accessKey",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Url",
+          "label": "accessKey",
           "searchable": true,
           "sortable": true
         }
       },
-      "Index": {
+      "lastUsedAt": {
         "edit": {
-          "label": "Index",
+          "label": "lastUsedAt",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Index",
+          "label": "lastUsedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "permissions": {
+        "edit": {
+          "label": "permissions",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "action"
+        },
+        "list": {
+          "label": "permissions",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "expiresAt": {
+        "edit": {
+          "label": "expiresAt",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "expiresAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "lifespan": {
+        "edit": {
+          "label": "lifespan",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "lifespan",
           "searchable": true,
           "sortable": true
         }
@@ -106,32 +149,49 @@
       }
     },
     "layouts": {
+      "list": [
+        "id",
+        "name",
+        "description",
+        "accessKey"
+      ],
       "edit": [
         [
           {
-            "name": "Titre",
+            "name": "name",
             "size": 6
           },
           {
-            "name": "Transcription",
+            "name": "description",
             "size": 6
           }
         ],
         [
           {
-            "name": "Url",
+            "name": "accessKey",
             "size": 6
           },
           {
-            "name": "Index",
+            "name": "lastUsedAt",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "permissions",
+            "size": 6
+          },
+          {
+            "name": "expiresAt",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "lifespan",
             "size": 4
           }
         ]
-      ],
-      "list": [
-        "Index",
-        "Titre",
-        "Url"
       ]
     }
   },
