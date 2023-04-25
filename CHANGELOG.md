@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.11.3...v1.12.0) (2023-04-25)
+
+
+### Features
+
+* **apprentissage:** video passage en collection type ([11bf39b](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/11bf39b564be25d71db2f77bdca8a6ae5315fc51))
+
 ## [1.11.3](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.11.2...v1.11.3) (2023-04-21)
 
 
