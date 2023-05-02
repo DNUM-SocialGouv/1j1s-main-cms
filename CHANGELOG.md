@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.12.1...v1.12.2) (2023-05-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency strapi-plugin-import-export-entries to ~1.19.0 ([18311c0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/18311c00ca0ebf8c701057df4c747e77f6ae34f0))
+
 ## [1.12.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.12.0...v1.12.1) (2023-04-28)
 
 
