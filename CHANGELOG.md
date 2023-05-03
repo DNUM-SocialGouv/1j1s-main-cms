@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.12.2...v1.13.0) (2023-05-03)
+
+
+### Features
+
+* **apprentissage:** ajout des droits en lecture sur les videos pour Public ([e7a4451](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/e7a44517a3fb0fdfb27ed7e4666d2e4df2e3a647))
+
 ## [1.12.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.12.1...v1.12.2) (2023-05-02)
 
 
