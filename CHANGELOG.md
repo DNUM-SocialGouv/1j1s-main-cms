@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.13.1...v1.13.2) (2023-05-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @strapi/strapi to v4.10.5 ([b6b398f](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/b6b398f59f8083f8aaa399e3e0c22d9fc1879526))
+
 ## [1.13.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.13.0...v1.13.1) (2023-05-04)
 
 
