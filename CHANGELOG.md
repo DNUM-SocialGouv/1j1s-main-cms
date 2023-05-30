@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.5](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.13.4...v1.13.5) (2023-05-30)
+
+
+### Bug Fixes
+
+* **employeur:** changer siteUrl en long text pour pouvoir mettre des url de plus de 255 caractères ([8737d5b](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/8737d5bb60051638b9fa601f6e5604e88dcf7b0f))
+
 ## [1.13.4](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.13.3...v1.13.4) (2023-05-25)
 
 
