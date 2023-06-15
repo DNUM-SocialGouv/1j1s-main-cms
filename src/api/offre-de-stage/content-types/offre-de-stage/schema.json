@@ -41,7 +41,7 @@
     },
     "dateDeDebut": {
       "type": "date",
-      "required": true
+      "required": false
     },
     "urlDeCandidature": {
       "type": "text",
@@ -91,6 +91,14 @@
       "type": "component",
       "repeatable": false,
       "component": "localisation.localisation"
+    },
+    "dateDeDebutMin": {
+      "type": "date",
+      "required": false
+    },
+    "dateDeDebutMax": {
+      "type": "date",
+      "required": false
     }
   }
 }
