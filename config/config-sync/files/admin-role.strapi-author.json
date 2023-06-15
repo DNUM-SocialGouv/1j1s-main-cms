@@ -1001,7 +1001,9 @@
           "localisation.departement",
           "localisation.codePostal",
           "localisation.region",
-          "localisation.pays"
+          "localisation.pays",
+          "dateDeDebutMin",
+          "dateDeDebutMax"
         ]
       },
       "conditions": [
@@ -1049,7 +1051,9 @@
           "localisation.departement",
           "localisation.codePostal",
           "localisation.region",
-          "localisation.pays"
+          "localisation.pays",
+          "dateDeDebutMin",
+          "dateDeDebutMax"
         ]
       },
       "conditions": [
@@ -1089,7 +1093,9 @@
           "localisation.departement",
           "localisation.codePostal",
           "localisation.region",
-          "localisation.pays"
+          "localisation.pays",
+          "dateDeDebutMin",
+          "dateDeDebutMax"
         ]
       },
       "conditions": [
