@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/LesMesuresEmployeursListResponse"
+                "$ref": "#/components/schemas/LesMesuresEmployeursResponse"
               }
             }
           }
