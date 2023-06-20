@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.13.9...v1.14.0) (2023-06-20)
+
+
+### Features
+
+* **documentation:** mise à jour de la documentation ([c165619](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/c165619ee84bc6bb04f83422db00534305cfe4d9))
+
 ## [1.13.9](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.13.8...v1.13.9) (2023-06-13)
 
 
