@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.14.0...v1.15.0) (2023-06-21)
+
+
+### Features
+
+* **POE:** Passer en long text le commentaire de contact POE ([#124](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/124)) ([78acf9c](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/78acf9c2d7ba7b317cefaef2195a25858dd34a02))
+
 ## [1.14.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.13.9...v1.14.0) (2023-06-20)
 
 
