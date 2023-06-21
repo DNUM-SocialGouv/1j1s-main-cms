@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AccessibiliteListResponse"
+                "$ref": "#/components/schemas/AccessibiliteResponse"
               }
             }
           }

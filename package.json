@@ -1,7 +1,7 @@
 {
   "name": "1j1s-main-cms",
   "private": true,
-  "version": "1.13.9",
+  "version": "1.15.0",
   "description": "1 jeune 1 solution main CMS ",
   "scripts": {
     "docker:populate": "./populate-with-recette-data.sh",
@@ -47,8 +47,8 @@
     "uuid": "c8583f78-6df0-4091-8734-ede822e386b8"
   },
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
-    "npm": ">=6.0.0"
+    "node": "^16.20.0",
+    "npm": "^9.7.1"
   },
   "license": "MIT"
 }
