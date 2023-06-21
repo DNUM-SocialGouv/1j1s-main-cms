@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.15.0...v1.16.0) (2023-06-21)
+
+
+### Features
+
+* **stage:** ajout champ dateDebutMin et dateDebutMax ([f79177e](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/f79177efe7f99f00135315cc5251e20205271c10))
+
 ## [1.15.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.14.0...v1.15.0) (2023-06-21)
 
 
