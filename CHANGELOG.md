@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.16.0...v1.17.0) (2023-06-22)
+
+
+### Features
+
+* **logement:** passage du minimum du nombre de pièces à 0 ([#127](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/127)) ([63e44ee](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/63e44eedd9be1660a8dade0afbfa3493e8a1f949))
+
 ## [1.16.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.15.0...v1.16.0) (2023-06-21)
 
 
