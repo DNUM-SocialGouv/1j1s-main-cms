@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formation_initiale_details",
+  "info": {
+    "singularName": "formation-initiale-detail",
+    "pluralName": "formation-initiale-details",
+    "displayName": "Formation-initiale-detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "identifiant": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "intitule": {
+      "type": "text",
+      "required": true
+    },
+    "duree": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "certification": {
+      "type": "string"
+    },
+    "niveauEtudesVise": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "attendusParcoursup": {
+      "type": "text"
+    },
+    "conditionsAcces": {
+      "type": "text"
+    },
+    "poursuiteEtudes": {
+      "type": "text"
+    }
+  }
+}
