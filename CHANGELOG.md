@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.17.1...v1.17.2) (2023-06-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency pg to v8.11.1 ([#132](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/132)) ([20ea86a](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/20ea86ac45c18e2eb1c627d0934632c950e48c42))
+
 ## [1.17.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.17.0...v1.17.1) (2023-06-22)
 
 
