@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.17.2...v1.18.0) (2023-06-29)
+
+
+### Features
+
+* **formation:** creer la collection de fiches formations ([99254bb](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/99254bba4f340a9446b7eb591781416191758e20))
+
 ## [1.17.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.17.1...v1.17.2) (2023-06-28)
 
 
