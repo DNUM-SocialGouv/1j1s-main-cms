@@ -64,6 +64,8 @@
         "location",
         "résidence",
         "sous-location",
+        "logement chez l'habitant",
+        "logement contre services",
         "non renseigné"
       ]
     },
