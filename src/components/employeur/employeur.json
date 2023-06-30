@@ -15,7 +15,7 @@
       "type": "richtext"
     },
     "logoUrl": {
-      "type": "string"
+      "type": "text"
     },
     "siteUrl": {
       "type": "text"

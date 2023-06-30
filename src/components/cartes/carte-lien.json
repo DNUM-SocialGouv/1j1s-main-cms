@@ -24,7 +24,7 @@
       ]
     },
     "url": {
-      "type": "string",
+      "type": "text",
       "regex": "^http(s)?:\\/\\/",
       "required": false
     },
