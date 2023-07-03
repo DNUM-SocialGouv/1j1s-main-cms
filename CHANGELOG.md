@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.18.1...v1.18.2) (2023-07-03)
+
+
+### Bug Fixes
+
+* utiliser long text pour tous les urls ([#136](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/136)) ([422291d](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/422291db866139aad0b4512271619f235cafb648))
+
 ## [1.18.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.18.0...v1.18.1) (2023-07-03)
 
 
