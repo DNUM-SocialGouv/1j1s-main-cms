@@ -20,7 +20,7 @@
       "required": true
     },
     "Url": {
-      "type": "string",
+      "type": "text",
       "required": true,
       "regex": "(https?:\\/\\/)?(www\\.)?youtube\\.com\\/watch\\?v=.+"
     },
