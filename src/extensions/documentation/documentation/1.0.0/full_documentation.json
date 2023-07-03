@@ -14,7 +14,7 @@
       "name": "MIT",
       "url": "https://github.com/DNUM-SocialGouv/1j1s-stage-orchestrateur-transform-load/blob/main/LICENSE"
     },
-    "x-generation-date": "2023-06-30T12:51:11.954Z"
+    "x-generation-date": "2023-06-30T13:46:55.181Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -882,6 +882,8 @@
                   "location",
                   "résidence",
                   "sous-location",
+                  "logement chez l'habitant",
+                  "logement contre services",
                   "non renseigné"
                 ]
               },
@@ -1072,6 +1074,8 @@
               "location",
               "résidence",
               "sous-location",
+              "logement chez l'habitant",
+              "logement contre services",
               "non renseigné"
             ]
           },

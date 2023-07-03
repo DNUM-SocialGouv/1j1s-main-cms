@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.18.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.18.0...v1.18.1) (2023-07-03)
+
+
+### Bug Fixes
+
+* **logement:** ajout des types 'logement chez l'habitant' et 'logemen… ([#137](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/137)) ([a097957](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/a09795746d13668ea97aec614715ea3750381585))
+
 ## [1.18.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.17.2...v1.18.0) (2023-06-29)
 
 
