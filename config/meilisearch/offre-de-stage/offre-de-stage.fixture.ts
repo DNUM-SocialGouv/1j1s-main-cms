@@ -9,6 +9,8 @@ export function uneOffreDeStageStrapi(override?: Partial<Strapi.OffreDeStage>): 
     source: Strapi.OffreDeStage.Source.JOBTEASER,
     description: "La description",
     dateDeDebut: "2023-12-01T00:00:00.000Z",
+    dateDeDebutMin: "2023-12-01T00:00:00.000Z",
+    dateDeDebutMax: "2023-12-15T00:00:00.000Z",
     urlDeCandidature: "http://une-compagnie.com/apply/1234",
     teletravailPossible: true,
     sourceCreatedAt: "2023-10-01T00:00:00.000Z",
@@ -51,6 +53,8 @@ export function uneOffreDeStageMeilisearch(override?: Partial<Meilisearch.OffreD
   return {
     id: 1,
     dateDeDebut: "2023-12-01T00:00:00.000Z",
+    dateDeDebutMin: "2023-12-01T00:00:00.000Z",
+    dateDeDebutMax: "2023-12-15T00:00:00.000Z",
     description: "La description",
     dureeEnJour: 365,
     dureeEnJourMax: 461,

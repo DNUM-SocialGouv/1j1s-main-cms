@@ -35,6 +35,8 @@ export default {
       "titre",
       "domaines",
       "dateDeDebut",
+      "dateDeDebutMin",
+      "dateDeDebutMax",
       "source",
       "nomEmployeur",
       "dureeCategorisee",

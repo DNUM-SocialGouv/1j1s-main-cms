@@ -65,6 +65,8 @@ export function transformerOffreDeStage({ entry }: { entry: Strapi.OffreDeStage 
   return {
     id: entry.id,
     dateDeDebut: entry.dateDeDebut,
+    dateDeDebutMin: entry.dateDeDebutMin,
+    dateDeDebutMax: entry.dateDeDebutMax,
     description: entry.description,
     dureeEnJour: entry.dureeEnJour,
     dureeEnJourMax: entry.dureeEnJourMax,

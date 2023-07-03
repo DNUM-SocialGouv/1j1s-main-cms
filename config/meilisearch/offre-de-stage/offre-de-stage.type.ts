@@ -4,6 +4,8 @@ export namespace Meilisearch {
     domaines: Array<string>;
     source: string;
     dateDeDebut: string;
+    dateDeDebutMin: string;
+    dateDeDebutMax: string;
     teletravailPossible: boolean;
     niveauEtude: string;
     dureeCategorisee: string;
@@ -43,6 +45,8 @@ export namespace Strapi {
     source: OffreDeStage.Source;
     description: string;
     dateDeDebut: string;
+    dateDeDebutMin: string;
+    dateDeDebutMax: string;
     urlDeCandidature: string;
     teletravailPossible: boolean;
     sourceCreatedAt: string;
