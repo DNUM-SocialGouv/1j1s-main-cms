@@ -10,6 +10,8 @@ export default {
       "domaines",
       "source",
       "dateDeDebut",
+      "dateDeDebutMin",
+      "dateDeDebutMax",
       "teletravailPossible",
       "niveauEtude",
       "dureeCategorisee",
@@ -30,7 +32,7 @@ export default {
       "localisation.departement",
       "duree",
     ],
-    sortableAttributes: ["dateDeDebut"],
+    sortableAttributes: ["dateDeDebut", "dateDeDebutMin"],
     displayedAttributes: [
       "titre",
       "domaines",
