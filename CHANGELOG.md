@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.19.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.18.4...v1.19.0) (2023-07-12)
+
+
+### Features
+
+* **stage:** ajouter min et max aux endroits où dateDeDebut était présente ([83dfd91](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/83dfd917914022e5b221655c9aa4fa4d02c1cb6b))
+* **stage:** indexer avec dateDeDebutMin et dateDeDebutMax ([160abc2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/160abc237de419763fa492cf9549122c517a7674))
+
 ## [1.18.4](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.18.3...v1.18.4) (2023-07-07)
 
 
