@@ -94,11 +94,11 @@
     },
     "dateDeDebutMin": {
       "type": "date",
-      "required": false
+      "required": true
     },
     "dateDeDebutMax": {
       "type": "date",
-      "required": false
+      "required": true
     }
   }
 }
