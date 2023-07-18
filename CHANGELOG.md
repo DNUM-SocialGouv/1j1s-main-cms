@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.20.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.19.1...v1.20.0) (2023-07-18)
+
+
+### Features
+
+* **stage:** passer la date de début minimum et maximum en required ([#148](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/148)) ([a644b3d](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/a644b3d185aee5e9aa510d501bcc01bef67f05ee))
+
 ## [1.19.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.19.0...v1.19.1) (2023-07-17)
 
 
