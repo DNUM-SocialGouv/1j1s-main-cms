@@ -43,6 +43,12 @@
       "action": "api::fiche-metier.fiche-metier.findOne"
     },
     {
+      "action": "api::formation-initiale-detail.formation-initiale-detail.find"
+    },
+    {
+      "action": "api::formation-initiale-detail.formation-initiale-detail.findOne"
+    },
+    {
       "action": "api::les-mesures-employeurs.les-mesures-employeurs.find"
     },
     {
