@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.21.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.20.1...v1.21.0) (2023-07-21)
+
+
+### Features
+
+* **formations init:** ajout des droits pour role public ([#153](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/153)) ([fe7579a](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/fe7579aa2469d0d80e8a7f1fcf86ff4ff6928aa6))
+
 ## [1.20.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.20.0...v1.20.1) (2023-07-20)
 
 
