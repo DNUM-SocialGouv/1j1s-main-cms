@@ -3,7 +3,6 @@ export namespace Meilisearch {
     id: number;
     domaines: Array<string>;
     source: string;
-    dateDeDebut: string;
     dateDeDebutMin: string;
     dateDeDebutMax: string;
     teletravailPossible: boolean;
@@ -44,7 +43,6 @@ export namespace Strapi {
     slug: string;
     source: OffreDeStage.Source;
     description: string;
-    dateDeDebut: string;
     dateDeDebutMin: string;
     dateDeDebutMax: string;
     urlDeCandidature: string;
