@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.21.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.21.1...v1.21.2) (2023-08-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency strapi-plugin-populate-deep to v3 ([3123aba](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/3123abaa31740e31d052eab8f9fd2fc6c4c8f4fe))
+* **deps:** update dependency strapy-plugin-slugify to 2.3.3 ([#162](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/162)) ([e1aeab6](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/e1aeab6617f1b1d957fdcf504f5761a7755fc09a))
+
 ## [1.21.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.21.0...v1.21.1) (2023-07-31)
 
 
