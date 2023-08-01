@@ -9,7 +9,6 @@ export default {
     filterableAttributes: [
       "domaines",
       "source",
-      "dateDeDebut",
       "dateDeDebutMin",
       "dateDeDebutMax",
       "teletravailPossible",
@@ -32,11 +31,10 @@ export default {
       "localisation.departement",
       "duree",
     ],
-    sortableAttributes: ["dateDeDebut", "dateDeDebutMin"],
+    sortableAttributes: ["dateDeDebutMin"],
     displayedAttributes: [
       "titre",
       "domaines",
-      "dateDeDebut",
       "dateDeDebutMin",
       "dateDeDebutMax",
       "source",

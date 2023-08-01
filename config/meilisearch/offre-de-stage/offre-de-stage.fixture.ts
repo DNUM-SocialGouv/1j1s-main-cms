@@ -8,7 +8,6 @@ export function uneOffreDeStageStrapi(override?: Partial<Strapi.OffreDeStage>): 
     slug: "titre-suivi-d-identifiant-source",
     source: Strapi.OffreDeStage.Source.JOBTEASER,
     description: "La description",
-    dateDeDebut: "2023-12-01T00:00:00.000Z",
     dateDeDebutMin: "2023-12-01T00:00:00.000Z",
     dateDeDebutMax: "2023-12-15T00:00:00.000Z",
     urlDeCandidature: "http://une-compagnie.com/apply/1234",
@@ -52,7 +51,6 @@ export function uneOffreDeStageStrapi(override?: Partial<Strapi.OffreDeStage>): 
 export function uneOffreDeStageMeilisearch(override?: Partial<Meilisearch.OffreDeStage>): Meilisearch.OffreDeStage {
   return {
     id: 1,
-    dateDeDebut: "2023-12-01T00:00:00.000Z",
     dateDeDebutMin: "2023-12-01T00:00:00.000Z",
     dateDeDebutMax: "2023-12-15T00:00:00.000Z",
     description: "La description",

@@ -39,10 +39,6 @@
       "type": "richtext",
       "required": true
     },
-    "dateDeDebut": {
-      "type": "date",
-      "required": false
-    },
     "urlDeCandidature": {
       "type": "text",
       "regex": "^(http|https|mailto):(//)?"

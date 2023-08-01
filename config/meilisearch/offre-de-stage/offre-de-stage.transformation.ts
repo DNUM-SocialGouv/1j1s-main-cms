@@ -64,7 +64,6 @@ export function transformerLesDomaines(entry: Strapi.OffreDeStage): Array<string
 export function transformerOffreDeStage({ entry }: { entry: Strapi.OffreDeStage }): Meilisearch.OffreDeStage {
   return {
     id: entry.id,
-    dateDeDebut: entry.dateDeDebut,
     dateDeDebutMin: entry.dateDeDebutMin,
     dateDeDebutMax: entry.dateDeDebutMax,
     description: entry.description,
