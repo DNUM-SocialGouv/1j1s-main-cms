@@ -1147,7 +1147,8 @@ export interface ApiOffreDeStageOffreDeStage extends CollectionTypeSchema {
       ]
     >;
     description: RichTextAttribute & RequiredAttribute;
-    dateDeDebut: DateAttribute & RequiredAttribute;
+    dateDeDebutMin: DateAttribute & RequiredAttribute;
+    dateDeDebutMax: DateAttribute & RequiredAttribute;
     urlDeCandidature: TextAttribute;
     teletravailPossible: BooleanAttribute;
     sourceCreatedAt: DateTimeAttribute & PrivateAttribute;
