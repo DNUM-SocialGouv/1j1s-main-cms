@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.21.4](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.21.3...v1.21.4) (2023-08-03)
+
+
+### Bug Fixes
+
+* sync config ([2c035a0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/2c035a0d9c15a3a260eede8218cd4fd400f6a8ce))
+* update definition de types ([cbee10a](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/cbee10af6f8a03db5e5b9418d7216e739a5b47bf))
+
 ## [1.21.3](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.21.2...v1.21.3) (2023-08-03)
 
 
