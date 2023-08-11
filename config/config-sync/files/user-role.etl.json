@@ -52,6 +52,18 @@
       "action": "api::evenement.evenement.update"
     },
     {
+      "action": "api::formation-initiale-detail.formation-initiale-detail.create"
+    },
+    {
+      "action": "api::formation-initiale-detail.formation-initiale-detail.delete"
+    },
+    {
+      "action": "api::formation-initiale-detail.formation-initiale-detail.find"
+    },
+    {
+      "action": "api::formation-initiale-detail.formation-initiale-detail.findOne"
+    },
+    {
       "action": "api::offre-de-stage.offre-de-stage.create"
     },
     {
