@@ -10,9 +10,6 @@
       "action": "api::contact-poe.contact-poe.create"
     },
     {
-      "action": "api::entreprise.entreprise.create"
-    },
-    {
       "action": "api::offre-de-stage.offre-de-stage.create"
     },
     {

@@ -885,46 +885,6 @@ export interface ApiContactPoeContactPoe extends CollectionTypeSchema {
   };
 }
 
-export interface ApiEntrepriseEntreprise extends CollectionTypeSchema {
-  info: {
-    singularName: 'entreprise';
-    pluralName: 'entreprises';
-    displayName: 'Entreprises';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    nom_societe: StringAttribute;
-    code_postal: StringAttribute;
-    ville: StringAttribute;
-    siret: StringAttribute;
-    taille: StringAttribute;
-    secteur: StringAttribute;
-    prenom: StringAttribute;
-    telephone: StringAttribute;
-    email: StringAttribute;
-    nom: StringAttribute;
-    travail: StringAttribute;
-    erreur: StringAttribute;
-    createdAt: DateTimeAttribute;
-    updatedAt: DateTimeAttribute;
-    publishedAt: DateTimeAttribute;
-    createdBy: RelationAttribute<
-      'api::entreprise.entreprise',
-      'oneToOne',
-      'admin::user'
-    > &
-      PrivateAttribute;
-    updatedBy: RelationAttribute<
-      'api::entreprise.entreprise',
-      'oneToOne',
-      'admin::user'
-    > &
-      PrivateAttribute;
-  };
-}
-
 export interface ApiEvenementEvenement extends CollectionTypeSchema {
   info: {
     singularName: 'evenement';
@@ -1480,7 +1440,6 @@ declare global {
       'api::conditions-generales-d-utilisation.conditions-generales-d-utilisation': ApiConditionsGeneralesDUtilisationConditionsGeneralesDUtilisation;
       'api::contact-cej.contact-cej': ApiContactCejContactCej;
       'api::contact-poe.contact-poe': ApiContactPoeContactPoe;
-      'api::entreprise.entreprise': ApiEntrepriseEntreprise;
       'api::evenement.evenement': ApiEvenementEvenement;
       'api::fiche-metier.fiche-metier': ApiFicheMetierFicheMetier;
       'api::les-mesures-employeurs.les-mesures-employeurs': ApiLesMesuresEmployeursLesMesuresEmployeurs;
