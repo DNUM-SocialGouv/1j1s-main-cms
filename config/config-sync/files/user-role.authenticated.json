@@ -25,9 +25,6 @@
       "action": "api::contact-poe.contact-poe.create"
     },
     {
-      "action": "api::entreprise.entreprise.create"
-    },
-    {
       "action": "api::evenement.evenement.create"
     },
     {
