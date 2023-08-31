@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.22.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.21.8...v1.22.0) (2023-08-30)
+
+
+### Features
+
+* **lee:** supprimer la collection entreprise necessaire à l'inscription ([#179](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/179)) ([4455aa5](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/4455aa50405f42f7c11af0c8d64293d35b85de45))
+
 ## [1.21.8](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.21.7...v1.21.8) (2023-08-28)
 
 
