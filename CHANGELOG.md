@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.22.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.22.0...v1.22.1) (2023-08-31)
+
+
+### Bug Fixes
+
+* **deps:** update strapi monorepo to ~4.13.0 ([#181](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/181)) ([c1cbb35](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/c1cbb3503cd707d1ea3e1cb57a2e76f3f14c7b8d))
+
 ## [1.22.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.21.8...v1.22.0) (2023-08-30)
 
 
