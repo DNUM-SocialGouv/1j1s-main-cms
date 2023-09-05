@@ -841,50 +841,6 @@ export interface ApiContactCejContactCej extends CollectionTypeSchema {
       PrivateAttribute;
   };
 }
-
-export interface ApiContactPoeContactPoe extends CollectionTypeSchema {
-  info: {
-    singularName: 'contact-poe';
-    pluralName: 'contacts-poe';
-    displayName: 'Contact POE';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    nom_societe: StringAttribute;
-    code_postal: StringAttribute;
-    ville: StringAttribute;
-    siret: StringAttribute;
-    taille: StringAttribute;
-    secteur: StringAttribute;
-    prenom: StringAttribute;
-    telephone: StringAttribute;
-    nom: StringAttribute;
-    travail: StringAttribute;
-    erreur: StringAttribute;
-    nombreARecruter: StringAttribute;
-    commentaire: StringAttribute;
-    email: EmailAttribute;
-    createdAt: DateTimeAttribute;
-    updatedAt: DateTimeAttribute;
-    publishedAt: DateTimeAttribute;
-    createdBy: RelationAttribute<
-      'api::contact-poe.contact-poe',
-      'oneToOne',
-      'admin::user'
-    > &
-      PrivateAttribute;
-    updatedBy: RelationAttribute<
-      'api::contact-poe.contact-poe',
-      'oneToOne',
-      'admin::user'
-    > &
-      PrivateAttribute;
-  };
-}
-
 export interface ApiEvenementEvenement extends CollectionTypeSchema {
   info: {
     singularName: 'evenement';
@@ -1439,7 +1395,6 @@ declare global {
       'api::article.article': ApiArticleArticle;
       'api::conditions-generales-d-utilisation.conditions-generales-d-utilisation': ApiConditionsGeneralesDUtilisationConditionsGeneralesDUtilisation;
       'api::contact-cej.contact-cej': ApiContactCejContactCej;
-      'api::contact-poe.contact-poe': ApiContactPoeContactPoe;
       'api::evenement.evenement': ApiEvenementEvenement;
       'api::fiche-metier.fiche-metier': ApiFicheMetierFicheMetier;
       'api::les-mesures-employeurs.les-mesures-employeurs': ApiLesMesuresEmployeursLesMesuresEmployeurs;

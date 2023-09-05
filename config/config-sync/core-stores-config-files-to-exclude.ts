@@ -31,7 +31,6 @@ export default [
   "core-store.plugin_content_manager_configuration_content_types::api::article.article",
   "core-store.plugin_content_manager_configuration_content_types::api::conditions-generales-d-utilisation.conditions-generales-d-utilisation",
   "core-store.plugin_content_manager_configuration_content_types::api::contact-cej.contact-cej",
-  "core-store.plugin_content_manager_configuration_content_types::api::contact-poe.contact-poe",
   "core-store.plugin_content_manager_configuration_content_types::api::evenement.evenement",
   "core-store.plugin_content_manager_configuration_content_types::api::fiche-metier.fiche-metier",
   "core-store.plugin_content_manager_configuration_content_types::api::faq.faq",
