@@ -22,9 +22,6 @@
       "action": "api::contact-cej.contact-cej.create"
     },
     {
-      "action": "api::contact-poe.contact-poe.create"
-    },
-    {
       "action": "api::evenement.evenement.create"
     },
     {
