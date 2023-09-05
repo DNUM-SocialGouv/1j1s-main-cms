@@ -69,7 +69,6 @@ services:
       /usr/bin/mc rm -r --force myminio/\${MINIO_EVENEMENTS_TRANSFORM_BUCKET};
       /usr/bin/mc rm -r --force myminio/\${MINIO_EVENEMENTS_LOAD_BUCKET};
       /usr/bin/mc rm -r --force myminio/\${MINIO_CEJ_BUCKET};
-      /usr/bin/mc rm -r --force myminio/\${MINIO_POE_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_CMS_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_STAGES_EXTRACT_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_STAGES_TRANSFORM_BUCKET};
@@ -81,7 +80,6 @@ services:
       /usr/bin/mc mb myminio/\${MINIO_EVENEMENTS_TRANSFORM_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_EVENEMENTS_LOAD_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_CEJ_BUCKET};
-      /usr/bin/mc mb myminio/\${MINIO_POE_BUCKET};
       /usr/bin/mc policy download myminio/\${MINIO_CMS_BUCKET};
       exit 0;
       "
