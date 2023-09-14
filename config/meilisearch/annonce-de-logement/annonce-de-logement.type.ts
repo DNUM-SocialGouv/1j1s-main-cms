@@ -6,18 +6,18 @@ export namespace Meilisearch {
     dateDeDisponibilite: string;
     dateDeMiseAJour: string;
     devise: string; //enum
-    prix: number;
-    prixHT: number;
+    prix?: number;
+    prixHT?: number;
     surface: number;
     surfaceMax: number;
     surfaceAAfficher: string;
-    type: string; // enum
-    typeBien: string; // enum
+    type?: string; // enum
+    typeBien?: string; // enum
     url: string;
     imagesUrl: Array<string>;
     sourceUpdatedAt: string;
     localisationAAfficher: string;
-    localisation: AnnonceDeLogement.Localisation,
+    localisation?: AnnonceDeLogement.Localisation,
   }
 
   namespace AnnonceDeLogement {
@@ -36,26 +36,26 @@ export namespace Strapi {
     description: string;
     url: string;
     source: AnnonceDeLogement.Source;
-    typeBien: AnnonceDeLogement.TypeBien;
-    type: AnnonceDeLogement.TypeLocation;
+    typeBien?: AnnonceDeLogement.TypeBien;
+    type?: AnnonceDeLogement.TypeLocation;
     surface: number;
-    surfaceMax: number;
+    surfaceMax?: number;
     nombreDePieces: number;
-    etage: number;
+    etage?: number;
     dateDeDisponibilite: string;
-    bilanEnergetique: AnnonceDeLogement.BilanEnergetique;
+    bilanEnergetique?: AnnonceDeLogement.BilanEnergetique;
     meuble: boolean;
     localisation: AnnonceDeLogement.Localisation;
     sourceCreatedAt: string;
     sourceUpdatedAt: string;
-    imagesUrl: Array<AnnonceDeLogement.ImageUrl>;
-    servicesInclus: Array<AnnonceDeLogement.ServiceInclus>;
-    servicesOptionnels: Array<AnnonceDeLogement.ServiceOptionnel>;
-    prixHT: number;
-    prix: number;
+    imagesUrl?: Array<AnnonceDeLogement.ImageUrl>;
+    servicesInclus?: Array<AnnonceDeLogement.ServiceInclus>;
+    servicesOptionnels?: Array<AnnonceDeLogement.ServiceOptionnel>;
+    prixHT?: number;
+    prix?: number;
     devise: string;
-    charge: number;
-    garantie: number;
+    charge?: number;
+    garantie?: number;
     slug: string;
     createdAt: string;
     updatedAt: string;
@@ -97,16 +97,16 @@ export namespace Strapi {
     }
 
     export interface ServiceInclus {
-      nom: string;
+      nom?: string;
     }
 
     export interface ServiceOptionnel {
-      nom: string;
+      nom?: string;
     }
 
     export interface BilanEnergetique {
-      consommationEnergetique: string;
-      emissionDeGaz: string;
+      consommationEnergetique?: string;
+      emissionDeGaz?: string;
     }
 
     export enum Source {
