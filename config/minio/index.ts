@@ -1,3 +1,4 @@
+// @ts-ignore
 export default (env) => ({
   config: {
     provider: "aws-s3",

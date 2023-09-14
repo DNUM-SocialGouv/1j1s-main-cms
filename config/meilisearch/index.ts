@@ -3,6 +3,7 @@ import configurationEvenementMeilisearch from "./evenement/index";
 import configurationFicheMetierMeilisearch from "./fiche-metier/index";
 import configurationOffreDeStageMeilisearch from "./offre-de-stage/index";
 
+// @ts-ignore
 export default (env) => ({
   config: {
     host: env("PLUGIN_MEILISEARCH_URL"),

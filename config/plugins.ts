@@ -8,6 +8,7 @@ import slugifyConfiguration from "./slugify";
 import usersPermissionsConfiguration from "./users-permissions";
 import documentationConfiguration from './documentation'
 
+// @ts-ignore
 export default ({ env }) => ({
   "config-sync": configSync,
   "import-export-entries": importExportConfiguration,

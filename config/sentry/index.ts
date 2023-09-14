@@ -1,3 +1,4 @@
+// @ts-ignore
 export default (env) => ({
   enabled: true,
   config: {
