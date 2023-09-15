@@ -1,5 +1,4 @@
-// @ts-ignore
-export default ({ env }) => ({
+export default ({ env }: any) => ({
   connection: {
     client: "postgres",
     connection: {

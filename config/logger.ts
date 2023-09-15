@@ -11,8 +11,7 @@ const logstashFormat = () => winston.format.logstash()
 
 const prettyFormat = () => strapiLogFormats.prettyPrint() as winston.Logform.Format
 
-// @ts-ignore
-export default function ({ env }) {
+export default function ({ env }: any) {
   // Available log levels :
   // error: 0, warn: 1, info: 2, http: 3, verbose: 4, debug: 5, silly: 6
   // See https://github.com/winstonjs/triple-beam/blob/master/config/npm.js

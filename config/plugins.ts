@@ -8,15 +8,14 @@ import slugifyConfiguration from "./slugify";
 import usersPermissionsConfiguration from "./users-permissions";
 import documentationConfiguration from './documentation'
 
-// @ts-ignore
-export default ({ env }) => ({
-  "config-sync": configSync,
-  "import-export-entries": importExportConfiguration,
-  meilisearch: meilisearchConfiguration(env),
-  sentry: sentryConfiguration(env),
-  slugify: slugifyConfiguration,
-  "strapi-plugin-populate-deep": populateDeepConfiguration,
-  upload: minioConfiguration(env),
-  "users-permissions": usersPermissionsConfiguration,
-  "documentation": documentationConfiguration
+export default ({ env }: any) => ({
+	"config-sync": configSync,
+	"import-export-entries": importExportConfiguration,
+	meilisearch: meilisearchConfiguration(env),
+	sentry: sentryConfiguration(env),
+	slugify: slugifyConfiguration,
+	"strapi-plugin-populate-deep": populateDeepConfiguration,
+	upload: minioConfiguration(env),
+	"users-permissions": usersPermissionsConfiguration,
+	"documentation": documentationConfiguration,
 });

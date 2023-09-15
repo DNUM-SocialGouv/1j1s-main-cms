@@ -1,5 +1,4 @@
-// @ts-ignore
-export default ({ env }) => ({
+export default ({ env }: any) => ({
   host: env("HOST", "0.0.0.0"),
   port: env.int("PORT", 1337),
   app: {
