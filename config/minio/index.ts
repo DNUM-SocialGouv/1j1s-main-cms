@@ -1,4 +1,4 @@
-export default (env) => ({
+export default (env: any) => ({
   config: {
     provider: "aws-s3",
     providerOptions: {

@@ -1,4 +1,4 @@
-export default (env) => ({
+export default (env: any) => ({
   enabled: true,
   config: {
     dsn: env("SENTRY_DSN"),

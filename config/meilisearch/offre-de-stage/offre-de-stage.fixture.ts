@@ -42,8 +42,8 @@ export function uneOffreDeStageStrapi(override?: Partial<Strapi.OffreDeStage>): 
     createdAt: "2023-10-06T00:00:00.000Z",
     updatedAt: "2023-10-06T00:00:00.000Z",
     publishedAt: "2023-10-06T00:00:00.000Z",
-    createdBy: null,
-    updatedBy: null,
+    createdBy: '1J1S',
+    updatedBy: '1J1S',
     ...override,
   };
 }
