@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.23.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.22.4...v1.23.0) (2023-09-19)
+
+
+### Features
+
+* **transverse:** configuration de TS pour la transformation Meilisearch et mise à jour des types stage et logement ([#199](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/199)) ([6c6f4d5](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/6c6f4d5fa89a2465c7da576e5c8824dd17226d3e))
+
 ## [1.22.4](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.22.3...v1.22.4) (2023-09-15)
 
 
