@@ -3,8 +3,7 @@ import configurationEvenementMeilisearch from "./evenement/index";
 import configurationFicheMetierMeilisearch from "./fiche-metier/index";
 import configurationOffreDeStageMeilisearch from "./offre-de-stage/index";
 
-// @ts-ignore
-export default (env) => ({
+export default (env: any) => ({
   config: {
     host: env("PLUGIN_MEILISEARCH_URL"),
     apiKey: env("PLUGIN_MEILISEARCH_API_KEY"),

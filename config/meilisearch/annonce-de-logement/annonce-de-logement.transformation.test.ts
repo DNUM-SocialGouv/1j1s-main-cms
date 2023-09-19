@@ -141,7 +141,7 @@ describe("AnnonceDeLogementTransformation", () => {
     });
 
     describe("et que la valeur courante est 'euros'", () => {
-      it("retourne la devise par défaut", () => {
+      it("retourne la devise €", () => {
         // Given
         devise = 'euros';
 

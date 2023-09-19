@@ -2,7 +2,7 @@ export namespace Meilisearch {
 	export interface OffreDeStage {
 		id: number;
 		domaines: Array<string>;
-		source?: string;
+		source: string;
 		dateDeDebutMin: string;
 		dateDeDebutMax: string;
 		teletravailPossible?: boolean;
@@ -11,7 +11,7 @@ export namespace Meilisearch {
 		dureeEnJour?: number;
 		dureeEnJourMax?: number;
 		localisation?: OffreDeStage.Localisation;
-		localisationFiltree: Array<string>;
+		localisationFiltree: Array<string | undefined>;
 		titre: string;
 		nomEmployeur?: string;
 		description: string;
@@ -41,7 +41,7 @@ export namespace Strapi {
 		identifiantSource: string;
 		titre: string;
 		slug: string;
-		source?: OffreDeStage.Source;
+		source: OffreDeStage.Source;
 		description: string;
 		dateDeDebutMin: string;
 		dateDeDebutMax: string;
@@ -84,7 +84,7 @@ export namespace Strapi {
 		}
 
 		export interface Domaine {
-			nom?: Domaine.Nom | null;
+			nom?: Domaine.Nom;
 		}
 
 		export namespace Domaine {

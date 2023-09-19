@@ -17,7 +17,7 @@ export namespace Meilisearch {
     imagesUrl: Array<string>;
     sourceUpdatedAt: string;
     localisationAAfficher: string;
-    localisation?: AnnonceDeLogement.Localisation,
+    localisation: AnnonceDeLogement.Localisation,
   }
 
   namespace AnnonceDeLogement {

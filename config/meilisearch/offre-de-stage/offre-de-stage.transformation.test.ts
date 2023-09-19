@@ -2,7 +2,7 @@
 import assert from "node:assert";
 import {
 	convertirDansLaBonneUniteTemporelle,
-	creerFiltreSurLaDuree, creerLocalisationFiltree,
+	creerFiltreSurLaDuree,
 	transformerLaLocalisation,
 	transformerLesDomaines,
 	transformerOffreDeStage,
@@ -303,27 +303,37 @@ describe("OffreDeStageTransformationTest", () => {
 		});
 	});
 
-	context('creerLocalisationFiltree', () => {
-		it('retourne un tableau avec les localisations fournises', () => {
+	context('Lorsque je filtre les différents niveaux de localisation', () => {
+		it('lorsque toutes les localisations sont fournies retourne un tableau avec les localisations', () => {
 			const localisation: Strapi.OffreDeStage.Localisation = {
 				ville: "Marseille",
 				departement: "Bouches-du-Rhone",
-				region: "Provence-Alpes-Côte d'Azur",
+				region: "PACA",
 			}
 
-			const result = creerLocalisationFiltree(localisation)
+      const offreDeStageStrapi = uneOffreDeStageStrapi({localisation});
 
-			assert.deepEqual(result, ["Marseille", "Provence-Alpes-Côte d'Azur", "Bouches-du-Rhone"])
+      // When
+      const result = transformerOffreDeStage({ entry: offreDeStageStrapi });
+
+      // Then
+      assert.deepEqual(result.localisationFiltree, ["Marseille", "PACA", "Bouches-du-Rhone"]);
 		});
-		it('retourne un tableau avec seulement les localisations founises', () => {
+
+    it('lorsque certaines localisations ne sont pas fournies, retourne le tableau des localisations avec des undefined', () => {
 			const localisation: Strapi.OffreDeStage.Localisation = {
 				ville: "Marseille",
-				departement: undefined,
+				departement: "Bouches-du-Rhone",
+				region: undefined,
 			}
 
-			const result = creerLocalisationFiltree(localisation)
+      const offreDeStageStrapi = uneOffreDeStageStrapi({localisation});
 
-			assert.deepEqual(result, ["Marseille"])
+      // When
+      const result = transformerOffreDeStage({ entry: offreDeStageStrapi });
+
+      // Then
+      assert.deepEqual(result.localisationFiltree, ["Marseille", undefined, "Bouches-du-Rhone"]);
 		});
 	})
 

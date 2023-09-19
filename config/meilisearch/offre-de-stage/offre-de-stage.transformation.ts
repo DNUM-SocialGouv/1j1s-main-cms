@@ -1,5 +1,4 @@
 import { Meilisearch, Strapi } from "./offre-de-stage.type";
-import * as domain from 'domain';
 
 export function creerFiltreSurLaDuree(nombreDeJours?: number): string {
   if (!nombreDeJours) return "Non renseigné";
@@ -48,34 +47,30 @@ export function transformerLaLocalisation(localisation?: Strapi.OffreDeStage.Loc
 	};
 }
 
-export function transformerLesDomaines(domaines: Array<Strapi.OffreDeStage.Domaine>): Array<string> {
+export function transformerLesDomaines(domaines: Array<Strapi.OffreDeStage.Domaine>): Array<Strapi.OffreDeStage.Domaine.Nom> {
 	return domaines.map((domaine) => domaine.nom)
 		.filter((nomDomaine): nomDomaine is Strapi.OffreDeStage.Domaine.Nom => !!nomDomaine && nomDomaine.length > 0)
 }
 
-export function creerLocalisationFiltree(localisation: Strapi.OffreDeStage.Localisation) {
-	return [localisation.ville, localisation.region, localisation.departement].filter((localisation): localisation is string => !!localisation);
-}
-
-export function transformerOffreDeStage({ entry: stage }: { entry: Strapi.OffreDeStage }): Meilisearch.OffreDeStage {
+export function transformerOffreDeStage({ entry }: { entry: Strapi.OffreDeStage }): Meilisearch.OffreDeStage {
 	return {
-		id: stage.id,
-		dateDeDebutMin: stage.dateDeDebutMin,
-		dateDeDebutMax: stage.dateDeDebutMax,
-		description: stage.description,
-		dureeEnJour: stage.dureeEnJour,
-		dureeEnJourMax: stage.dureeEnJourMax,
-		source: stage.source?.toString(),
-		teletravailPossible: stage.teletravailPossible,
-		titre: stage.titre,
-		duree: stage.dureeEnJour ? convertirDansLaBonneUniteTemporelle(stage.dureeEnJour) : undefined,
-		domaines: stage.domaines ? transformerLesDomaines(stage.domaines) : [],
-		nomEmployeur: stage.employeur?.nom,
-		logoUrlEmployeur: stage.employeur?.logoUrl,
-		niveauEtude: stage.preRequis?.niveauEtude,
-		dureeCategorisee: creerFiltreSurLaDuree(stage.dureeEnJour),
-		localisationFiltree: stage.localisation ? creerLocalisationFiltree(stage.localisation) : [],
-		localisation: transformerLaLocalisation(stage.localisation),
-		slug: stage.slug,
+		id: entry.id,
+		dateDeDebutMin: entry.dateDeDebutMin,
+		dateDeDebutMax: entry.dateDeDebutMax,
+		description: entry.description,
+		dureeEnJour: entry.dureeEnJour,
+		dureeEnJourMax: entry.dureeEnJourMax,
+		source: entry.source.toString(),
+		teletravailPossible: entry.teletravailPossible,
+		titre: entry.titre,
+		duree: entry.dureeEnJour ? convertirDansLaBonneUniteTemporelle(entry.dureeEnJour) : undefined,
+		domaines: entry.domaines ? transformerLesDomaines(entry.domaines) : [],
+		nomEmployeur: entry.employeur?.nom,
+		logoUrlEmployeur: entry.employeur?.logoUrl,
+		niveauEtude: entry.preRequis?.niveauEtude,
+		dureeCategorisee: creerFiltreSurLaDuree(entry.dureeEnJour),
+		localisationFiltree: [entry.localisation?.ville, entry.localisation?.region, entry.localisation?.departement],
+		localisation: transformerLaLocalisation(entry.localisation),
+		slug: entry.slug,
 	};
 }

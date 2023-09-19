@@ -34,7 +34,8 @@
         "stagefr-compresse",
         "stagefr-decompresse",
         "welcome to the jungle"
-      ]
+      ],
+      "required": true
     },
     "description": {
       "type": "richtext",
