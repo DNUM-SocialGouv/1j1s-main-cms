@@ -1,4 +1,7 @@
 {
   "enabled": true,
-  "extends": ["github>SocialGouv/renovate-config"]
+  "extends": ["github>SocialGouv/renovate-config"],
+  "nvm": {
+    "enabled": true
+  }
 }

@@ -1,13 +1,17 @@
-export default ({ env }: any) => ({
-  connection: {
-    client: "postgres",
+export default ({ env }: any) => {
+  const databaseURL = env("DATABASE_URL", "postgres://database-user:database-password@127.0.0.1:5432/cms-principal")
+
+  return {
     connection: {
-      host: env("DATABASE_HOST", "127.0.0.1"),
-      port: env.int("DATABASE_PORT", 5432),
-      database: env("DATABASE_NAME", "cms-principal"),
-      user: env("DATABASE_USERNAME", "database-user"),
-      password: env("DATABASE_PASSWORD", "database-password"),
-      ssl: env.bool("DATABASE_SSL", false),
+      client: "postgres",
+      connection: {
+        host: databaseURL.hostname,
+        port: databaseURL.port,
+        database: databaseURL.pathname.substr(1),
+        user: databaseURL.username,
+        password: databaseURL.password,
+        ssl: env.bool("DATABASE_SSL", false),
+      },
     },
-  },
-});
+  }
+};
