@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.23.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.1...v1.23.2) (2023-09-28)
+
+
+### Bug Fixes
+
+* **offre-stage:** slug optionnel car sinon il faudrait le fournir dan… ([#208](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/208)) ([9afde3e](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/9afde3ea50bf2804127f12e3c4454789fb0bf0bc))
+
 ## [1.23.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.0...v1.23.1) (2023-09-22)
 
 
