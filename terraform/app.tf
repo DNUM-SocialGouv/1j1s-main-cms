@@ -8,7 +8,7 @@ module "main_cms_app" {
 
   containers = {
     web = {
-      size   = terraform.workspace == "production" ? "XL" : "XL"
+      size   = terraform.workspace == "production" ? "L" : "L"
       amount = terraform.workspace == "production" ? 2 : 1
       autoscaler = terraform.workspace == "production" ? {
         min_containers = 2
