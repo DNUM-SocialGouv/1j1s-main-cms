@@ -1,0 +1,33 @@
+name: Mise en pause de la recette Scalingo
+
+on:
+  schedule:
+    # Du lundi au vendredi à 6h UTC => démarrage des containers
+    - cron: '0 8 * * 1-5'
+    # Du lundi au vendredi à 20h UTC => mise en pause des containers
+    - cron: '0 20 * * 1-5'
+
+env:
+  APP_NAME: 1j1s-main-cms
+
+jobs:
+  green-pause:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Configurer la CLI Scalingo
+        uses: scalingo-community/setup-scalingo@v0.1.1
+        with:
+          api_token: ${{ secrets.SCALINGO_API_TOKEN }}
+          region: ${{ vars.SCALINGO_REGION }}
+          app_name: ${{ env.APP_NAME }}
+
+      - name: Mettre en pause les containers de l'application
+        if: github.event.schedule != '0 20 * * 1-5'
+        run: |
+          scalingo scale web:0
+
+      - name: Démarrer les containers de l'application
+        if: github.event.schedule != '0 8 * * 1-5'
+        run: |
+          scalingo scale web:1 --synchronous
