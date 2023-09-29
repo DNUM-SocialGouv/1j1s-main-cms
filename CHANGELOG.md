@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.23.3](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.2...v1.23.3) (2023-09-29)
+
+
+### 🐛 Corrections de bogues
+
+* **ci:** bad interpretation of env SENTRY_ENVIRONMENT in .env.scalingo ([72607cf](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/72607cf9de7872db99eb033f34a74e394b45958f))
+* **ci:** fix database connection with Scalingo ([38479bc](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/38479bc707e820ab370645bbf9933ce2ca298bb3))
+* **ci:** heap size issue and revert to L-size Scalingo container ([7fd0f40](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/7fd0f40a102d3bcee675218ef451203fad62306f))
+* **ci:** increase size of Scalingo containers because of a memory error at startup ([e13d16d](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/e13d16d9ad763ca11dc83b39b18acac40e66a830))
+
+
+### 👷 Autres changements
+
+* add Terraform to configure Scalingo and MEP ([#205](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/205)) ([ff0cf89](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/ff0cf8952154cdef0db80450ead467529c1402cd))
+
 ## [1.23.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.1...v1.23.2) (2023-09-28)
 
 

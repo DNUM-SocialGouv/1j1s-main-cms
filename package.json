@@ -1,7 +1,7 @@
 {
   "name": "1j1s-main-cms",
   "private": true,
-  "version": "1.23.2",
+  "version": "1.23.3",
   "description": "CMS agrégeant les données pour le site 1jeune1solution.gouv.fr",
   "scripts": {
     "docker:populate": "./populate-with-recette-data.sh",
