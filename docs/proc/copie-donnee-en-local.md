@@ -81,7 +81,7 @@ Une fois le téléchargement terminé, il suffit de lancer le docker de BDD en l
 docker compose down -v
 docker compose --env-file .env.docker up -d db
 sleep 5
-docker compose exec db psql -U ${DATABASE_USERNAME} -d ${DATABASE_NAME} -c "CREATE USER ${SCALINGO_DB_USER} SUPERUSER;"
+docker compose exec db psql "${DATABASE_URL}" -c "CREATE USER ${SCALINGO_DB_USER} SUPERUSER;"
 docker compose cp ./tmp/backup.pgsql db:/tmp/backup.pgsql
-docker compose exec db pg_restore -U ${SCALINGO_DB_USER} -d ${DATABASE_NAME} /tmp/backup.pgsql
+docker compose exec db pg_restore -d ${DATABASE_URL} /tmp/backup.pgsql
 ```

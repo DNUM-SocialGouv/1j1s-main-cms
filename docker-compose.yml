@@ -24,26 +24,27 @@ services:
       - strapi
   db:
     image: postgres
-    container_name: ${DATABASE_HOST}
+    container_name: 1j1s-main-content-manager-db
     restart: always
     volumes:
       - strapi-data:/var/lib/postgresql/data/
     environment:
-      POSTGRES_DB: ${DATABASE_NAME}
-      POSTGRES_USER: ${DATABASE_USERNAME}
-      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: cms-principal
+      POSTGRES_USER: database-user
+      POSTGRES_PASSWORD: database-password
     networks:
       - database
   meilisearch:
     container_name: 1j1s-meilisearch
     image: getmeili/meilisearch:v1.3.5
     environment:
-      - MEILI_MASTER_KEY=${PLUGIN_MEILISEARCH_API_KEY:-masterKey}
-      - MEILI_NO_ANALYTICS=${MEILI_NO_ANALYTICS:-true}
-      - MEILI_ENV=${MEILI_ENV:-development}
-      - MEILI_LOG_LEVEL=${MEILI_LOG_LEVEL:-trace}
-      - MEILI_DB_PATH=${MEILI_DB_PATH:-/data.ms}
-      - STRAPI_TELEMETRY_DISABLED=true
+      MEILI_MASTER_KEY: ${PLUGIN_MEILISEARCH_API_KEY:-masterKey}
+      MEILI_NO_ANALYTICS: ${MEILI_NO_ANALYTICS:-true}
+      MEILI_ENV: ${MEILI_ENV:-development}
+      MEILI_LOG_LEVEL: ${MEILI_LOG_LEVEL:-trace}
+      MEILI_DB_PATH: ${MEILI_DB_PATH:-/data.ms}
+      STRAPI_TELEMETRY_DISABLED: true
+      STRAPI_LOG_LEVEL: debug
     networks:
       - meilisearch
     volumes:
