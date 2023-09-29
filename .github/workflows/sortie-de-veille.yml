@@ -1,0 +1,23 @@
+name: Sortie de veille Scalingo
+
+on:
+  schedule:
+    # Tous les jours à 4h UTC => démarrage des containers
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+    inputs:
+      number_of_container:
+        description: 'Nombre de containers souhaités'
+        required: false
+        default: 1
+        type: number
+
+jobs:
+  pause-recette:
+    uses: ./.github/workflows/eco-scalingo.yml
+    with:
+      scalingo_app_name: 1j1s-main-cms
+      scalingo_region: osc-fr1
+      number_of_container: ${{ fromJson(inputs.number_of_container) }}
+    secrets:
+      scalingo_api_token: ${{ secrets.SCALINGO_API_TOKEN }}
