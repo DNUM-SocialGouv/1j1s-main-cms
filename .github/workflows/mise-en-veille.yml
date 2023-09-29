@@ -1,0 +1,17 @@
+name: Mise en veille Scalingo
+
+on:
+  schedule:
+    # Tous les jours à 20h UTC => mise en veille des containers
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+
+jobs:
+  pause-recette:
+    uses: ./.github/workflows/eco-scalingo.yml
+    with:
+      scalingo_app_name: 1j1s-main-cms
+      scalingo_region: osc-fr1
+      number_of_container: 0
+    secrets:
+      scalingo_api_token: ${{ secrets.SCALINGO_API_TOKEN }}
