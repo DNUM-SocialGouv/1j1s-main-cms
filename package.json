@@ -2,7 +2,7 @@
   "name": "1j1s-main-cms",
   "private": true,
   "version": "1.23.2",
-  "description": "1 jeune 1 solution main CMS ",
+  "description": "CMS agrégeant les données pour le site 1jeune1solution.gouv.fr",
   "scripts": {
     "docker:populate": "./populate-with-recette-data.sh",
     "docker:start": "docker-compose --env-file=.env.docker up --build -d && sleep 5 && open http://localhost:1337/admin",
@@ -46,8 +46,7 @@
     "uuid": "c8583f78-6df0-4091-8734-ede822e386b8"
   },
   "engines": {
-    "node": "^16.20.0",
-    "npm": "^9.7.1"
+    "node": "^18.12.1"
   },
   "license": "MIT"
 }
