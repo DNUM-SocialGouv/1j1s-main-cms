@@ -11,7 +11,7 @@ env:
   APP_NAME: 1j1s-main-cms
 
 jobs:
-  green-pause:
+  pause-recette:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +27,23 @@ jobs:
         run: |
           scalingo scale web:0
 
+      - name: Mettre en pause les review apps associées à l'application
+        if: github.event.schedule != '0 20 * * 1-5'
+        run: |
+          for review_app in $(scalingo review-apps | grep "$APP_NAME" | awk -F' | ' '{print $2}'); do
+            echo "Mise en pause de la review app ${review_app"
+            scalingo --app "${review_app}" scale web:0
+          done
+
       - name: Démarrer les containers de l'application
         if: github.event.schedule != '0 8 * * 1-5'
         run: |
           scalingo scale web:1 --synchronous
+
+      - name: Démarrer les review apps associées à l'application
+        if: github.event.schedule != '0 8 * * 1-5'
+        run: |
+          for review_app in $(scalingo review-apps | grep "$APP_NAME" | awk -F' | ' '{print $2}'); do
+            echo "Démarrage de la review app ${review_app}"
+            scalingo --app "${review_app}" scale web:1 --synchronous
+          done
