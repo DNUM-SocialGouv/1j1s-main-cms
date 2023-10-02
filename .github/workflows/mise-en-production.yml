@@ -36,7 +36,7 @@ jobs:
       environnement_url: https://www.1jeune1solution.gouv.fr
     concurrency: terraform-state-production # Evite les conflits sur le state Terraform
 
-  deployment:
+  scalingo:
     name: Déployer le code sur Scalingo
     needs: [terraform, backup]
     runs-on: ubuntu-latest
