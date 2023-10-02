@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.23.5](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.4...v1.23.5) (2023-10-02)
+
+
+### 🐛 Corrections de bogues
+
+* **ci:** bad naming of Scalingo job in MEP workflow ([3576b32](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/3576b32e30bdfdb8091f5672c3b6778fe1f5b9f2))
+
 ## [1.23.4](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.3...v1.23.4) (2023-10-02)
 
 
