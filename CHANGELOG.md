@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.23.7](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.6...v1.23.7) (2023-10-03)
+
+
+### 👷 Autres changements
+
+* **deps:** update terraform scalingo-community/app/scalingo to v0.3.2 ([#218](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/218)) ([7c44569](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/7c445696fb30b81e4dd7d2364cecc81ab890416a))
+
 ## [1.23.6](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.5...v1.23.6) (2023-10-02)
 
 
