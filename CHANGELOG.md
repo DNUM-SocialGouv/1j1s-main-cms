@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.23.8](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.7...v1.23.8) (2023-10-04)
+
+
+### 🐛 Corrections de bogues
+
+* fix le populate de l'env local ([1a82a63](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/1a82a6341453e10d0ca2f03f1d231955df24e7ab))
+
 ## [1.23.7](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.6...v1.23.7) (2023-10-03)
 
 
