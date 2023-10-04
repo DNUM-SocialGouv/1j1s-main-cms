@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.24.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.8...v1.24.0) (2023-10-04)
+
+
+### ✨ Nouvelles fonctionnalités
+
+* **stages:** rendre facultatif les dates de début ([#220](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/220)) ([b8faf1e](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/b8faf1ec9042470eb89812c5d75222fabe8f7444))
+
 ## [1.23.8](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.7...v1.23.8) (2023-10-04)
 
 
