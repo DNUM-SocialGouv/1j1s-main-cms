@@ -23,6 +23,6 @@ cd ..
 docker compose down -v
 docker compose --env-file .env.docker up -d db
 sleep 5
-docker compose exec db psql ${DATABASE_UR} -c "CREATE USER ${SCALINGO_DB_USER} SUPERUSER;"
+docker compose exec db psql ${DATABASE_URL} -c "CREATE USER ${SCALINGO_DB_USER} SUPERUSER;"
 docker compose cp ./tmp/backup.pgsql db:/tmp/backup.pgsql
-docker compose exec db pg_restore-d "${DATABASE_URL}" /tmp/backup.pgsql
+docker compose exec db pg_restore -d "${DATABASE_URL}" /tmp/backup.pgsql
