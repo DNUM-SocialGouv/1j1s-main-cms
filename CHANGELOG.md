@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.24.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.0...v1.24.1) (2023-10-12)
+
+
+### 🐛 Corrections de bogues
+
+* **config-strapi:** ajout des config files à exclure pour le plugin c… ([#224](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/224)) ([2a2d00c](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/2a2d00ce0b40016066cd7f39892ff55f81fc6b6e))
+
 ## [1.24.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.23.8...v1.24.0) (2023-10-04)
 
 
