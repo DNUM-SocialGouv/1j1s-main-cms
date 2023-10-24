@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.24.3](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.2...v1.24.3) (2023-10-24)
+
+
+### 🐛 Corrections de bogues
+
+* **deps:** update dependency strapi-plugin-config-sync to ~1.2.0 ([#226](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/226)) ([9b88d25](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/9b88d25b56566116d12b201d2e2be7a7cb9afd93))
+
+
+### 👷 Autres changements
+
+* **deps:** update getmeili/meilisearch docker tag to v1.4.2 ([#228](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/228)) ([e593800](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/e593800e3642454cecc962549b88f8f11e352d22))
+
 ## [1.24.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.1...v1.24.2) (2023-10-18)
 
 
