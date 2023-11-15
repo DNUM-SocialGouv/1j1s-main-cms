@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.24.6](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.5...v1.24.6) (2023-11-14)
+
+
+### 👷 Autres changements
+
+* **deps:** lock file maintenance ([#235](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/235)) ([03a8078](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/03a8078f991c50699a258b4dc2a60ae0a0f215d6))
+* **deps:** update actions/setup-node action to v4 ([#229](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/229)) ([081ead4](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/081ead44b5969c3db94a6921313ccab0907e3350))
+
 ## [1.24.5](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.4...v1.24.5) (2023-10-30)
 
 
