@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.24.8](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.7...v1.24.8) (2023-11-20)
+
+
+### 🐛 Corrections de bogues
+
+* **deps:** update dependency strapi-plugin-slugify to v2.3.8 ([d5e647d](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/d5e647d88e43b4baf73e6142e817f4e0f86823a3))
+
 ## [1.24.7](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.6...v1.24.7) (2023-11-17)
 
 
