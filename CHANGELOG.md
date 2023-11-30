@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.24.9](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.8...v1.24.9) (2023-11-28)
+
+
+### 👷 Autres changements
+
+* **deps:** update getmeili/meilisearch docker tag to v1.5.0 ([#242](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/242)) ([f25cc76](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/f25cc763d50071c242d0087a94ece5cce98cc297))
+
 ## [1.24.8](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.7...v1.24.8) (2023-11-20)
 
 
