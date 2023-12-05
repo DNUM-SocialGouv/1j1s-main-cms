@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.24.11](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.10...v1.24.11) (2023-12-05)
+
+
+### 👷 Autres changements
+
+* **deps:** lock file maintenance ([#247](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/247)) ([531c7c4](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/531c7c410c826dfb8ba650de808158a7c6bc8a61))
+
 ## [1.24.10](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.9...v1.24.10) (2023-12-05)
 
 
