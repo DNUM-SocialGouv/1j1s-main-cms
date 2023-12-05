@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.24.10](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.9...v1.24.10) (2023-12-05)
+
+
+### 👷 Autres changements
+
+* **deps:** update dependency @types/node to ~18.19.0 ([f488a5d](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/f488a5da0575d437c209c2e2641a9214b23cbe29))
+
 ## [1.24.9](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.8...v1.24.9) (2023-11-28)
 
 
