@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.24.12](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.11...v1.24.12) (2023-12-11)
+
+
+### Bug Fixes
+
+* **ci:** manifest file pour release please v4 ([504259f](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/504259f21f2e8aa846fd86358597a02e1d05fc7f))
+
 ## [1.24.11](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.10...v1.24.11) (2023-12-05)
 
 
