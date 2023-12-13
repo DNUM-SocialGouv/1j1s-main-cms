@@ -22,6 +22,7 @@ services:
       - meilisearch
       - database
       - strapi
+      - minio
   db:
     image: postgres
     container_name: 1j1s-main-content-manager-db
@@ -59,7 +60,7 @@ services:
     entrypoint: >
       /bin/sh -c "
       /usr/bin/mc config host add myminio \${MINIO_ENDPOINT} \${MINIO_ACCESS_KEY} \${MINIO_SECRET_KEY};
-      /usr/bin/mc rm -r --force myminio/\${MINIO_CMS_BUCKET};
+      /usr/bin/mc rm -r --force myminio/\${MINIO_BUCKET};
       /usr/bin/mc rm -r --force myminio/\${MINIO_STAGES_EXTRACT_BUCKET};
       /usr/bin/mc rm -r --force myminio/\${MINIO_STAGES_TRANSFORM_BUCKET};
       /usr/bin/mc rm -r --force myminio/\${MINIO_STAGES_LOAD_BUCKET};
@@ -70,7 +71,7 @@ services:
       /usr/bin/mc rm -r --force myminio/\${MINIO_EVENEMENTS_TRANSFORM_BUCKET};
       /usr/bin/mc rm -r --force myminio/\${MINIO_EVENEMENTS_LOAD_BUCKET};
       /usr/bin/mc rm -r --force myminio/\${MINIO_CEJ_BUCKET};
-      /usr/bin/mc mb myminio/\${MINIO_CMS_BUCKET};
+      /usr/bin/mc mb myminio/\${MINIO_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_STAGES_EXTRACT_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_STAGES_TRANSFORM_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_STAGES_LOAD_BUCKET};
@@ -81,7 +82,7 @@ services:
       /usr/bin/mc mb myminio/\${MINIO_EVENEMENTS_TRANSFORM_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_EVENEMENTS_LOAD_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_CEJ_BUCKET};
-      /usr/bin/mc policy download myminio/\${MINIO_CMS_BUCKET};
+      /usr/bin/mc policy download myminio/\${MINIO_BUCKET};
       exit 0;
       "
     networks:
@@ -96,6 +97,7 @@ services:
     environment:
       - MINIO_ROOT_USER=${MINIO_ACCESS_KEY}
       - MINIO_ROOT_PASSWORD=${MINIO_SECRET_KEY}
+      - MINIO_DOMAIN=${MINIO_DOMAIN}
     networks:
       - strapi
       - minio
