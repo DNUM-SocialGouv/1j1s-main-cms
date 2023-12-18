@@ -96,6 +96,8 @@ services:
     environment:
       - MINIO_ROOT_USER=${MINIO_ACCESS_KEY}
       - MINIO_ROOT_PASSWORD=${MINIO_SECRET_KEY}
+      - MINIO_DOMAIN=${MINIO_DOMAIN}
+      - STORAGE_S3_FORCE_PATH_STYLE='true'
     networks:
       - strapi
       - minio
@@ -107,7 +109,7 @@ networks:
   database:
     internal: true
   minio:
-    internal: true
+    internal: false
   meilisearch:
 
 volumes:

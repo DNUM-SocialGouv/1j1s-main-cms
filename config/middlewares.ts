@@ -20,8 +20,8 @@ export default [
         useDefaults: true,
         directives: {
           "connect-src": ["'self'", "https:"],
-          "img-src": ["'self'", "data:", "blob:", "dl.airtable.com", process.env.MINIO_ENDPOINT],
-          "media-src": ["'self'", "data:", "blob:", "dl.airtable.com", process.env.MINIO_ENDPOINT],
+          "img-src": ["'self'", "data:", "blob:", "dl.airtable.com", process.env.MINIO_ENDPOINT, `*.${process.env.MINIO_ENDPOINTº}`],
+          "media-src": ["'self'", "data:", "blob:", "dl.airtable.com", process.env.MINIO_ENDPOINT, `*.${process.env.MINIO_ENDPOINTº}`],
           upgradeInsecureRequests: null,
         },
       },
