@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.24.14](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.13...v1.24.14) (2023-12-19)
+
+
+### Bug Fixes
+
+* add image and env var for strapi upload ([f0f3f2c](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/f0f3f2c3f364366ab3ba2357c1becf220a4c3387))
+* ajoute package-lock ([6dbcc7a](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/6dbcc7a7c9fc4d13c2c889f1f9b0e570ac33c03c))
+* revert "fix(deps): update dependency @strapi/strapi to v4.15.4 ([#236](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/236))" ([74aa3e8](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/74aa3e853265033d872198a48ffa9e56059bf6b9))
+* Revert "fix(deps): update strapi monorepo to ~4.15.0" ([f8fa1bd](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/f8fa1bd5dbc462ab6876d54f7c8c1006b0a469fd))
+
 ## [1.24.13](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.12...v1.24.13) (2023-12-12)
 
 
