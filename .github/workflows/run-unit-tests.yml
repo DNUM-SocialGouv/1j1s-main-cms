@@ -1,5 +1,9 @@
 name: Tests unitaires
-on: [push]
+on:
+  [push, pull_request]:
+    branches: [ main ]
+  create:
+    branches: [ "renovate/**" ]
 jobs:
   tests-unitaires:
     if: ${{ !contains(github.event.head_commit.message, 'WIP') }}
