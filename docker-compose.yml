@@ -81,7 +81,7 @@ services:
       /usr/bin/mc mb myminio/\${MINIO_EVENEMENTS_TRANSFORM_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_EVENEMENTS_LOAD_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_CEJ_BUCKET};
-      /usr/bin/mc policy download myminio/\${MINIO_CMS_BUCKET};
+      /usr/bin/mc anonymous set download myminio/\${MINIO_CMS_BUCKET};
       exit 0;
       "
     networks:
@@ -90,6 +90,7 @@ services:
     image: minio/minio
     ports:
       - "9000:9000"
+      - "9001:9001"
     volumes:
       - minio-data:/export
       - minio-config:/root/.minio
@@ -99,7 +100,7 @@ services:
     networks:
       - strapi
       - minio
-    command: server /export
+    command: server /export --console-address ":9001"
 
 networks:
   strapi:
@@ -107,7 +108,6 @@ networks:
   database:
     internal: true
   minio:
-    internal: true
   meilisearch:
 
 volumes:
