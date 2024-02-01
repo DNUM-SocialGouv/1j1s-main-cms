@@ -1,18 +1,6 @@
 export default [
-  "strapi::errors",
-  "strapi::cors",
-  "strapi::poweredBy",
   "strapi::logger",
-  "strapi::query",
-  {
-    name: "strapi::body",
-    config: {
-      jsonLimit: "200mb"
-    }
-  },
-  "strapi::session",
-  "strapi::favicon",
-  "strapi::public",
+  "strapi::errors",
   {
     name: "strapi::security",
     config: {
@@ -27,4 +15,16 @@ export default [
       },
     },
   },
+  "strapi::cors",
+  "strapi::poweredBy",
+  "strapi::query",
+  {
+    name: "strapi::body",
+    config: {
+      jsonLimit: "200mb"
+    }
+  },
+  "strapi::session",
+  "strapi::favicon",
+  "strapi::public",
 ];

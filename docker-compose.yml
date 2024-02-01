@@ -82,6 +82,7 @@ services:
       /usr/bin/mc mb myminio/\${MINIO_EVENEMENTS_LOAD_BUCKET};
       /usr/bin/mc mb myminio/\${MINIO_CEJ_BUCKET};
       /usr/bin/mc anonymous set download myminio/\${MINIO_CMS_BUCKET};
+      /usr/bin/mc alias set myminio \${MINIO_ENDPOINT} \${MINIO_ACCESS_KEY} \${MINIO_SECRET_KEY};
       exit 0;
       "
     networks:
@@ -97,7 +98,7 @@ services:
     environment:
       - MINIO_ROOT_USER=${MINIO_ACCESS_KEY}
       - MINIO_ROOT_PASSWORD=${MINIO_SECRET_KEY}
-      - MINIO_DOMAIN=minio
+      - MINIO_DOMAIN=${minio}
     networks:
       - strapi
       - minio
