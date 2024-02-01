@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.24.15](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.14...v1.24.15) (2024-02-01)
+
+
+### Bug Fixes
+
+* ajouter le job de tests unitaires à la CI lors de création de branche release/** ([#266](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/266)) ([e938e3a](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/e938e3adda837294add8d3fd8ab11bab5e35e326))
+
 ## [1.24.14](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.13...v1.24.14) (2023-12-19)
 
 
