@@ -1,6 +1,9 @@
 name: Tests unitaires
 on:
-  [push],
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
   create:
     branches: [ "renovate/**" ]
 
