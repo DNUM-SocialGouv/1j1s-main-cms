@@ -1,6 +1,8 @@
 name: Tests unitaires
 on:
-  [push]
+  [push],
+  create:
+    branches: [ "renovate/**" ]
 
 jobs:
   tests-unitaires:
