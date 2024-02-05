@@ -97,6 +97,22 @@
     "dateDeDebutMax": {
       "type": "date",
       "required": false
+    },
+    "salaireMin": {
+      "min": 0,
+      "type": "decimal"
+    },
+    "salaireMax": {
+      "type": "decimal",
+      "min": 0
+    },
+    "periodeSalaire": {
+      "type": "enumeration",
+      "enum": [
+        "HOURLY",
+        "MONTHLY",
+        "YEARLY"
+      ]
     }
   }
 }
