@@ -1,6 +1,6 @@
 name: Tests unitaires
 on:
-  [push]
+  push
   [pull_request]:
     branches: [ main ]
   create:
