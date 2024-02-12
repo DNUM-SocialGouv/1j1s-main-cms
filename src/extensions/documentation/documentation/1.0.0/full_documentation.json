@@ -5951,6 +5951,22 @@
               "dateDeDebutMax": {
                 "type": "string",
                 "format": "date"
+              },
+              "salaireMin": {
+                "type": "number",
+                "format": "float"
+              },
+              "salaireMax": {
+                "type": "number",
+                "format": "float"
+              },
+              "periodeSalaire": {
+                "type": "string",
+                "enum": [
+                  "HOURLY",
+                  "MONTHLY",
+                  "YEARLY"
+                ]
               }
             }
           }
@@ -6084,6 +6100,22 @@
           "dateDeDebutMax": {
             "type": "string",
             "format": "date"
+          },
+          "salaireMin": {
+            "type": "number",
+            "format": "float"
+          },
+          "salaireMax": {
+            "type": "number",
+            "format": "float"
+          },
+          "periodeSalaire": {
+            "type": "string",
+            "enum": [
+              "HOURLY",
+              "MONTHLY",
+              "YEARLY"
+            ]
           },
           "createdAt": {
             "type": "string",

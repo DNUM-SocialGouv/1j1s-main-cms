@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.25.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.15...v1.25.0) (2024-02-06)
+
+
+### Features
+
+* **stages:** ajout salaire min max et periode ([#273](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/273)) ([9394577](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/9394577d19bd6c97ca88be5d9f334a9a3cc568cc))
+
 ## [1.24.15](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.14...v1.24.15) (2024-02-01)
 
 
