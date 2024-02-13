@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.25.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.25.0...v1.25.1) (2024-02-13)
+
+
+### Bug Fixes
+
+* **ci:** rétablit les tests sur les PRs ([#274](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/274)) ([e26f26b](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/e26f26b7c41f6d62b8c835d619f9fe1793b02076))
+
 ## [1.25.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.24.15...v1.25.0) (2024-02-06)
 
 
