@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.25.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.25.1...v1.25.2) (2024-02-16)
+
+
+### Bug Fixes
+
+* fix la configuration minio pour l'env local ([990ce7b](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/990ce7b86954b9ee3f85ae1f1bd3015aebd33755))
+
 ## [1.25.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.25.0...v1.25.1) (2024-02-13)
 
 
