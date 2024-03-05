@@ -98,15 +98,15 @@
       "type": "date",
       "required": false
     },
-    "salaireMin": {
+    "remunerationMin": {
       "min": 0,
       "type": "decimal"
     },
-    "salaireMax": {
+    "remunerationMax": {
       "type": "decimal",
       "min": 0
     },
-    "periodeSalaire": {
+    "remunerationPeriode": {
       "type": "enumeration",
       "enum": [
         "HOURLY",
