@@ -6,9 +6,9 @@ export default (env: any) => ({
         accessKeyId: env("MINIO_ACCESS_KEY"),
         secretAccessKey: env("MINIO_SECRET_KEY"),
         region: "us-east-1",
-        endpoint: env("MINIO_ENDPOINT"), // region in the endpoint but no bucket name
+        endpoint: env("MINIO_ENDPOINT"),
         params: {
-          Bucket: env("MINIO_BUCKET"), // bucket name in the providerOptions
+          Bucket: env("MINIO_BUCKET"),
         },
         forcePathStyle: true,
       },
