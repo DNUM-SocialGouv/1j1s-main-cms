@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.26.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.25.2...v1.26.0) (2024-03-05)
+
+
+### Features
+
+* **stages:** renommage salaire vers remuneration ([#281](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/281)) ([29a34c0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/29a34c0ce673af9c472927758fad191d74715683))
+
 ## [1.25.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.25.1...v1.25.2) (2024-02-16)
 
 
