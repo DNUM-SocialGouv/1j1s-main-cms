@@ -63,4 +63,7 @@ export default [
   "core-store.plugin_users-permissions_grant",
   "core-store.strapi_content_types_schema",
   "i18n-locale.en",
+  // test
+  "core-store.plugin_meilisearch_meilisearch_indexed_content_types.json",
+  "core-store.plugin_meilisearch_meilisearch_listened_content_types.json",
 ];
