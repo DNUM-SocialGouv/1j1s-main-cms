@@ -4,6 +4,8 @@ export default function ({ env }: any) {
 
   const importOnBootstrap = env.bool('IMPORT_CONFIG_ON_BOOTSTRAP', true) as boolean
 
+  console.log(`importOnBootstrap: ${importOnBootstrap}`)
+
   return {
     enabled: true,
     config: {
