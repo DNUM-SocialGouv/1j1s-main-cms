@@ -1,10 +1,12 @@
 import coreStoresConfigFilesToExclude from "./core-stores-config-files-to-exclude";
 
-export default function ({ env }: any) {
+console.log('Loading config-sync')
+
+export default (env: any) => {
 
   const importOnBootstrap = env.bool('IMPORT_CONFIG_ON_BOOTSTRAP', true) as boolean
 
-  console.log(`importOnBootstrap: ${importOnBootstrap}`)
+  console.log('importOnBootstrap: ', importOnBootstrap)
 
   return {
     enabled: true,
