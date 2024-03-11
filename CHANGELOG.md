@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.26.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.26.0...v1.26.1) (2024-03-11)
+
+
+### Bug Fixes
+
+* fix forcePathStyle config for minio ([5fbb722](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/5fbb72241d1b4ca3dca2cf04a23b61e1d28488b0))
+* update packages ([1d095df](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/1d095df02be10ab21b3c441f9579cc4a405970c0))
+
 ## [1.26.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.25.2...v1.26.0) (2024-03-05)
 
 
