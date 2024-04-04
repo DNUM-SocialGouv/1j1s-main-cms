@@ -59,9 +59,6 @@
       "type": "datetime",
       "private": true
     },
-    "remunerationBase": {
-      "type": "integer"
-    },
     "employeur": {
       "type": "component",
       "repeatable": false,
