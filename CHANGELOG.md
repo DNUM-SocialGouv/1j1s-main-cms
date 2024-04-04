@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.27.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.26.6...v1.27.0) (2024-04-04)
+
+
+### Features
+
+* **stages:** supprimer remunerationBase ([#296](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/296)) ([4e1ad66](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/4e1ad6691006371a43c8e4da53de491b3a55e6bf))
+
 ## [1.26.6](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.26.5...v1.26.6) (2024-04-03)
 
 
