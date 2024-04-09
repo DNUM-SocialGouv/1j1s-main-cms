@@ -14,7 +14,7 @@
       "name": "MIT",
       "url": "https://github.com/DNUM-SocialGouv/1j1s-stage-orchestrateur-transform-load/blob/main/LICENSE"
     },
-    "x-generation-date": "2024-04-03T14:46:46.432Z"
+    "x-generation-date": "2024-04-09T09:13:48.662Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -507,6 +507,12 @@
                 "items": {
                   "$ref": "#/components/schemas/CartesCarteLienComponent"
                 }
+              },
+              "listeActualitesV2": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/CartesActualiteComponent"
+                }
               }
             }
           }
@@ -565,6 +571,12 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/CartesCarteLienComponent"
+            }
+          },
+          "listeActualitesV2": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CartesActualiteComponent"
             }
           },
           "createdAt": {
@@ -637,7 +649,7 @@
           }
         }
       },
-      "CartesCarteLienComponent": {
+      "CartesActualiteComponent": {
         "type": "object",
         "properties": {
           "id": {
@@ -807,9 +819,6 @@
                 }
               }
             }
-          },
-          "pourQui": {
-            "type": "string"
           }
         }
       },
@@ -5284,6 +5293,182 @@
           },
           "meta": {
             "type": "object"
+          }
+        }
+      },
+      "CartesCarteLienComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "titre": {
+            "type": "string"
+          },
+          "contenu": {
+            "type": "string"
+          },
+          "banniere": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "attributes": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "alternativeText": {
+                        "type": "string"
+                      },
+                      "caption": {
+                        "type": "string"
+                      },
+                      "width": {
+                        "type": "integer"
+                      },
+                      "height": {
+                        "type": "integer"
+                      },
+                      "formats": {},
+                      "hash": {
+                        "type": "string"
+                      },
+                      "ext": {
+                        "type": "string"
+                      },
+                      "mime": {
+                        "type": "string"
+                      },
+                      "size": {
+                        "type": "number",
+                        "format": "float"
+                      },
+                      "url": {
+                        "type": "string"
+                      },
+                      "previewUrl": {
+                        "type": "string"
+                      },
+                      "provider": {
+                        "type": "string"
+                      },
+                      "provider_metadata": {},
+                      "related": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "folder": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "attributes": {
+                                "type": "object",
+                                "properties": {}
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "folderPath": {
+                        "type": "string"
+                      },
+                      "createdAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "updatedAt": {
+                        "type": "string",
+                        "format": "date-time"
+                      },
+                      "createdBy": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "attributes": {
+                                "type": "object",
+                                "properties": {}
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "updatedBy": {
+                        "type": "object",
+                        "properties": {
+                          "data": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "number"
+                              },
+                              "attributes": {
+                                "type": "object",
+                                "properties": {}
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "url": {
+            "type": "string"
+          },
+          "article": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "number"
+                  },
+                  "attributes": {
+                    "type": "object",
+                    "properties": {}
+                  }
+                }
+              }
+            }
+          },
+          "pourQui": {
+            "type": "string"
           }
         }
       },
