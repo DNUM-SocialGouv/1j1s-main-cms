@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.28.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.27.1...v1.28.0) (2024-04-09)
+
+
+### Features
+
+* **actualites:** ajouter un nouveau composant carte ([#302](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/302)) ([fd2635d](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/fd2635dfb9ba4dea0415a23f6b96982d6b871915))
+
 ## [1.27.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.27.0...v1.27.1) (2024-04-08)
 
 
