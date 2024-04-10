@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.28.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.28.0...v1.28.1) (2024-04-10)
+
+
+### Bug Fixes
+
+* **actualites:** ajout des configs ([#304](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/304)) ([4a624ff](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/4a624ff4a9b25c4370784e36b1ecd2c5eadf0d36))
+
 ## [1.28.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.27.1...v1.28.0) (2024-04-09)
 
 
