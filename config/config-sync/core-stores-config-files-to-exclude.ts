@@ -4,6 +4,7 @@ export default [
   "core-store.i18n-locale",
   "core-store.plugin_content_manager_configuration_components::bilan-energetique.bilan-energetique",
   "core-store.plugin_content_manager_configuration_components::cartes.carte-lien",
+  "core-store.plugin_content_manager_configuration_components::cartes.carte-actualite",
   "core-store.plugin_content_manager_configuration_components::competence.competence",
   "core-store.plugin_content_manager_configuration_components::domaine.domaine",
   "core-store.plugin_content_manager_configuration_components::employeur.employeur",
