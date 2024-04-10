@@ -1,0 +1,136 @@
+{
+  "key": "plugin_content_manager_configuration_components::cartes.actualite",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "titre",
+      "defaultSortBy": "titre",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "titre": {
+        "edit": {
+          "label": "titre",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "titre",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "contenu": {
+        "edit": {
+          "label": "contenu",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "contenu",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "banniere": {
+        "edit": {
+          "label": "banniere",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "banniere",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "url": {
+        "edit": {
+          "label": "url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "url",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "article": {
+        "edit": {
+          "label": "article",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "titre"
+        },
+        "list": {
+          "label": "article",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "titre",
+        "contenu",
+        "banniere"
+      ],
+      "edit": [
+        [
+          {
+            "name": "titre",
+            "size": 6
+          },
+          {
+            "name": "contenu",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "banniere",
+            "size": 6
+          },
+          {
+            "name": "url",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "article",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "cartes.actualite",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
