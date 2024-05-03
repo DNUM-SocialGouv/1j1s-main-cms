@@ -34,7 +34,8 @@
       "target": "api::article.article"
     },
     "pourQui": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     }
   }
 }
