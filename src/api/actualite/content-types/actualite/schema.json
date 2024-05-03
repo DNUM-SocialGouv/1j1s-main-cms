@@ -15,11 +15,6 @@
     "listeActualites": {
       "type": "component",
       "repeatable": true,
-      "component": "cartes.carte-lien"
-    },
-    "listeActualitesV2": {
-      "type": "component",
-      "repeatable": true,
       "component": "cartes.actualite"
     }
   }
