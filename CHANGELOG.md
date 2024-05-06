@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.29.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.28.4...v1.29.0) (2024-05-06)
+
+
+### Features
+
+* **actualites:** renommage du nouveau champ d'actualité et suppression de l'ancien ([#314](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/314)) ([8099789](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/8099789be0c00da9ef69f62c48d72ab935f9bb71))
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies to v4.24.1 (patch) ([#311](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/311)) ([5280630](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/5280630c04f1b26b20b8d0ba16bc3614c6080359))
+
 ## [1.28.4](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.28.3...v1.28.4) (2024-05-02)
 
 
