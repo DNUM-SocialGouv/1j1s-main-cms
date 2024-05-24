@@ -1,7 +1,7 @@
 {
   "name": "1j1s-main-cms",
   "private": true,
-  "version": "1.29.1",
+  "version": "1.29.2",
   "description": "CMS agrégeant les données pour le site 1jeune1solution.gouv.fr",
   "scripts": {
     "docker:populate": "./populate-with-recette-data.sh",
@@ -32,7 +32,7 @@
     "react-router-dom": "^5.3.4",
     "strapi-plugin-config-sync": "~1.2.0",
     "strapi-plugin-import-export-entries": "~1.23.0",
-    "strapi-plugin-meilisearch": "~0.12.0",
+    "strapi-plugin-meilisearch": "~0.11.0",
     "strapi-plugin-populate-deep": "~3.0.0",
     "strapi-plugin-slugify": "2.3.8",
     "styled-components": "^5.3.3"
