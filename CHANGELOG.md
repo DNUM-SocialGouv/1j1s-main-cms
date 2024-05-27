@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.29.3](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.29.2...v1.29.3) (2024-05-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency strapi-plugin-meilisearch to ~0.12.0 ([#322](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/322)) ([c675a00](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/c675a00a4818c962abf1e64d3a9915377e69a380))
+
 ## [1.29.2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.29.1...v1.29.2) (2024-05-24)
 
 
