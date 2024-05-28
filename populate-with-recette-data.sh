@@ -8,6 +8,7 @@ if [ -f .env ]
 then
   export $(cat .env | xargs)
 else
+  >&2 echo "error: No .env found"
   exit 1
 fi
 
