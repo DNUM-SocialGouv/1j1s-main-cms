@@ -22,6 +22,9 @@
       "action": "api::article.article.findOne"
     },
     {
+      "action": "api::banniere-campagne.banniere-campagne.find"
+    },
+    {
       "action": "api::conditions-generales-d-utilisation.conditions-generales-d-utilisation.find"
     },
     {
