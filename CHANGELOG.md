@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.30.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.29.6...v1.30.0) (2024-06-17)
+
+
+### Features
+
+* **banniere:** ajout de la banniere de campagne ([#333](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/333)) ([ae97896](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/ae9789632527c05c4412b0d265f7356c5ec821ca))
+
 ## [1.29.6](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.29.5...v1.29.6) (2024-06-10)
 
 
