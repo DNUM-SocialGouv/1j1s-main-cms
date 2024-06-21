@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.31.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.30.1...v1.31.0) (2024-06-21)
+
+
+### Features
+
+* **banniere:** supprimer la campagne ([#338](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/338)) ([cbaf7be](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/cbaf7be2ec2c34a7544e54896ec48326b9c9293d))
+
 ## [1.30.1](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.30.0...v1.30.1) (2024-06-18)
 
 
