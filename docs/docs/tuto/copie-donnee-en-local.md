@@ -1,13 +1,35 @@
-# Copie des données de recette en local
+---
+sidebar_label: Que faire si l'indexation des données reste bloquée à 10000 données ?
+sidebar_position: 2
+---
+
+
+# Lorsque l'indexation depuis Strapi échoue : copier les données en local
+
+  
+
+_23 Juillet 2024 (mis à jour le 24 Juillet 2024)_
+
+:::info Contexte
+Si vous avez suivi la procédure de resynchronisation et qu'à l'appui sur "update" la valeur du nombre de données indexée reste bloquée à 10000 : L'anomalie provient du plugin Meilisearch Cloud utilisé qui limite à 10000 indexations. Lorsque l’ETL effectue son travail d’upsert des contenus à charger sur Strapi, celui-ci impacte le nombre d'éléments d’une collection (offre de stage, annonces de logements…) et modifie nombre d’entre eux. Puis, le plugin Meilisearch, au travers d’une réaction à un évènement propagé par Strapi, envoie un document à indexer dans Meilisearch.
+:::
+
+
+### Explication de la procédure
+Une désynchronisation entre le contenu indexé par Meilisearch et le contenu présent en base de données est donc quotidiennement présente. Pour résoudre le problème nous avons mis en place une solution de contournement en lançant l'indexation depuis un strapi branché à Meilisearch version locale, connecté aux url de Recette ou Prod.
 
 ---
+
+## Copie des données de recette en local
+
 
 Le script `populate-with-recette-data.sh` à la racine a été mis en place pour la copie des données du CMS de recette vers le CMS conteneurisé.
 Ci-dessous l'explication du fonctionnement de ce script. 
 
-## Prérequis
+### Pré-requis
 
-Afin de pouvoir exécuter le script, il faut avoir copié le contenu de `.env.docker' dans '.env'.
+:::danger Configuration
+Afin de pouvoir exécuter le script, il faut avoir copié le contenu de `.env.docker` dans `.env`.
 
 Ensuite, vous devez avoir en votre possession une clef vous permettant de vous connecter sur l'environnement depuis lequel l'on veut copier.
 Pour la générer : il suffit de se connecter sur son compte Scalingo et générer un API Token. 
@@ -22,8 +44,7 @@ Vous pouvez exécuter la commande suivante pour installer ou mettre à jour `Sca
 ```/bin/bash
 $ curl -O https://cli-dl.scalingo.com/install && bash install
 ```
-
-## Explication de la procédure
+:::
 
 ### Variables d'environnement utiles
 
