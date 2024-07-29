@@ -31,6 +31,16 @@
       "type": "component",
       "repeatable": true,
       "component": "cartes.carte-lien"
+    },
+    "engagement": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cartes.carte-lien"
+    },
+    "logement": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cartes.carte-lien"
     }
   }
 }

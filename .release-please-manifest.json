@@ -3,5 +3,5 @@
     "package-name": "release-please-action"
   },
   "changelog-sections": "[{\"type\":\"feat\",\"section\":\"✨ Nouvelles fonctionnalités\",\"hidden\":false},{\"type\":\"fix\",\"section\":\"🐛 Corrections de bogues\",\"hidden\":false},{\"type\":\"chore\",\"section\":\"👷 Autres changements\",\"hidden\":false},{\"type\":\"ci\",\"section\":\"👷 Autres changements\",\"hidden\":false},{\"type\":\"refacto\",\"section\":\"👷 Autres changements\",\"hidden\":false},{\"type\":\"build\",\"section\":\"👷 Autres changements\",\"hidden\":false},{\"type\":\"docs\",\"section\":\"📚 Documentation\",\"hidden\":false}]",
-  ".": "1.31.3"
+  ".": "1.32.0"
 }

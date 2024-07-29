@@ -14,7 +14,7 @@
       "name": "MIT",
       "url": "https://github.com/DNUM-SocialGouv/1j1s-stage-orchestrateur-transform-load/blob/main/LICENSE"
     },
-    "x-generation-date": "2024-06-20T12:05:45.038Z"
+    "x-generation-date": "2024-07-23T13:59:03.479Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6566,6 +6566,18 @@
                 "items": {
                   "$ref": "#/components/schemas/CartesCarteLienComponent"
                 }
+              },
+              "engagement": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/CartesCarteLienComponent"
+                }
+              },
+              "logement": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/CartesCarteLienComponent"
+                }
               }
             }
           }
@@ -6639,6 +6651,18 @@
             }
           },
           "aidesFinancieres": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CartesCarteLienComponent"
+            }
+          },
+          "engagement": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CartesCarteLienComponent"
+            }
+          },
+          "logement": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/CartesCarteLienComponent"
@@ -8559,7 +8583,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -8881,7 +8906,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -9203,7 +9229,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -9708,7 +9735,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -10213,7 +10241,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -10535,7 +10564,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -11040,7 +11070,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -11545,7 +11576,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -12050,7 +12082,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -12555,7 +12588,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -13060,7 +13094,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -13382,7 +13417,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -13704,7 +13740,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -14026,7 +14063,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -14531,7 +14569,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
@@ -14853,7 +14892,8 @@
             "deprecated": false,
             "required": false,
             "schema": {
-              "type": "object"
+              "type": "object",
+              "additionalProperties": true
             },
             "style": "deepObject"
           },
