@@ -28,10 +28,6 @@ Propulsé par NextJS, l'application est découpée de la sorte :
 * Package Manager : npm
 
 
-## ADR (Architectural Decision Record)
-
-Certains choix techniques sont expliqués [l'ADR](../adr/ADR.md).
-
 
 ## Génération des pages web
 
