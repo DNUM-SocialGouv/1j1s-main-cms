@@ -32,9 +32,6 @@ function mapOffreStage(response: Strapi.CollectionType.OffreStage): OffreDeStage
 * code : PascalCase
 * fichiers : kebab-case
 
-Plus d'info sur [l'arborescence des dossiers](../architecture/architecture.md#structure)
-
-
 ### Nommage des collections
 
 Une variable représentant une collection sera suffixée par le mot `List` afin d'éviter le pluriel, parfois en conflit avec des mots invariables
