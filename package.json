@@ -15,7 +15,7 @@
     "dev": "strapi develop",
     "prepare": "./setup.sh || true",
     "start": "strapi start",
-    "build": "strapi build --no-optimization",
+    "build": "strapi build --minify false",
     "strapi": "strapi",
     "test": "mocha"
   },
