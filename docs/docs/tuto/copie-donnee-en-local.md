@@ -1,13 +1,29 @@
-# Copie des données de recette en local
-
 ---
+sidebar_label: Comment copier les données Meilisearch en local ?
+sidebar_position: 2
+---
+
+
+# Comment copier les données Meilisearch en local ?
+
+  
+
+_23 Juillet 2024 (mis à jour le 21 Août 2024)_
+
+:::info Contexte
+Vous souhaiter savoir comment réaliser la copie des données Meilisearch du CMS vers une version locale afin de réaliser par exemple, l'indexation depuis un strapi branché à Meilisearch version locale, connecté aux url de Recette ou Prod.
+:::
+
+
+## Copie des données de recette en local
 
 Le script `populate-with-recette-data.sh` à la racine a été mis en place pour la copie des données du CMS de recette vers le CMS conteneurisé.
 Ci-dessous l'explication du fonctionnement de ce script. 
 
-## Prérequis
+### Pré-requis
 
-Afin de pouvoir exécuter le script, il faut avoir copié le contenu de `.env.docker' dans '.env'.
+:::danger Configuration
+Afin de pouvoir exécuter le script, il faut avoir copié le contenu de `.env.docker` dans `.env`.
 
 Ensuite, vous devez avoir en votre possession une clef vous permettant de vous connecter sur l'environnement depuis lequel l'on veut copier.
 Pour la générer : il suffit de se connecter sur son compte Scalingo et générer un API Token. 
@@ -22,8 +38,7 @@ Vous pouvez exécuter la commande suivante pour installer ou mettre à jour `Sca
 ```/bin/bash
 $ curl -O https://cli-dl.scalingo.com/install && bash install
 ```
-
-## Explication de la procédure
+:::
 
 ### Variables d'environnement utiles
 
