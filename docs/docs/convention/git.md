@@ -45,51 +45,31 @@ Chaque commit doit assurer que :
 Dès que cela est possible, préciser le contexte pour chaque commit, en lettres minuscules. Cela peut être une fonctionnalité, un composant transverse, de l'interface ou une exigence non fonctionnelle. 
 
 Liste des contextes de **fonctionnalités** autorisées (non exhaustive) :
-- emplois
 - stages
-- alternance
-- jobs étudiants
-- jobs d'été
-- emplois europe
-- formations
-- formations init (pour formations initiales)
-- metiers (pour découvrir les métiers)
-- évènement
-- cej (pour contrat engagement jeune)
-- aides
-- logement
-- mentorat
-- entreprendre
-- accompagnement
-- services jeunes
-- bénévolat
-- actualités
-- employeur
-- sitemap
-- robots
+- formation initiale
+- actualites
+- mesures employeurs
+- mesures jeunes
+- logements
+- faq
+- cgu
+- mentions legales
+- politique de confidentialite
+- accessibilite
+- metiers
+- apprentissage
+- contactCEJ
+- evenements
+- article
+- campagne apprentissage
+- ...
+
 
 ### Contenu du message
 Un message de commit doit contenir a minima un titre court formaté contenant un préfixe cité dans la convention ci-dessus. Si une description supplémentaire est nécessaire, celle-ci sera ajoutée dans un sous-message de commit.
 
 ### Exemples de nommage
 _exemple : `feat(sitemap): ajout des offres de stages au sitemap`_
-
-Exemple de composants transverses (non exhaustive) :
-- header
-- footer
-- nav
-
-_exemple : `refactor(nav): génération du menu à partir d'un fichier de configuration`_
-
-Dans le cas de changement de style, préférer :
-- ui
-
-_exemple : `feat(ui): mise à jour du style des champs texte`_
-
-Exigences non fonctionnelles (non exhaustive) :
-- meilisearch
-- deps
-
 _exemple : `chore(deps): mise à jour des dépendances`_
 
 

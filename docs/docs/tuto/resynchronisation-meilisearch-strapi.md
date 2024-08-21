@@ -39,6 +39,7 @@ Exemple avec désynchronisation :
 5. Vous voyez un bouton `Update`tout à droite de la ligne qui vous permet de purger les documents de ladite collection
 sur Meilisearch et de les réindexer par batch, cliquez dessus une fois et soyez patient ;
 6. Attendez un moment puis vérifiez si la désynchronisation a disparu.
+7. Si vous constatez que l'indexation reste bloquée à 10000 offres, veuillez vous référer à cette [documentation pour la partie ETL](https://dnum-socialgouv.github.io/1j1s-etl/docs/tuto/copie-donnee-en-local) et [celle-ci pour la partie CMS](../tuto/fixer-la-synchro-meilisearch)
 
 ## Si ça ne résout pas le problème ?
 

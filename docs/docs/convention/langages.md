@@ -18,14 +18,7 @@ _exemple : `getJobÉtudiant`, `OffreEmploi`, `it("récupère la liste des alter
 ### Fonctions
 
 * privilégier les fonctions nommées et avec le constructeur `function` au lieu des arrow functions `() => `
-* nommer la callback des useEffect
 * préciser le type de sortie de fonction
-
-```javascript
-useEffect(function myFunction() {
-  /*  contenu de la fonction */
-}, []);
-```
 
 ```javascript
 function mapOffreStage(response: Strapi.CollectionType.OffreStage): OffreDeStage {
@@ -36,8 +29,8 @@ function mapOffreStage(response: Strapi.CollectionType.OffreStage): OffreDeStage
 
 ### Nommage des fichiers et dossiers
 
-* composant, style : PascalCase, `ButtonPrimary.tsx`, `ButtonPrimary.module.scss`
-* tout le reste : camelCase, `httpClient.service.ts`, `offreEmploi.ts`, `offreEmploi.repository.ts`
+* code : PascalCase
+* fichiers : kebab-case
 
 Plus d'info sur [l'arborescence des dossiers](../architecture/architecture.md#structure)
 
@@ -50,8 +43,4 @@ _exemple: `const offreEmploiList: Array<OffreEmploi> = [...]`
 
 ## Stratégie de test
 
-Nous favorisons des tests unitaires autant que possible, rapides à exécuter. Les tests de composants via React Testing Library complètent ces tests afin de tester l'affichage, par l'**arbre d'accessibilité**
-* tests unitaires autant que possible
-* tests d'intégration sur les endpoints API
-* tests de composants via React Testing Library sur les composants comportant de la logique d'affichage, de la validation (formulaires) et récupération de données
-* tests end-to-end pour simuler un workflow complet utilisateur sur une fonctionnalité. Exemple : recherche d'une offre d'emploi puis consultation du détail d'une offre
+Nous n'utilisons que des tests unitaires
