@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.32.4](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.32.3...v1.32.4) (2024-08-22)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies to v3.5.2 (minor) ([#364](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/364)) ([63ddbcd](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/63ddbcd424921c2b6e4ed1606ae6b319c09f13a1))
+* Fix le build strapi avec la doc ([862577b](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/862577b26e47547833228959bffec3b485875cd9))
+
 ## [1.32.3](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.32.2...v1.32.3) (2024-08-19)
 
 
