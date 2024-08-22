@@ -39,7 +39,7 @@ jobs:
   deploy:
     name: Déployer sur GitHub Pages
     runs-on: ubuntu-latest
-    needs: [ build-docusaurus, build-storybook ]
+    needs: [ build-docusaurus ]
 
     steps:
       - name: Télécharger les fichiers Docusaurus
