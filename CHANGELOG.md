@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.32.5](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.32.4...v1.32.5) (2024-09-03)
+
+
+### Bug Fixes
+
+* **docs:** passe de ^ à ~ pour les mises à jour automatique ([#372](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/372)) ([e7ba1e7](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/e7ba1e7b9c059b562c4d321b665fe286b601a93b))
+
 ## [1.32.4](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.32.3...v1.32.4) (2024-08-22)
 
 
