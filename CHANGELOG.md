@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.32.6](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.32.5...v1.32.6) (2024-09-04)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies to v4.25.9 (patch) ([#370](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/370)) ([7f2c044](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/7f2c044dd1a4c637f0283e42f7154a6a50315590))
+* **deps:** update dependency prism-react-renderer to ~2.4.0 ([#374](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/374)) ([65074f2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/65074f233344ebcd5d48f81d34b2f47a0b8c39e6))
+
 ## [1.32.5](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.32.4...v1.32.5) (2024-09-03)
 
 
