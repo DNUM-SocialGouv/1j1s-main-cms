@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.32.7](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.32.6...v1.32.7) (2024-09-05)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies to v4.25.10 (patch) ([#376](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/376)) ([4fa7f39](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/4fa7f39addd8d338772a67a9b308b4a9cac28d09))
+
 ## [1.32.6](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.32.5...v1.32.6) (2024-09-04)
 
 
