@@ -107,6 +107,7 @@
       "type": "enumeration",
       "enum": [
         "HOURLY",
+        "DAILY",
         "MONTHLY",
         "YEARLY"
       ]
