@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.32.8](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.32.7...v1.32.8) (2024-09-10)
+
+
+### Bug Fixes
+
+* **stages:** ajoute la rémunération quotidienne ([#378](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/378)) ([02465b7](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/02465b70b50cfb4514d113fdab2302c89a4920a1))
+
 ## [1.32.7](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.32.6...v1.32.7) (2024-09-05)
 
 
