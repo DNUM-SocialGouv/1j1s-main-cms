@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.33.0](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.32.8...v1.33.0) (2024-09-11)
+
+
+### Features
+
+* **ci:** mise en pause de la recette Scalingo le soir et le WE ([cc5a307](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/cc5a307aa6c781dc7f9d4a4797f137f13d44afe7))
+
 ## [1.32.8](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.32.7...v1.32.8) (2024-09-10)
 
 
