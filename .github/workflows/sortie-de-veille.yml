@@ -18,6 +18,6 @@ jobs:
     with:
       scalingo_app_name: 1j1s-main-cms
       scalingo_region: osc-fr1
-      number_of_container: ${{ fromJson(inputs.number_of_container) }}
+      number_of_container: ${{ fromJson(inputs.number_of_container || 1) }}
     secrets:
       scalingo_api_token: ${{ secrets.SCALINGO_API_TOKEN }}
