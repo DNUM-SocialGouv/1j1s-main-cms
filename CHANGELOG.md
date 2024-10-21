@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.33.5](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.33.4...v1.33.5) (2024-10-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @mdx-js/react to ~3.1.0 ([#396](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/396)) ([2636e16](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/2636e167cf30a7c9e9aa08e28dbea2da7c62b3fc))
+
 ## [1.33.4](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.33.3...v1.33.4) (2024-10-03)
 
 
