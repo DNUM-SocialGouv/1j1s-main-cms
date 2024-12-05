@@ -12,19 +12,22 @@
           "contenu"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::accessibilite.accessibilite",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::accessibilite.accessibilite",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -35,7 +38,8 @@
           "contenu"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -46,7 +50,8 @@
           "contenu"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -57,23 +62,25 @@
           "listeActualites.contenu",
           "listeActualites.banniere",
           "listeActualites.url",
-          "listeActualites.article",
-          "listeActualites.pourQui"
+          "listeActualites.article"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::actualite.actualite",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::actualite.actualite",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -84,11 +91,11 @@
           "listeActualites.contenu",
           "listeActualites.banniere",
           "listeActualites.url",
-          "listeActualites.article",
-          "listeActualites.pourQui"
+          "listeActualites.article"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -99,11 +106,11 @@
           "listeActualites.contenu",
           "listeActualites.banniere",
           "listeActualites.url",
-          "listeActualites.article",
-          "listeActualites.pourQui"
+          "listeActualites.article"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -146,65 +153,25 @@
           "slug"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::annonce-de-logement.annonce-de-logement",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::annonce-de-logement.annonce-de-logement",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::annonce-de-logement.annonce-de-logement",
-      "properties": {
-        "fields": [
-          "identifiantSource",
-          "titre",
-          "description",
-          "url",
-          "source",
-          "typeBien",
-          "type",
-          "surface",
-          "surfaceMax",
-          "nombreDePieces",
-          "etage",
-          "dateDeDisponibilite",
-          "bilanEnergetique.consommationEnergetique",
-          "bilanEnergetique.emissionDeGaz",
-          "meuble",
-          "localisation.latitude",
-          "localisation.longitude",
-          "localisation.ville",
-          "localisation.adresse",
-          "localisation.departement",
-          "localisation.codePostal",
-          "localisation.region",
-          "localisation.pays",
-          "sourceCreatedAt",
-          "sourceUpdatedAt",
-          "imagesUrl.value",
-          "servicesInclus.nom",
-          "servicesOptionnels.nom",
-          "prixHT",
-          "prix",
-          "devise",
-          "charge",
-          "garantie",
-          "slug"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
       "subject": "api::annonce-de-logement.annonce-de-logement",
       "properties": {
         "fields": [
@@ -244,7 +211,52 @@
           "slug"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::annonce-de-logement.annonce-de-logement",
+      "properties": {
+        "fields": [
+          "identifiantSource",
+          "titre",
+          "description",
+          "url",
+          "source",
+          "typeBien",
+          "type",
+          "surface",
+          "surfaceMax",
+          "nombreDePieces",
+          "etage",
+          "dateDeDisponibilite",
+          "bilanEnergetique.consommationEnergetique",
+          "bilanEnergetique.emissionDeGaz",
+          "meuble",
+          "localisation.latitude",
+          "localisation.longitude",
+          "localisation.ville",
+          "localisation.adresse",
+          "localisation.departement",
+          "localisation.codePostal",
+          "localisation.region",
+          "localisation.pays",
+          "sourceCreatedAt",
+          "sourceUpdatedAt",
+          "imagesUrl.value",
+          "servicesInclus.nom",
+          "servicesOptionnels.nom",
+          "prixHT",
+          "prix",
+          "devise",
+          "charge",
+          "garantie",
+          "slug"
+        ]
+      },
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -257,19 +269,22 @@
           "banniere"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::article.article",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::article.article",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -282,7 +297,8 @@
           "banniere"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -295,7 +311,8 @@
           "banniere"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -306,19 +323,22 @@
           "contenu"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::conditions-generales-d-utilisation.conditions-generales-d-utilisation",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::conditions-generales-d-utilisation.conditions-generales-d-utilisation",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -329,7 +349,8 @@
           "contenu"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -340,7 +361,8 @@
           "contenu"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -356,19 +378,22 @@
           "code_postal"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::contact-cej.contact-cej",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::contact-cej.contact-cej",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -384,7 +409,8 @@
           "code_postal"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -400,7 +426,8 @@
           "code_postal"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -421,19 +448,22 @@
           "dateFin"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::evenement.evenement",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::evenement.evenement",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -454,7 +484,8 @@
           "dateFin"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -475,7 +506,8 @@
           "dateFin"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -487,19 +519,22 @@
           "slug"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::faq.faq",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::faq.faq",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -511,7 +546,8 @@
           "slug"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -523,7 +559,8 @@
           "slug"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -554,47 +591,18 @@
           "synonymes"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::fiche-metier.fiche-metier",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
-      "subject": "api::fiche-metier.fiche-metier",
-      "properties": {
-        "fields": [
-          "nom_metier",
-          "competences",
-          "condition_travail",
-          "secteurs_activite.identifiant",
-          "secteurs_activite.libelle",
-          "identifiant",
-          "centres_interet.identifiant",
-          "centres_interet.libelle",
-          "niveau_acces_min.libelle",
-          "niveau_acces_min.identifiant",
-          "nature_travail",
-          "vie_professionnelle",
-          "acces_metier",
-          "statuts.identifiant",
-          "statuts.id_ideo1",
-          "statuts.libelle",
-          "formations_min_requise.identifiant",
-          "formations_min_requise.libelle",
-          "accroche_metier",
-          "libelle_feminin",
-          "libelle_masculin",
-          "synonymes"
-        ]
-      },
-      "conditions": []
-    },
-    {
-      "action": "plugin::content-manager.explorer.update",
       "subject": "api::fiche-metier.fiche-metier",
       "properties": {
         "fields": [
@@ -622,7 +630,40 @@
           "synonymes"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::fiche-metier.fiche-metier",
+      "properties": {
+        "fields": [
+          "nom_metier",
+          "competences",
+          "condition_travail",
+          "secteurs_activite.identifiant",
+          "secteurs_activite.libelle",
+          "identifiant",
+          "centres_interet.identifiant",
+          "centres_interet.libelle",
+          "niveau_acces_min.libelle",
+          "niveau_acces_min.identifiant",
+          "nature_travail",
+          "vie_professionnelle",
+          "acces_metier",
+          "statuts.identifiant",
+          "statuts.id_ideo1",
+          "statuts.libelle",
+          "formations_min_requise.identifiant",
+          "formations_min_requise.libelle",
+          "accroche_metier",
+          "libelle_feminin",
+          "libelle_masculin",
+          "synonymes"
+        ]
+      },
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -637,19 +678,22 @@
           "dispositifs.pourQui"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::les-mesures-employeurs.les-mesures-employeurs",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::les-mesures-employeurs.les-mesures-employeurs",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -664,7 +708,8 @@
           "dispositifs.pourQui"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -679,7 +724,8 @@
           "dispositifs.pourQui"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -690,19 +736,22 @@
           "contenu"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::mention-legale.mention-legale",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::mention-legale.mention-legale",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -713,7 +762,8 @@
           "contenu"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -724,7 +774,8 @@
           "contenu"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -754,22 +805,37 @@
           "aidesFinancieres.banniere",
           "aidesFinancieres.url",
           "aidesFinancieres.article",
-          "aidesFinancieres.pourQui"
+          "aidesFinancieres.pourQui",
+          "engagement.titre",
+          "engagement.contenu",
+          "engagement.banniere",
+          "engagement.url",
+          "engagement.article",
+          "engagement.pourQui",
+          "logement.titre",
+          "logement.contenu",
+          "logement.banniere",
+          "logement.url",
+          "logement.article",
+          "logement.pourQui"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::mesure-jeune.mesure-jeune",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::mesure-jeune.mesure-jeune",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -799,10 +865,23 @@
           "aidesFinancieres.banniere",
           "aidesFinancieres.url",
           "aidesFinancieres.article",
-          "aidesFinancieres.pourQui"
+          "aidesFinancieres.pourQui",
+          "engagement.titre",
+          "engagement.contenu",
+          "engagement.banniere",
+          "engagement.url",
+          "engagement.article",
+          "engagement.pourQui",
+          "logement.titre",
+          "logement.contenu",
+          "logement.banniere",
+          "logement.url",
+          "logement.article",
+          "logement.pourQui"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -832,10 +911,23 @@
           "aidesFinancieres.banniere",
           "aidesFinancieres.url",
           "aidesFinancieres.article",
-          "aidesFinancieres.pourQui"
+          "aidesFinancieres.pourQui",
+          "engagement.titre",
+          "engagement.contenu",
+          "engagement.banniere",
+          "engagement.url",
+          "engagement.article",
+          "engagement.pourQui",
+          "logement.titre",
+          "logement.contenu",
+          "logement.banniere",
+          "logement.url",
+          "logement.article",
+          "logement.pourQui"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -852,11 +944,11 @@
           "sourceCreatedAt",
           "sourceUpdatedAt",
           "sourcePublishedAt",
-          "remunerationBase",
           "employeur.nom",
           "employeur.description",
           "employeur.logoUrl",
           "employeur.siteUrl",
+          "employeur.email",
           "domaines.nom",
           "preRequis.niveauEtude",
           "preRequis.profil",
@@ -871,22 +963,28 @@
           "localisation.region",
           "localisation.pays",
           "dateDeDebutMin",
-          "dateDeDebutMax"
+          "dateDeDebutMax",
+          "remunerationMin",
+          "remunerationMax",
+          "remunerationPeriode"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::offre-de-stage.offre-de-stage",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::offre-de-stage.offre-de-stage",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -903,11 +1001,11 @@
           "sourceCreatedAt",
           "sourceUpdatedAt",
           "sourcePublishedAt",
-          "remunerationBase",
           "employeur.nom",
           "employeur.description",
           "employeur.logoUrl",
           "employeur.siteUrl",
+          "employeur.email",
           "domaines.nom",
           "preRequis.niveauEtude",
           "preRequis.profil",
@@ -922,10 +1020,14 @@
           "localisation.region",
           "localisation.pays",
           "dateDeDebutMin",
-          "dateDeDebutMax"
+          "dateDeDebutMax",
+          "remunerationMin",
+          "remunerationMax",
+          "remunerationPeriode"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -942,11 +1044,11 @@
           "sourceCreatedAt",
           "sourceUpdatedAt",
           "sourcePublishedAt",
-          "remunerationBase",
           "employeur.nom",
           "employeur.description",
           "employeur.logoUrl",
           "employeur.siteUrl",
+          "employeur.email",
           "domaines.nom",
           "preRequis.niveauEtude",
           "preRequis.profil",
@@ -961,10 +1063,14 @@
           "localisation.region",
           "localisation.pays",
           "dateDeDebutMin",
-          "dateDeDebutMax"
+          "dateDeDebutMax",
+          "remunerationMin",
+          "remunerationMax",
+          "remunerationPeriode"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -975,19 +1081,22 @@
           "contenu"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::politique-de-confidentialite.politique-de-confidentialite",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.publish",
       "subject": "api::politique-de-confidentialite.politique-de-confidentialite",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -998,7 +1107,8 @@
           "contenu"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -1009,7 +1119,8 @@
           "contenu"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.create",
@@ -1022,13 +1133,15 @@
           "Index"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.delete",
       "subject": "api::videos-campagne-apprentissage.videos-campagne-apprentissage",
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.read",
@@ -1041,7 +1154,8 @@
           "Index"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::content-manager.explorer.update",
@@ -1054,37 +1168,43 @@
           "Index"
         ]
       },
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::upload.assets.copy-link",
       "subject": null,
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::upload.assets.create",
       "subject": null,
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::upload.assets.download",
       "subject": null,
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::upload.assets.update",
       "subject": null,
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     },
     {
       "action": "plugin::upload.read",
       "subject": null,
       "properties": {},
-      "conditions": []
+      "conditions": [],
+      "actionParameters": {}
     }
   ]
 }
