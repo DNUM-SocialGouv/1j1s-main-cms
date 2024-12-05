@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.33.11](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.33.10...v1.33.11) (2024-12-05)
+
+
+### Bug Fixes
+
+* ajoute droits stages et mesures jeunes pour synchro en recette et prod ([#422](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/422)) ([761971d](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/761971d982c1ca0f45c78307c4fe82baa9a1b856))
+
 ## [1.33.10](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.33.9...v1.33.10) (2024-12-01)
 
 
