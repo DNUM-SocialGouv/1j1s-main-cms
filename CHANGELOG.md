@@ -1,5 +1,36 @@
 # Changelog
 
+## [1.33.14](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.33.13...v1.33.14) (2025-10-01)
+
+
+### 🐛 Corrections de bogues
+
+* **deps:** update all non-major dependencies ([fdd0165](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/fdd016503bdb7a6645be150af4bbeafa362e5fab))
+* **deps:** update all non-major dependencies (patch) ([#432](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/432)) ([7683136](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/76831368aecfb92776b0d2970c2ef1db1885893f))
+* **deps:** update all non-major dependencies to v4.25.21 ([2233812](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/2233812e9520615a33f447005e9c5392ce76fe0f))
+* **deps:** update all non-major dependencies to v4.25.22 ([9361f99](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/9361f9911a622a8a287297216ab74a94d021f70c))
+* **deps:** update all non-major dependencies to v4.25.23 ([84ce9df](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/84ce9df870f4d438945e214cfae7192357f91f4f))
+
+
+### 👷 Autres changements
+
+* **ci:** configure better changelog for release-please ([35e0b44](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/35e0b44bd3d31ff87d7ac026e05d85fbc5ec4990))
+* **deps:** lock file maintenance ([2d8d18b](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/2d8d18befb37a7d02e2ffb4102745ef026d4e7fd))
+* **deps:** lock file maintenance ([3087299](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/3087299265e0642e86f3a6affd3e0f6dd9e345ad))
+* **deps:** lock file maintenance ([5ca7205](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/5ca7205c5133756cd233fb5c446ba8dc6667d029))
+* **deps:** lock file maintenance ([c89b75b](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/c89b75b89487afceeed9b9f4edf4bdf095215f2f))
+* **deps:** lock file maintenance ([5b535cd](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/5b535cd546c2c79acf2691cfd219a0f6710a82ae))
+* **deps:** update actions/checkout action to v5 ([4e7ae51](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/4e7ae516bbad166eba616d6e089b8091e19202f0))
+* **deps:** update actions/checkout action to v5 ([713827e](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/713827ef51f2b57a050f5ce0cbf501dcf3adab49))
+* **deps:** update actions/download-artifact action to v5 ([85d9f97](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/85d9f97ebb744abf986704a009e1ce3fc599481f))
+* **deps:** update all non-major devdedependencies ([ab1d776](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/ab1d776ccef25f494b7aa4296c14d0b8ca00b8d3))
+* **deps:** update all non-major devdedependencies (minor) ([#433](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/433)) ([e1fd21a](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/e1fd21a302c0b967a3e5a8bfa895de3461563d27))
+* **deps:** update dependency typescript to ~5.8.0 ([3ce2faa](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/3ce2faa01c047b09f7c93da3e2cfde33a07d0845))
+* **deps:** update getmeili/meilisearch docker tag to v1.12.8 ([#428](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/428)) ([0b808f7](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/0b808f78bfdf1732cfa648bd5bae515d5a04141a))
+* **deps:** update getmeili/meilisearch docker tag to v1.17.1 ([04be1b2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/04be1b2104c462f9305b2af14e8c3d1402c84515))
+* **deps:** update getmeili/meilisearch docker tag to v1.19.1 ([af99eb2](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/af99eb28deb9c2067acc7a8b39047165293818de))
+* update node 18 to latest release (18.20.7) ([#438](https://github.com/DNUM-SocialGouv/1j1s-main-cms/issues/438)) ([3b2436e](https://github.com/DNUM-SocialGouv/1j1s-main-cms/commit/3b2436ea3c88d7afe736908aae5ce9e26959cd4c))
+
 ## [1.33.13](https://github.com/DNUM-SocialGouv/1j1s-main-cms/compare/v1.33.12...v1.33.13) (2025-01-10)
 
 
