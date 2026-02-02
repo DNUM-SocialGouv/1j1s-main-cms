@@ -14,7 +14,7 @@ fi
 
 scalingo login --api-token ${SCALINGO_API_TOKEN}
 
-addon_id=$(scalingo addons | grep $ADDON_NAME | cut -d'|' -f3 | tr -d ' ')
+addon_id=$(scalingo addons | grep $ADDON_NAME | sed 's/│/|/g' | cut -d'|' -f3 | tr -d ' ')
 mkdir -p tmp && cd tmp
 scalingo --addon ${addon_id} backups-download --output ./backup
 tar -xvf ./backup
