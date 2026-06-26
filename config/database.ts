@@ -35,6 +35,27 @@ export default ({ env }: any) => {
           password,
           ssl: env.bool("DATABASE_SSL", false),
         },
+        // Pool de connexions PostgreSQL géré par Knex (le moteur SQL sous Strapi).
+        //
+        // Le réglage important ici est `acquireTimeoutMillis`. Par défaut, Knex fait attendre
+        // une requête jusqu'à 60 s pour obtenir une connexion libre. Lors d'une rafale, ces
+        // attentes s'empilent (event loop occupé, mémoire qui monte) et ont contribué au crash
+        // du conteneur en production (incidents du 24/06 et du 05/07 2026). On raccourcit à 5 s
+        // pour échouer vite (« fail fast ») plutôt que d'empiler.
+        // Nuance importante : ce timeout borne la DURÉE d'attente, pas le NOMBRE de requêtes en
+        // file (la file d'attente n'est pas plafonnée ici). La vraie limite de charge vient de
+        // l'amont : le cache du sitemap côté front. Ce pool est un garde-fou, pas le correctif.
+        //
+        // max reste volontairement à 10 : la base prod autorise 80 connexions, mais augmenter
+        // ce plafond n'absorbe PAS une rafale (Knex ne crée pas de connexions au-delà du besoin)
+        // et rapproche du max_connections de l'addon. Ne l'augmenter qu'avec une raison mesurée,
+        // en gardant une marge pour les migrations, l'admin Strapi et Meilisearch.
+        pool: {
+          min: env.int("DATABASE_POOL_MIN", 2),
+          max: env.int("DATABASE_POOL_MAX", 10),
+          acquireTimeoutMillis: env.int("DATABASE_POOL_ACQUIRE_TIMEOUT", 5000),
+          createTimeoutMillis: env.int("DATABASE_POOL_CREATE_TIMEOUT", 10000),
+        },
       },
     }
   } catch (error: any) {
