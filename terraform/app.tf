@@ -8,7 +8,9 @@ module "main_cms_app" {
 
   containers = {
     web = {
-      size   = terraform.workspace == "production" ? "L" : "L"
+      # Strapi met ~68s à booter sur L, plus que la limite Scalingo de 60s. XL (recette)
+      # et 2XL (prod) ramènent ce boot autour de 21s. Repasser en L rejoue le timeout.
+      size   = terraform.workspace == "production" ? "2XL" : "XL"
       amount = terraform.workspace == "production" ? 2 : 1
       autoscaler = terraform.workspace == "production" ? {
         min_containers = 2
