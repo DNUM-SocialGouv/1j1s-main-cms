@@ -24,8 +24,15 @@ jobs:
           app_name: ${{ secrets.TF_VAR_NOM_DE_L_APPLICATION }}
       - name: Créer une sauvegarde de la base PostgreSQL Scalingo
         run: |
-          POSTGRESQL_ADDON_ID=$(scalingo addons | grep -i postgresql | awk 'BEGIN{FS=" [|] "}{print $2}')
-          scalingo backups-create --addon $POSTGRESQL_ADDON_ID
+          # L'ID de l'addon est extrait par son motif "ad-<uuid>", robuste au format du tableau
+          # de `scalingo addons` dont les séparateurs de colonnes sont passés en Unicode (│).
+          POSTGRESQL_ADDON_ID=$(scalingo addons | grep -i postgresql | grep -oE 'ad-[0-9a-f-]+' | head -n1)
+          if [ -z "$POSTGRESQL_ADDON_ID" ]; then
+            echo "Erreur : ID de l'addon PostgreSQL introuvable dans la sortie de 'scalingo addons'." >&2
+            scalingo addons
+            exit 1
+          fi
+          scalingo backups-create --addon "$POSTGRESQL_ADDON_ID"
 
   terraform:
     uses: DNUM-SocialGouv/1j1s-front/.github/workflows/terraform-template.yml@main
