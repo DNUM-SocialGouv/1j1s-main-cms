@@ -45,7 +45,7 @@ terraform {
 
     cloudflare = {
       source  = "cloudflare/cloudflare"
-      version = "~> 4.15"
+      version = "~> 5.0"
     }
 
     dotenv = {
