@@ -20,11 +20,11 @@
     "test": "mocha"
   },
   "dependencies": {
-    "@strapi/logger": "4.25.23",
-    "@strapi/plugin-documentation": "4.25.23",
-    "@strapi/plugin-sentry": "4.25.23",
+    "@strapi/logger": "5.52.3",
+    "@strapi/plugin-documentation": "5.52.3",
+    "@strapi/plugin-sentry": "5.52.3",
     "@strapi/plugin-users-permissions": "4.25.23",
-    "@strapi/provider-upload-aws-s3": "4.25.23",
+    "@strapi/provider-upload-aws-s3": "5.52.3",
     "@strapi/strapi": "4.25.23",
     "pg": "8.13.3",
     "react": "^18.2.0",
