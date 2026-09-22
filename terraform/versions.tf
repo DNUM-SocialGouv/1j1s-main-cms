@@ -35,7 +35,7 @@ terraform {
       # Épinglé en 2.3.x. À partir de 2.4, le provider gère project_id et tente de vider
       # celui de l'app (projet 1j1s/default, défini hors Terraform), ce que Scalingo refuse.
       source  = "Scalingo/scalingo"
-      version = "~> 2.3.0"
+      version = "~> 2.7.0"
     }
 
     statuscake = {
